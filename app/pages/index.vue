@@ -25,7 +25,6 @@
 
       <!-- Row 2 -->
       <div class="text-[16px] leading-relaxed pt-5 pr-[30px]">
-        <span class="text-accent-red text-[14px] font-normal">Case study</span>
         <p class="mt-[15px]">bobby’s experience spans agencies, corporate enterprises, startups, and global consultancies, culminating in a highly adaptable approach to design and problem solving.</p>
       </div>
       <div class=" flex items-center justify-center relative overflow-hidden aspect-[4/3] bg-[url('/images-/Fig-3.png')] bg-contain bg-no-repeat bg-center">
@@ -87,22 +86,49 @@
       <!-- Column 2 -->
       <div class="flex flex-col h-full justify-between">
         <div class="text-[16px] leading-relaxed pr-5">
-          <span class="text-accent-red text-[14px] font-normal">Case study</span>
-          <p class="mt-[15px]">At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost.</p>
+          <p class="py-5 mt-[15px]">At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost.</p>
+          <div class="border-t border-[#444] border-b text-[16px] leading-relaxed pr-5">
+            <p class="py-2">How bublibu hides it’s complexity from users</p>
+          </div>
         </div>
-        <div class="text-[16px] leading-relaxed pr-5">
-          <p>He's experiencing build a whole user experience of food delivery app, managing the design to dev alignment alone with 2 engineer from rough ideas, ship the product optimize it to have almost 0 fail rate at 200 food delivery attempt</p>
-        </div>
+      
       </div>
 
       <!-- Column 3 -->
       <div class="flex flex-col h-full gap-[30px]">
-        <div class="bg-box-grey flex items-center justify-center relative overflow-hidden aspect-square">
+        <div class="flex items-center justify-center relative overflow-hidden aspect-square">
           <div class="text-[14px] text-[#444] text-center leading-snug">image<br>placeholder</div>
         </div>
-        <div class="bg-box-grey flex items-center justify-center relative overflow-hidden aspect-square">
-          <div class="text-[14px] text-[#444] text-center leading-snug">image<br>placeholder</div>
+        <div class="flex items-center justify-center relative overflow-hidden aspect-square">
+          <img src="/images-/2026s2.svg" alt="2026s2 illustration" class="w-[80%] h-auto" />
         </div>
+      </div>
+    </section>
+     <!-- Top Grid Section -->
+    <section class="grid grid-cols-3 gap-[30px] mb-[60px]">
+      <!-- Row 1 -->
+      <div class="bg-box-grey flex items-center justify-center relative overflow-hidden aspect-[4/3]">
+        <div class="flex flex-col items-center">
+          <div class="w-[90px] h-[90px] border border-[#444] rounded-full relative bg-[url('/images-/Fig-3.png')] bg-contain bg-no-repeat bg-center"></div>
+
+        </div>
+      </div>
+      <div class="col-span-2 flex items-center pl-[30px]">
+        <h2 class="text-[40px] font-normal leading-[1.15] m-0 max-w-[95%]">A typical designer who loves being involved in enginering conversation.</h2>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="text-[16px] leading-relaxed pt-5 pr-[30px]">
+        <span class="text-accent-red text-[14px] font-normal">Case study</span>
+        <p class="mt-[15px]">bobby’s experience spans agencies, corporate enterprises, startups, and global consultancies, culminating in a highly adaptable approach to design and problem solving.</p>
+      </div>
+      <div class=" flex items-center justify-center relative overflow-hidden aspect-[4/3] bg-[url('/images-/Fig-3.png')] bg-contain bg-no-repeat bg-center">
+      </div>
+      <div class="flex items-center justify-center w-full">
+        <a href="#" class="text-[16px] leading-relaxed no-underline text-inherit block text-center">
+          <img src="/images-/file-icon.png" alt="file icon" class="mb-2 mx-auto" />
+          <p>Bobby-hartanto.cv</p>
+        </a>
       </div>
     </section>
   </div>
