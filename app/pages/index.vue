@@ -49,11 +49,12 @@
     </section>
 
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[15px] mb-[30px]">
-      <div class="pt-5">
-        <img src="/images-/xl-axiata.png" alt="2026s2 illustration" class="w-[100%] h-auto" />
-        <p class="text-sm px-20 -mt-15">My XL app </p>
+      <div class="pt-5 col-span-1 items-center justify center">
+        <img src="/images-/axis.svg" alt="2026s2 illustration" class="w-[100%] h-auto" />
       </div>    
-      
+      <div class="pt-5 col-span-1 content-end justify center">
+        <img src="/images-/wp.svg" alt="2026s2 illustration" class="w-[50%] h-auto mx-auto" />
+      </div>    
       <div class="col-start-3 col-span-2 text-xl leading-relaxed ">
         <p class="mt-[15px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026, Culminating in a highly adaptable approach to design and problem solving. 
           </p>
@@ -95,7 +96,7 @@
               <span class="text-[18px] font-medium">Business & digital Product development Designer 2016</span>
             </div>
             <div class="flex items-center gap-[15px] text-[#333]">
-              <img src="/images-/moka.svg" alt="Moka" class="h-[25px] w-auto" />
+              <img src="/images-/mullen.png" alt="Mullen lowe" class="h-[25px] w-auto" />
               <span class="text-[18px] font-medium">Junior Graphic Designer 2014</span>
             </div>
           </div>
@@ -125,38 +126,72 @@
         </div>
       </div>
     </section>
-    
-    <!--Mokas -->
-     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
-      <!-- Merged Column 1 & 2 -->
+        <!-- Mokas portfolio -->
+    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] my-20 overflow-visible">
+      <div class="col-span-1 md:col-span-1">
+       <img src="/images-/moka-01.png" alt="Moka" class="w-[100%] h-auto" />
+      </div>
       <div class="col-span-1 md:col-span-1 md:col-start-2">
-        <div class="flex flex-col h-full ">
-          <div class="flex items-center gap-[15px] text-[#333]">
-              <img src="/images-/receipt.png" alt="Moka" class="w-[80%] h-auto" />
-            </div>
+      <img src="/images-/moka-02.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+
+      <div class="col-span-1 md:col-span-2 md:col-start-3">
+        <div class="flex flex-col w-full" >
+          <img src="/images-/paper-torn.svg" alt="balls" class="h-auto w-[100%] -scale-y-100">
+          
+          <div class="p-5"> 
+              <div class="flex w-full justify-center p-2 border-b-1 border-t-1" style="border-style: dashed;">
+                  <span style="font-family: 'DotGothic16', sans-serif;">
+                    *DINE IN*
+                  </span>
+              </div>
+              <div class="text-xl leading-relaxed ">
+                <p class="p-5">Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
+                </p>
+              </div>
+              <div class="flex w-full justify-center p-2 border-b-1 border-t-1" style="border-style: dashed;">
+                <div>
+                  <img src="/images-/barcode-2.svg" alt="balls" class="h-auto w-[100%]">
+                </div>
+              </div>
+          </div>
+          <img src="/images-/paper-torn.svg" alt="balls" class="h-auto w-[100%]">
         </div>
       </div>
 
-      <!-- Column 3 -->
-      <div class="col-span-1 md:col-span-2 h-full gap-[30px] ">
-        <div class="text-xl leading-relaxed ">
-          <p class="">Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
-          </p>
-             <div class="flex justify-center gap-[15px] text-[#333]">
-              <img src="/images-/panah.svg" alt="Moka" class="mt-15 w-[80%] h-auto mx-auto" />
+
+
+
+      <div class="col-span-1 md:col-span-1 md:col-start-5">
+      <img src="/images-/moka-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1 md:col-start-6 overflow-visible">
+      <img src="/images-/receipt.png" alt="2026s2 illustration" class="w-[60%] h-auto" />
+      </div>
+    </section>
+
+    <!--Mokas -->
+     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
+      <!-- Merged Column 1 & 2 -->
+      <div class="col-span-1 md:col-span-2 ">
+        <div class="flex flex-col h-full ">
+          <div class="flex gap-[15px] text-[#333]">
+              <img src="/images-/balls.svg" alt="balls" class="h-auto w-[60%]">
             </div>
+        </div>
+      </div>
+      <!-- Column 3 -->
+      <div class="col-span-1 md:col-span-3 md:col-start-3 h-full gap-[30px] ">
+          <div class="text-xl leading-relaxed pr-5">
+              <p class="py-5 mt-[15px] " style="font-family: 'IBM Plex Sans', sans-serif; font-size: 2rem;">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
+              </p>
           </div>
       </div>
 
-      <div class="col-span-1 md:col-span-2 flex justify-start items-center w-full">
-        <div class="col-span-1 flex flex-col">
-          <div class="col-span-1 flex  gap-[30px]">
-            <img src="/images-/snake.svg" alt="file icon" class="mb-2 h-auto w-[40%]" />
-            <img src="/images-/xl-axiata.png" alt="file icon" class=" h-auto w-[40%]" />
-          </div>  
-          <div class="text-xl leading-relaxed pr-5">
-          <p class="py-5 mt-[15px]">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
-          </p>
+      <div class="col-span-1 md:col-span-1 flex justify-start items-center w-full">
+        <div class="flex flex-col">
+          <div class="flex justify-center">
+            <img src="/images-/ibm-pc.png" alt="balls" class="h-auto w-[90%]">
           </div>
         </div>  
       </div>
@@ -165,35 +200,37 @@
       </div>
       
 
-
     </section>
-    
-    <!-- Mokas portfolio -->
+
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
-      <div class="col-span-1 md:col-span-1">
-      <img src="/images-/moka-01.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
-      </div>
-      <div class="col-span-1 md:col-span-1 md:col-start-3">
-      <img src="/images-/moka-02.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
-      </div>
-      <div class="col-span-1 md:col-span-1">
-      <img src="/images-/moka-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
-      </div>
-      <div class="col-span-1 md:col-span-1 md:col-start-6">
-      <img src="/images-/moka-03.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
-      </div>
-    </section>
+     
+         <div class="col-span-1 md:col-start-2 flex flex-col">
+          <div class="flex justify-center items-center">
+            <img src="/images-/dt.svg" alt="balls" class="h-auto w-[70%]">
+          </div>
+        </div>  
 
-
-    <!-- Bublibu -->
-     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
-      <!-- Merged Column 1 & 2 -->
-      <div class="col-span-1 md:col-span-1">
-        <div class="flex flex-col h-full">
-          <div class="flex items-start justify-start relative pr-10 mt-[15px]">
-            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[90%] h-auto" />
+        <div class="col-span-1 flex-col md:col-span-2 md:col-start-3 gap-[15px] text-[#333]">
+             
+          <div class="text-xl leading-relaxed">
+              <p class="font-normal" style="font-family: 'IBM Plex Sans', sans-serif;">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
+              </p>
           </div>
         </div>
+        
+        <div class="col-span-1">
+         <img src="/images-/xl-axiata.png" alt="file icon" class=" h-auto w-[100%]" />
+
+       </div>
+      </section>
+
+    <!-- Bublibu -->
+     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] mt-15">
+      <!-- Merged Column 1 & 2 -->
+      <div class="col-span-1 md:col-span-2 content-right pl-20 -mr-35">
+          <div class="flex items-start justify-start relative">
+            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[80%] h-auto" />
+          </div>
       </div>
 
       <!-- Column 3 -->
@@ -213,34 +250,64 @@
       </div>
     </section>
     
+     <!-- Mokas portfolio -->
+    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] my-20">
+      <div class="col-span-1 md:col-span-1">
+      <img src="/images-/bu-01.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1 md:col-start-3">
+      <img src="/images-/bu-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1">
+      <img src="/images-/bu-03.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1 md:col-start-6">
+      <img src="/images-/bu-02.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+    </section>
   
 
     <!-- Bottom Grid Section -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-[30px] ">
-      <!-- Column 1 -->
-      <div class="flex flex-col h-full md:mt-40">
-        
-        <div class="flex items-center gap-10 mb-4 pt-15">
-          <img src="/images-/Laravel.svg" alt="Laravel" class="h-[60px] w-auto" />
-          <img src="/images-/vue-js.svg" alt="Vue.js" class="h-[60px] w-auto" />
+    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] pb-20">
+      
+      <div class="col-span-2 h-full justify-between">
+      
+        <div class="flex items-center">
+          <img src="/images-/2026s2.svg" alt="2026s2 illustration" class="w-[70%] h-auto" />
+        </div>  
+        <div class="pt-10">
+          <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%] pt-10">A typical designer who loves being involved in enginering conversation.</h2>
         </div>
+      
       </div>
-
-      <!-- Column 2 -->
-      <div class="flex flex-col h-full justify-between">
-        <div class="text-xl leading-relaxed pr-5">
-
-        </div>
+      <div class="col-span-2">
+        <p class="text-xl leading-[1.15] m-0 max-w-[95%] pt-10">In early 2026 during the hype of vibecode, he’s extend his skill to not merely only ship a good screenshot, but ship a working frontend by the leverage of Ai and his fundamental knowledge of frontend.</p>
       
       </div>
 
       <!-- Column 3 -->
-      <div class="flex flex-col h-full gap-[30px]">
-        <div class="flex items-center justify-center relative overflow-hidden aspect-square">
-          <img src="/images-/2026s2.svg" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      <div class="flex flex-col h-full gap-[30px] md:col-start-5 md:col-span-2">
+        <div class="flex flex-col items-center justify-center relative overflow-hidden aspect-[4/3] rounded-[10px] bg-[#181818]">
+        <div class=" absolute top-2 left-2 z-10">
+          <img src="/images-/closing-button.png" alt="Vue.js" class="w-full h-full" />
         </div>
+        <div class="">
+          <video 
+          src="/videos/npm-run-build.mp4" 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          class="w-full h-full object-cover"
+        ></video>
+        </div>
+        
+      </div>
       </div>
     </section>
+
+
+
      <!-- Top Grid Section -->
       <section class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
       <!-- Column 1 -->
@@ -248,6 +315,7 @@
         <div class="text-[16px] leading-relaxed pr-5">
           <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%]">A typical designer who loves being involved in enginering conversation.</h2>
         </div>
+        
       
       </div>
 
@@ -319,6 +387,23 @@
 useHead({
   title: 'Bobby Hartanto - Portfolio',
   link: [
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      crossorigin: ''
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=DotGothic16&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap'
+    },
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'
