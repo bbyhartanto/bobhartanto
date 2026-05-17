@@ -1,19 +1,24 @@
 <template>
-  <div class="w-full px-5 pt-10 pb-[100px]">
-    <header class="flex justify-between text-sm mb-[60px] text-xl">
-      <span>Indonesia</span>
-      <a href="mailto:hello@bobhartanto.com" class="text-[#1A1A1A] no-underline">hello@bobhartanto.com</a>
+  <div class="w-full sticky top-0 z-10 border-b-1 border-black">
+    <div class="p-5">
+    <header class="flex justify-between text-sm ">
+          
+      <span>Bobby Hartanto</span>
+      <a href="mailto:hello@bobhartanto.com" class="text-[#1A1A1A] underline">hello@bobhartanto.com</a>
     </header>
+    </div>
+  </div>
+  <div class="w-full px-5 pt-10 pb-[100px]">
 
-    <section class="mb-[50px]">
+    <!-- <section class="mb-[50px]">
       <h1 class="text-[110px] font-medium tracking-tight m-0 leading-none">BOBBY HARTANTO</h1>
       <p class="text-[22px] m-0 font-light text-[#333]">A No fancy lead UI&UX Designer</p>
-    </section>
+    </section> -->
 
     <!-- Top Grid Section -->
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[15px] mb-[30px]">
       <!-- Column 1 -->
-            <div class="flex md:col-start-2 justify-center relative overflow-hidden aspect-[4/3]">
+            <div class="flex justify-center relative overflow-hidden aspect-[4/3]">
               <div class="flex flex-col h-full gap-[30px]">
                 <div class="text-[16px] leading-relaxed pr-5">
                   <img src="/images-/desainer-bergairah.png" alt="2026s2 illustration" class="w-[100%] h-auto" />
@@ -21,16 +26,26 @@
               </div>
             </div>
             <!-- Column 2 -->
-            <div class="col-span-1 md:col-span-4 flex md:pl-[30px]">
-              <h2 class="text-[60px] text-xl leading-[1.15] m-0 max-w-[95%]">Bobby Hartanto is an Indonesian based product designer with over 8+ years experience in designing intuitive and useful digital products.
+            <div class="col-span-1 md:col-start-3  md:col-span-3 flex ">
+              <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 8+ years experience in designing intuitive and useful digital products.
               
               </h2>
             </div>
-    </section>
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-[15px] mb-[30px]">
-      <div>
 
+            <div class="col-span-1 md:col-span-1 md:py-10">
+        <img src="/images-/circle.svg" alt="bublibu image" class="w-[50%] h-auto" />
       </div>
+
+
+    </section>
+    <section class="grid grid-cols-1 md:grid-cols-5 gap-[15px] mb-[30px] border-b-1 border-black">
+      <div class="col-span-1 md:col-span-2 md:col-start-2 md:py-10">
+        <img src="/images-/bobby.svg" alt="bublibu image" class="w-[90%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-start-5 md:col-span-1 md:py-10">
+        <img src="/images-/barcode.svg" alt="bublibu image" class="w-[90%] h-auto" />
+      </div>
+      
     </section>
 
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[15px] mb-[30px]">
@@ -51,12 +66,57 @@
     </section>
 
     <!-- Experiences Ribbon -->
-    <section class="flex flex-col md:flex-row md:items-center gap-[20px] md:gap-[30px] my-[70px] text-[16px]">
-      <div class="bg-[#1A1A1A] text-white py-1.5 px-3 text-[13px] font-semibold tracking-wider whitespace-nowrap">[ EXPERIENCES ]</div>
-      <div class="flex flex-col md:flex-row justify-between flex-1 gap-4 md:gap-0">
-        <div class="text-[#333]"><b class="font-bold text-[#1A1A1A] text-[18px]">Paton Dev</b> – Product & Lead Design 2025</div>
-        <div class="text-[#333]"><b class="font-black text-[#1A1A1A] text-[18px] tracking-tight">IBM</b> Indonesia – Senior Design Consultant 2019</div>
-        <div class="text-[#333]"><b class="font-bold text-[#1A1A1A] text-[18px]">moka <span class="text-[13px] font-semibold">Point of Sales</span></b> - Senior UI/UX Designer</div>
+    <section class="flex items-center my-[70px] border-y border-black overflow-hidden relative">
+      <div class="bg-[#1A1A1A] text-white py-4 px-6 text-[13px] font-semibold tracking-wider whitespace-nowrap z-10">[ EXPERIENCES ]</div>
+      <div class="flex-1 overflow-hidden">
+        <div class="animate-marquee whitespace-nowrap flex items-center">
+          <!-- First Set -->
+          <div class="flex items-center gap-[60px] px-[30px]">
+            <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/paton.svg" alt="Paton Dev" class="h-[25px] w-auto" />
+              <span class="text-[18px] font-medium">Product & Design Lead 2025</span>
+            </div>
+            <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/ibm.svg" alt="IBM" class="h-[25px] w-auto" />
+              <span class="text-[18px] font-medium">Indonesia – Senior Design Consultant 2019</span>
+            </div>
+            <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/moka.svg" alt="Moka" class="h-[25px] w-auto" />
+              <span class="text-[18px] font-medium">Senior UI/UX Designer 2017</span>
+            </div>
+            <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/astra.svg" alt="Astra" class="h-[25px] w-auto" />
+              <span class="text-[18px] font-medium">Business & digital Product development Designer 2016</span>
+            </div>
+            <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/moka.svg" alt="Moka" class="h-[25px] w-auto" />
+              <span class="text-[18px] font-medium">Junior Graphic Designer 2014</span>
+            </div>
+          </div>
+          <!-- Second Set (Duplicate for Loop) -->
+          <div class="flex items-center gap-[60px] px-[30px]">
+            <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/paton.svg" alt="Paton Dev" class="h-[25px] w-auto" />
+              <span class="text-[18px] font-medium">Product & Lead Design 2025</span>
+            </div>
+            <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/ibm.svg" alt="IBM" class="h-[25px] w-auto" />
+              <span class="text-[18px] font-medium">Indonesia – Senior Design Consultant 2019</span>
+            </div>
+            <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/moka.svg" alt="Moka" class="h-[25px] w-auto" />
+              <span class="text-[18px] font-medium">Senior UI/UX Designer</span>
+            </div>
+            <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/astra.svg" alt="Astra" class="h-[25px] w-auto" />
+              <span class="text-[18px] font-medium">Business & digital Product development Designer</span>
+            </div>
+            <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/moka.svg" alt="Moka" class="h-[25px] w-auto" />
+              <span class="text-[18px] font-medium">Junior Graphic Designer</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- bublibu section -->
@@ -197,3 +257,24 @@ useHead({
   ]
 })
 </script>
+
+<style scoped>
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+</style>
