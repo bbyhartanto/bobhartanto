@@ -136,17 +136,17 @@
       </div>
 
       <div class="col-span-1 md:col-span-2 md:col-start-3">
-        <div class="flex flex-col w-full" style="font-family: 'DotGothic16', sans-serif;">
+        <div class="flex flex-col w-full" >
           <img src="/images-/paper-torn.svg" alt="balls" class="h-auto w-[100%] -scale-y-100">
           
           <div class="p-5"> 
               <div class="flex w-full justify-center p-2 border-b-1 border-t-1" style="border-style: dashed;">
-                  <span>
+                  <span style="font-family: 'DotGothic16', sans-serif;">
                     *DINE IN*
                   </span>
               </div>
               <div class="text-xl leading-relaxed ">
-                <p class="p-5" style="font-family: 'DotGothic16', sans-serif;">Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
+                <p class="p-5">Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
                 </p>
               </div>
               <div class="flex w-full justify-center p-2 border-b-1 border-t-1" style="border-style: dashed;">
@@ -176,22 +176,22 @@
       <div class="col-span-1 md:col-span-2 ">
         <div class="flex flex-col h-full ">
           <div class="flex gap-[15px] text-[#333]">
-             
+              <img src="/images-/balls.svg" alt="balls" class="h-auto w-[60%]">
             </div>
         </div>
       </div>
-
       <!-- Column 3 -->
-      <div class="col-span-1 md:col-span-2 h-full gap-[30px] ">
-        <div class="text-xl leading-relaxed ">
+      <div class="col-span-1 md:col-span-3 md:col-start-3 h-full gap-[30px] ">
+          <div class="text-xl leading-relaxed pr-5">
+              <p class="py-5 mt-[15px] " style="font-family: 'IBM Plex Sans', sans-serif; font-size: 2rem;">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
+              </p>
           </div>
-         <img src="/images-/dt.svg" alt="Moka" class="mt-15 w-[80%] h-auto mx-auto" />
       </div>
 
-      <div class="col-span-1 md:col-span-2 flex justify-start items-center w-full">
-        <div class="col-span-1 flex flex-col">
+      <div class="col-span-1 md:col-span-1 flex justify-start items-center w-full">
+        <div class="flex flex-col">
           <div class="flex justify-center">
-            <img src="/images-/balls.svg" alt="balls" class="h-auto w-[90%]">
+            <img src="/images-/ibm-pc.png" alt="balls" class="h-auto w-[90%]">
           </div>
         </div>  
       </div>
@@ -205,15 +205,15 @@
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
      
          <div class="col-span-1 md:col-start-2 flex flex-col">
-          <div class="flex justify-center">
-            <img src="/images-/ibm-pc.png" alt="balls" class="h-auto w-[70%]">
+          <div class="flex justify-center items-center">
+            <img src="/images-/dt.svg" alt="balls" class="h-auto w-[70%]">
           </div>
         </div>  
 
         <div class="col-span-1 flex-col md:col-span-2 md:col-start-3 gap-[15px] text-[#333]">
              
-          <div class="text-xl leading-relaxed pr-5">
-              <p class="py-5 mt-[15px] font-normal" style="font-family: 'IBM Plex Sans', sans-serif;">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
+          <div class="text-xl leading-relaxed">
+              <p class="font-normal" style="font-family: 'IBM Plex Sans', sans-serif;">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
               </p>
           </div>
         </div>
