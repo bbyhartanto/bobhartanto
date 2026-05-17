@@ -132,26 +132,40 @@
       <div class="col-span-1 md:col-span-1 md:col-start-2">
         <div class="flex flex-col h-full ">
           <div class="flex items-center gap-[15px] text-[#333]">
-              <img src="/images-/receipt.png" alt="Moka" class="w-[50%] h-auto" />
+              <img src="/images-/receipt.png" alt="Moka" class="w-[80%] h-auto" />
             </div>
         </div>
       </div>
 
       <!-- Column 3 -->
       <div class="col-span-1 md:col-span-2 h-full gap-[30px] ">
-        <div class="text-xl leading-relaxed pr-5">
-          <p class="py-5 mt-[15px]">Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
+        <div class="text-xl leading-relaxed ">
+          <p class="">Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
           </p>
-          
+             <div class="flex justify-center gap-[15px] text-[#333]">
+              <img src="/images-/panah.svg" alt="Moka" class="mt-15 w-[80%] h-auto mx-auto" />
+            </div>
           </div>
       </div>
 
-      <div class="col-span-1 md:col-start-6 md:col-span-1 flex items-center justify-center w-full">
-        <a href="#" class="text-[16px] leading-relaxed no-underline text-inherit block text-center">
-          <img src="/images-/file-icon.png" alt="file icon" class="mb-2 mx-auto" />
-          <p>Bobby-hartanto.cv</p>
-        </a>
+      <div class="col-span-1 md:col-span-2 flex justify-start items-center w-full">
+        <div class="col-span-1 flex flex-col">
+          <div class="col-span-1 flex  gap-[30px]">
+            <img src="/images-/snake.svg" alt="file icon" class="mb-2 h-auto w-[40%]" />
+            <img src="/images-/xl-axiata.png" alt="file icon" class=" h-auto w-[40%]" />
+          </div>  
+          <div class="text-xl leading-relaxed pr-5">
+          <p class="py-5 mt-[15px]">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
+          </p>
+          </div>
+        </div>  
       </div>
+      <div class="col-span-1 md:col-span-1 flex justify-start items-center w-full">
+        
+      </div>
+      
+
+
     </section>
     
     <!-- Mokas portfolio -->
