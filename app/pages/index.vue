@@ -204,8 +204,8 @@
 
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
      
-         <div class="col-span-1 md:col-start-2 flex flex-col">
-          <div class="flex justify-center items-center">
+         <div class="col-span-1 md:col-span-2 ">
+          <div class="flex justify-end">
             <img src="/images-/dt.svg" alt="balls" class="h-auto w-[70%]">
           </div>
         </div>  
@@ -238,7 +238,7 @@
         <div class="text-xl leading-relaxed pr-5">
 
           <p class="py-5 mt-[15px]">
-            Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost.</p>
+            Paton.dev, while in IBM i was working as design consultant, here at Paton.dev i got challenged to lead a cross function team, to bootstapping Paton Product, during my work at paton.dev me and my team designed & build (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost.</p>
           </div>
       </div>
 
