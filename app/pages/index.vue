@@ -49,11 +49,12 @@
     </section>
 
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[15px] mb-[30px]">
-      <div class="pt-5">
-        <img src="/images-/xl-axiata.png" alt="2026s2 illustration" class="w-[100%] h-auto" />
-        <p class="text-sm px-20 -mt-15">My XL app </p>
+      <div class="pt-5 col-span-1 items-center justify center">
+        <img src="/images-/axis.svg" alt="2026s2 illustration" class="w-[100%] h-auto" />
       </div>    
-      
+      <div class="pt-5 col-span-1 content-end justify center">
+        <img src="/images-/wp.svg" alt="2026s2 illustration" class="w-[50%] h-auto mx-auto" />
+      </div>    
       <div class="col-start-3 col-span-2 text-xl leading-relaxed ">
         <p class="mt-[15px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026, Culminating in a highly adaptable approach to design and problem solving. 
           </p>
@@ -95,7 +96,7 @@
               <span class="text-[18px] font-medium">Business & digital Product development Designer 2016</span>
             </div>
             <div class="flex items-center gap-[15px] text-[#333]">
-              <img src="/images-/moka.svg" alt="Moka" class="h-[25px] w-auto" />
+              <img src="/images-/mullen.png" alt="Mullen lowe" class="h-[25px] w-auto" />
               <span class="text-[18px] font-medium">Junior Graphic Designer 2014</span>
             </div>
           </div>
@@ -132,7 +133,7 @@
       <div class="col-span-1 md:col-span-1 md:col-start-2">
         <div class="flex flex-col h-full ">
           <div class="flex items-center gap-[15px] text-[#333]">
-              <img src="/images-/receipt.png" alt="Moka" class="w-[80%] h-auto" />
+              <img src="/images-/forms.png" alt="Moka" class="w-[80%] h-auto" />
             </div>
         </div>
       </div>
@@ -143,7 +144,7 @@
           <p class="">Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
           </p>
              <div class="flex justify-center gap-[15px] text-[#333]">
-              <img src="/images-/panah.svg" alt="Moka" class="mt-15 w-[80%] h-auto mx-auto" />
+              <img src="/images-/iterasi.svg" alt="Moka" class="mt-15 w-[80%] h-auto mx-auto" />
             </div>
           </div>
       </div>
@@ -186,18 +187,16 @@
 
 
     <!-- Bublibu -->
-     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
+     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] mt-15">
       <!-- Merged Column 1 & 2 -->
-      <div class="col-span-1 md:col-span-1">
-        <div class="flex flex-col h-full">
-          <div class="flex items-start justify-start relative pr-10 mt-[15px]">
-            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[90%] h-auto" />
+      <div class="col-span-1 md:col-span-2 content-right pl-20 -mr-35">
+          <div class="flex items-start justify-start relative">
+            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[80%] h-auto" />
           </div>
-        </div>
       </div>
 
       <!-- Column 3 -->
-      <div class="col-span-1 md:col-span-2 md:col-start-3 h-full gap-[30px]">
+      <div class="col-span-1 md:col-span-3 md:col-start-3 h-full gap-[30px]">
         <div class="text-xl leading-relaxed pr-5">
 
           <p class="py-5 mt-[15px]">
@@ -216,31 +215,17 @@
   
 
     <!-- Bottom Grid Section -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-[30px] ">
-      <!-- Column 1 -->
-      <div class="flex flex-col h-full md:mt-40">
-        
-        <div class="flex items-center gap-10 mb-4 pt-15">
-          <img src="/images-/Laravel.svg" alt="Laravel" class="h-[60px] w-auto" />
-          <img src="/images-/vue-js.svg" alt="Vue.js" class="h-[60px] w-auto" />
-        </div>
-      </div>
-
-      <!-- Column 2 -->
-      <div class="flex flex-col h-full justify-between">
-        <div class="text-xl leading-relaxed pr-5">
-
-        </div>
-      
-      </div>
-
+    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] ">
       <!-- Column 3 -->
-      <div class="flex flex-col h-full gap-[30px]">
-        <div class="flex items-center justify-center relative overflow-hidden aspect-square">
+      <div class="flex flex-col h-full gap-[30px] md:col-start-3 md:col-span-2">
+        <div class="flex items-center justify-center py-20">
           <img src="/images-/2026s2.svg" alt="2026s2 illustration" class="w-[80%] h-auto" />
         </div>
       </div>
     </section>
+
+
+
      <!-- Top Grid Section -->
       <section class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
       <!-- Column 1 -->
