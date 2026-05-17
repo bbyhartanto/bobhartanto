@@ -55,8 +55,14 @@
       </div>    
       
       <div class="col-start-3 col-span-2 text-xl leading-relaxed ">
-        <p class="mt-[15px]">Bobby’s experience spans agencies, corporate enterprises, startups, and global consultancies, culminating in a highly adaptable approach to design and problem solving.
-        Bobby’s experience spans agencies, corporate enterprises, startups, and global consultancies, culminating in a highly adaptable approach to design and problem solving. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost.
+        <p class="mt-[15px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026, Culminating in a highly adaptable approach to design and problem solving. 
+          </p>
+          <p class="mt-[15px]">
+          Since my time in college, I’ve been obsessed with HTML and CSS. My first introduction to websites was when I tried to build an e-commerce store using Joomla on localhost. From there, my interest in websites grew, and I went on to experiment with other CMS platforms such as Drupal and WordPress.
+          </p>
+
+          <p class="mt-[15px]">
+            Although I started my career as a graphic designer at Mullen Lowe, my interest in interaction design and UI/UX continued to grow. Eventually, in 2016, I decided to shift my career to become a UI/UX Designer with joining Digital Transformation division of Astragraphia.
         </p>
       </div>
           
@@ -119,21 +125,24 @@
         </div>
       </div>
     </section>
-    <!-- bublibu section -->
+    
+    <!--Mokas -->
      <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
       <!-- Merged Column 1 & 2 -->
-      <div class="col-span-1 md:col-span-2">
-        <div class="flex flex-col h-full">
-          <div class="flex items-start justify-start relative pr-10">
-            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[90%] h-auto" />
-          </div>
+      <div class="col-span-1 md:col-span-1 md:col-start-2">
+        <div class="flex flex-col h-full ">
+          <div class="flex items-center gap-[15px] text-[#333]">
+              <img src="/images-/receipt.png" alt="Moka" class="w-[50%] h-auto" />
+            </div>
         </div>
       </div>
 
       <!-- Column 3 -->
-      <div class="col-span-1 md:col-span-2 h-full gap-[30px]">
+      <div class="col-span-1 md:col-span-2 h-full gap-[30px] ">
         <div class="text-xl leading-relaxed pr-5">
-          <p class="py-5 mt-[15px]">At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost.</p>
+          <p class="py-5 mt-[15px]">Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
+          </p>
+          
           </div>
       </div>
 
@@ -144,6 +153,52 @@
         </a>
       </div>
     </section>
+    
+    <!-- Mokas portfolio -->
+    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
+      <div class="col-span-1 md:col-span-1">
+      <img src="/images-/moka-01.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1 md:col-start-3">
+      <img src="/images-/moka-02.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1">
+      <img src="/images-/moka-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1 md:col-start-6">
+      <img src="/images-/moka-03.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+    </section>
+
+
+    <!-- Bublibu -->
+     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
+      <!-- Merged Column 1 & 2 -->
+      <div class="col-span-1 md:col-span-1">
+        <div class="flex flex-col h-full">
+          <div class="flex items-start justify-start relative pr-10 mt-[15px]">
+            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[90%] h-auto" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-span-1 md:col-span-2 md:col-start-3 h-full gap-[30px]">
+        <div class="text-xl leading-relaxed pr-5">
+
+          <p class="py-5 mt-[15px]">
+            Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost.</p>
+          </div>
+      </div>
+
+      <div class="col-span-1 md:col-start-6 md:col-span-1 flex items-center justify-center w-full">
+        <a href="#" class="text-[16px] leading-relaxed no-underline text-inherit block text-center">
+          <img src="/images-/file-icon.png" alt="file icon" class="mb-2 mx-auto" />
+          <p>Bobby-hartanto.cv</p>
+        </a>
+      </div>
+    </section>
+    
   
 
     <!-- Bottom Grid Section -->
