@@ -255,9 +255,9 @@
       </div>
 
       <div class="col-span-1 md:col-start-6 md:col-span-1 flex items-center justify-center w-full  animate-reveal">
-        <a href="#" class="text-[16px] leading-relaxed no-underline text-inherit block text-center">
+        <a href="https://drive.google.com/file/d/1L7tQ9KJIYJ815SpOrySy2Es_YiD-vlMq/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-[16px] leading-relaxed no-underline text-inherit block text-center">
           <img src="/images-/file-icon.png" alt="file icon" class="mb-2 mx-auto" />
-          <p>Bobby-hartanto.cv</p>
+          <p>Bobby-hartanto Portfolio.pdf</p>
         </a>
       </div>
     </section>
