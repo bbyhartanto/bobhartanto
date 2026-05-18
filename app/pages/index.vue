@@ -4,7 +4,11 @@
     <header class="flex justify-between text-sm ">
           
       <span>Bobby Hartanto</span>
-      <a href="mailto:hello@bobhartanto.com" class="text-[#1A1A1A] underline">hello@bobhartanto.com</a>
+      <div class="flex bg-black py-3 px-5 rounded-full text-[#ffffff]">
+        <p class="hidden md:block pr-5">Reach me out</p>
+        <a href="mailto:work.bobbyhartanto@gmail.com" class=" underline">work.bobbyhartanto@gmail.com</a>  
+      </div>
+      
     </header>
     </div>
   </div>
@@ -317,12 +321,12 @@
 
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] border-t-1"> 
       <div class="col-span-1">
-        Contact 
+       <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%] pt-10">Contact</h2>
       </div>
-      <div class="col-span-3">
+      <div class="col-span-3 flex items-center h-full">
         <ul>
-          <li>Linkedin</li>
-          <li>Email</li>
+          <li><a href="https://www.linkedin.com/in/bobhartanto/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+          <li><a href="mailto:work.bobbyhartanto@gmail.com">Email</a></li>
           <li>Instagram</li>
         </ul>
       </div>
