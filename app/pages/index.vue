@@ -319,9 +319,9 @@
 
 
 
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] border-t-1"> 
+    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] border-t-1 pt-10"> 
       <div class="col-span-1">
-       <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%] pt-10">Contact</h2>
+       <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%]">Contact</h2>
       </div>
       <div class="col-span-3 flex items-center h-full">
         <ul>
