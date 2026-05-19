@@ -22,9 +22,9 @@
     <!-- Top Grid Section -->
     <section class="flex flex-col md:flex-row gap-[15px]">
       <!-- Column 1 -->
-            <div class="flex-1 justify-center relative overflow-hidden">
+            <div class="flex-1 lg:flex-2 justify-center relative overflow-hidden py-2 md:py-0">
               <div class="flex flex-col">
-                <div class="w-[80%] mx-auto rounded-md overflow-hidden animate-reveal">
+                <div class="w-[100%] lg:w-[80%] mx-auto rounded-md overflow-hidden animate-reveal">
                   <video 
                   src="/videos/bby.mp4" 
                   autoplay 
@@ -37,36 +37,43 @@
               </div>
             </div>
             <!-- Column 2 -->
-            <div class="flex-2 md:col-start-3  md:col-span-2 flex ">
-              <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 8+ years experience in designing intuitive and useful digital products.
+            <div class="flex-3 md:col-start-3 md:col-span-2 flex py-2 md:py-0">
+              <h2 class="md:pl-10 lg:pl-0 text-[40px] text-xl leading-[1.15] m-0 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 8+ years experience in designing intuitive and useful digital products.
               
               </h2>
             </div>
 
-            <div class="flex-1 md:col-span-1 md:py-10">
+            <div class="flex-1 flex items-center justify-center py-2 md:col-span-1 md:py-10">
         <img src="/images-/circle.svg" alt="bublibu image" class="w-[50%] h-auto" />
       </div>
     </section>
 
 
-    <section class="grid grid-cols-1 md:grid-cols-5 gap-[15px] mb-[30px] border-b-1 border-black">
-      <div class="col-span-1 md:col-span-2 md:col-start-2 md:py-10">
+    <section class="grid grid-cols-1 lg:grid-cols-5 gap-[15px] mb-[30px] md:border-b-1 border-black">
+      <div class="col-span-1 md:col-span-2 md:col-start-2 md:py-10 flex items-center justify-center">
         <img src="/images-/bobby.svg" alt="bublibu image" class="w-[90%] h-auto" />
       </div>
-      <div class="col-span-1 md:col-start-5 md:col-span-1 md:py-10">
+      <div class="col-span-1 md:col-start-5 md:col-span-1 md:py-10 flex items-center justify-center">
         <img src="/images-/barcode.svg" alt="bublibu image" class="w-[90%] h-auto" />
       </div>
       
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-[15px] mb-[30px]">
-      <div class="pt-5 col-span-1 items-center justify center">
-        <img src="/images-/axis.svg" alt="2026s2 illustration" class="w-[100%] h-auto" />
-      </div>    
-      <div class="pt-5 col-span-1 content-end justify center">
-        <img src="/images-/wp.svg" alt="2026s2 illustration" class="w-[50%] h-auto mx-auto" />
-      </div>    
-      <div class="col-start-3 col-span-2 text-xl leading-relaxed ">
+  
+
+
+    <section class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-[15px] mb-[30px]">
+      <div class="col-span-1 lg:col-span-2 flex flex-col lg:flex-row">
+          <div class="pt-5 flex  md:items-start">
+            <img src="/images-/axis.svg" alt="2026s2 illustration" class="w-[100%] h-auto" />
+          </div> 
+
+          <div class="pt-5 flex md:items-end">
+            <img src="/images-/wp.svg" alt="2026s2 illustration" class="w-[60%] h-auto " />
+          </div> 
+        </div>
+
+      <div class="col-span-2 md:col-span-3 lg:col-span-2 text-xl leading-relaxed ">
         <p class="mt-[15px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026, Culminating in a highly adaptable approach to design and problem solving. 
           </p>
           <p class="mt-[15px]">
@@ -77,16 +84,17 @@
             Although I started my career as a graphic designer at Mullen Lowe, my interest in interaction design and UI/UX continued to grow. Eventually, in 2016, I decided to shift my career to become a UI/UX Designer with joining Digital Transformation division of Astragraphia.
         </p>
       </div>
-          
-      <div class="animate-reveal col-span-1 md:col-span-2 items-center justify-center relative overflow-hidden aspect-[4/3] bg-[url('/images-/Fig-3.png')] bg-contain bg-no-repeat bg-center">
-      </div>
+
+      <div class="pt-5 col-span-full md:col-span-2 flex items-center justify-center">
+        <img src="/images-/Fig-3.png" alt="2026s2 illustration" class="w-[80%] h-auto " />
+      </div> 
 
     </section>
 
     <!-- Experiences Ribbon -->
-    <section class="flex items-center my-[70px] border-y border-black overflow-hidden relative">
-      <div class="bg-[#1A1A1A] text-white py-4 px-6 text-[13px] font-semibold tracking-wider whitespace-nowrap z-10">[ EXPERIENCES ]</div>
-      <div class="flex-1 overflow-hidden">
+    <section class="flex flex-col md:flex-row items-center my-[70px] border-y border-black overflow-hidden relative">
+      <div class="w-full md:w-auto bg-[#1A1A1A] text-white py-4 px-6 text-[13px] font-semibold tracking-wider whitespace-nowrap z-10">[ EXPERIENCES ]</div>
+      <div class="flex-1 overflow-hidden py-5 md:py-0">
         <div class="animate-marquee whitespace-nowrap flex items-center">
           <!-- First Set -->
           <div class="flex items-center gap-[60px] px-[30px]">
@@ -139,18 +147,17 @@
     </section>
         <!-- Mokas portfolio -->
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] my-20 overflow-visible">
-      <div class="col-span-1 md:col-span-1 animate-reveal">
-       <img src="/images-/moka-01.png" alt="Moka" class="w-[100%] h-auto" />
+      <div class="col-span-1 md:col-span-1 animate-reveal flex items-center justify-center md:items-start">
+       <img src="/images-/moka-01.png" alt="Moka" class="w-[80%] h-auto" />
       </div>
-      <div class="col-span-1 md:col-span-1 md:col-start-2 animate-reveal">
+      <div class="col-span-1 md:col-span-1 md:col-start-2 animate-reveal flex items-center justify-center md:items-end">
       <img src="/images-/moka-02.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
       </div>
 
-      <div class="col-span-1 md:col-span-2 md:col-start-3">
-        <div class="flex flex-col w-full" >
+      <div class="col-span-1 md:col-span-3 lg:col-span-2 md:col-start-3 flex justify-center">
+        <div class="flex flex-col w-full items-center" >
           <img src="/images-/paper-torn.svg" alt="balls" class="h-auto w-[100%] -scale-y-100">
-          
-          <div class="p-5"> 
+          <div class="p-5 w-full">
               <div class="flex w-full justify-center p-2 border-b-1 border-t-1" style="border-style: dashed;">
                   <span style="font-family: 'DotGothic16', sans-serif;">
                     *DINE IN*
@@ -170,15 +177,14 @@
         </div>
       </div>
 
-
-
-
-      <div class="col-span-1 md:col-span-1 md:col-start-5  animate-reveal">
-      <img src="/images-/moka-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
-      </div>
-      <div class="col-span-1 md:col-span-1 md:col-start-6 overflow-visible  animate-reveal">
-      <img src="/images-/receipt.png" alt="2026s2 illustration" class="w-[60%] h-auto" />
-      </div>
+        <div class="col-span-1 lg:col-span-2 flex flex-col lg:flex-row">
+          <div class="flex animate-reveal items-center justify-center">
+          <img src="/images-/moka-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+          </div>
+          <div class="flex overflow-visible animate-reveal items-center justify-center">
+          <img src="/images-/receipt.png" alt="2026s2 illustration" class="w-[60%] h-auto" />
+          </div>
+        </div>
     </section>
 
     <!--Mokas -->
@@ -186,7 +192,7 @@
       <!-- Merged Column 1 & 2 -->
       <div class="col-span-1 md:col-span-2 ">
         <div class="flex flex-col h-full ">
-          <div class="flex gap-[15px] text-[#333]">
+          <div class="flex gap-[15px] text-[#333] justify-center md:justify-start">
               <img src="/images-/balls.svg" alt="balls" class="h-auto w-[60%]">
             </div>
         </div>
@@ -197,13 +203,15 @@
               <p class="py-5 mt-[15px] " style="font-family: 'IBM Plex Sans', sans-serif; font-size: 2rem;">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
               </p>
           </div>
-          <img src="/images-/double.svg" alt="balls" class="h-auto w-[60%]">
+          <div class="flex md:justify-start justify-center items-center w-full">
+            <img src="/images-/double.svg" alt="balls" class="h-auto md:w-[60%] w-[90%]">
+          </div>
       </div>
 
       <div class="col-span-1 md:col-span-1 flex justify-start items-center w-full">
         <div class="flex flex-col">
           <div class="flex justify-center animate-reveal">
-            <img src="/images-/ibm-pc.png" alt="balls" class="h-auto w-[90%]">
+            <img src="/images-/ibm-pc.png" alt="balls" class="h-auto w-[60%] md:w-[85%]">
           </div>
         </div>  
       </div>
@@ -215,9 +223,8 @@
     </section>
 
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
-     
-         <div class="col-span-1 md:col-span-2 ">
-          <div class="flex justify-end">
+         <div class="col-span-1 md:col-span-2">
+          <div class="flex md:justify-end flex justify-center items-center w-full">
             <img src="/images-/dt.svg" alt="balls" class="h-auto w-[70%]">
           </div>
         </div>  
@@ -230,7 +237,7 @@
           </div>
         </div>
         
-        <div class="col-span-1  animate-reveal">
+        <div class="col-span-1 animate-reveal flex items-center justify-center">
          <img src="/images-/xl-axiata.png" alt="file icon" class=" h-auto w-[100%]" />
 
        </div>
@@ -239,9 +246,9 @@
     <!-- Bublibu -->
      <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
       <!-- Merged Column 1 & 2 -->
-      <div class="col-span-1 md:col-span-2 content-right pl-20 -mr-35 animate-reveal">
+      <div class="col-span-1 md:col-span-1 content-right pl-20 -mr-35 animate-reveal">
           <div class="flex items-start justify-start relative  ">
-            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[80%] h-auto" />
+            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[50%] h-auto" />
           </div>
       </div>
 
@@ -251,6 +258,12 @@
           <p class="py-5 mt-[15px]">
             At Paton.dev, the challenge shifted entirely. While at IBM I was a design consultant embedded in large teams, here I was asked to lead - to bootstrap a product from the ground up with a cross-functional team. The most significant thing we built together was Bublibu, a food delivery app that delivered the same user experience as GrabFood or GoFood, but without the fleet. We built it on third-party courier APIs, matching the experience people already expected at a fraction of the operating cost.
           </p>
+          </div>
+      </div>
+
+      <div class="col-span-1 md:col-span-1 content-right pl-20 -mr-35 animate-reveal">
+          <div class="flex items-start justify-start relative  ">
+            <img src="/images-/bublib-2.png" alt="bublibu image" class="w-[50%] h-auto" />
           </div>
       </div>
 
@@ -264,16 +277,16 @@
     
      <!--Bublibu portfolio -->
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] my-5  animate-reveal">
-      <div class="col-span-1 md:col-span-1">
+      <div class="col-span-1 md:col-span-1 flex items-center justify-center">
       <img src="/images-/bu-01.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
       </div>
-      <div class="col-span-1 md:col-span-1 md:col-start-3">
+      <div class="col-span-1 md:col-span-1 md:col-start-3 flex items-center justify-center">
       <img src="/images-/bu-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
       </div>
-      <div class="col-span-1 md:col-span-1">
+      <div class="col-span-1 md:col-span-1 flex items-center justify-center">
       <img src="/images-/bu-03.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
       </div>
-      <div class="col-span-1 md:col-span-1 md:col-start-6">
+      <div class="col-span-1 md:col-span-1 md:col-start-6 flex items-center justify-center">
       <img src="/images-/bu-02.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
       </div>
     </section>
@@ -317,8 +330,6 @@
       </div>
     </section>
 
-
-
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] border-t-1 pt-10"> 
       <div class="col-span-1">
        <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%]">Contact</h2>
@@ -331,10 +342,6 @@
         </ul>
       </div>
     </section>
-
-
-
-
 
       <!-- <section class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
        <div class="flex flex-col h-full justify-between">
