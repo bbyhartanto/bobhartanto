@@ -68,12 +68,12 @@
             <img src="/images-/axis.svg" alt="2026s2 illustration" class="w-[100%] h-auto" />
           </div> 
 
-          <div class="pt-5 flex md:items-end">
+          <div class="pt-5 flex md:items-end justify-center">
             <img src="/images-/wp.svg" alt="2026s2 illustration" class="w-[60%] h-auto " />
           </div> 
         </div>
 
-      <div class="col-span-2 md:col-span-3 lg:col-span-2 text-xl leading-relaxed ">
+      <div class="col-span-full md:col-span-3 lg:col-span-2 text-xl leading-relaxed ">
         <p class="mt-[15px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026, Culminating in a highly adaptable approach to design and problem solving. 
           </p>
           <p class="mt-[15px]">
@@ -246,7 +246,7 @@
     <!-- Bublibu -->
      <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
       <!-- Merged Column 1 & 2 -->
-      <div class="col-span-1 md:col-span-1 content-right pl-20 -mr-35 animate-reveal">
+      <div class="col-span-1 md:col-span-1 md:pl-20 md:-mr-35 animate-reveal">
           <div class="flex items-start justify-start relative  ">
             <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[50%] h-auto" />
           </div>
@@ -261,7 +261,7 @@
           </div>
       </div>
 
-      <div class="col-span-1 md:col-span-1 content-right pl-20 -mr-35 animate-reveal">
+      <div class="col-span-1 md:col-span-1 md:pl-20 md:-mr-35 animate-reveal">
           <div class="flex items-start justify-start relative  ">
             <img src="/images-/bublib-2.png" alt="bublibu image" class="w-[50%] h-auto" />
           </div>
@@ -295,12 +295,12 @@
     <!-- Bottom Grid Section -->
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] py-20">
       
-      <div class="col-span-2 h-full justify-between">
+      <div class="col-span-full md:col-span-2 h-full justify-between">
         
         <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%] pt-10">Bobby is a typical designer who loves being involved in enginering conversation.</h2>
       </div>
 
-      <div class="col-span-2">
+      <div class="col-span-full md:col-span-2">
         <div class="flex items-center">
           <ClientOnly>
             <img src="/images-/2026s2.svg" alt="2026s2 illustration" class="w-[50%] h-auto" />
@@ -334,7 +334,7 @@
       <div class="col-span-1">
        <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%]">Contact</h2>
       </div>
-      <div class="col-span-3 flex items-center h-full">
+      <div class="col-span-full md:col-span-3 flex items-center h-full">
         <ul>
           <li><a href="https://www.linkedin.com/in/bobhartanto/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
           <li><a href="mailto:work.bobbyhartanto@gmail.com">Email</a></li>
