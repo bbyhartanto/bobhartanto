@@ -54,8 +54,8 @@
         <img src="/images-/barcode.svg" alt="bublibu image" class="w-[90%] h-auto" />
       </div>
     </section>
-    <section class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-[15px] mb-[30px]">
-      <div class="col-span-1 lg:col-span-2 flex flex-col lg:flex-row">
+    <section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-[15px] mb-[30px]">
+      <div class="col-span-2 lg:col-span-2 flex lg:flex-row">
           <div class="pt-5 flex  md:items-start">
             <img src="/images-/axis.svg" alt="2026s2 illustration" class="w-[100%] h-auto" />
           </div> 
@@ -65,7 +65,7 @@
           </div> 
         </div>
 
-      <div class="col-span-full md:col-span-3 lg:col-span-2 text-xl leading-relaxed ">
+      <div class="col-span-full md:col-span-3 lg:col-span-2 text-lg leading-relaxed ">
         <p class="mt-[15px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026, Culminating in a highly adaptable approach to design and problem solving. 
           </p>
           <p class="mt-[15px]">
@@ -84,7 +84,7 @@
     </section>
 
     <!-- Experiences Ribbon -->
-    <section class="flex flex-col md:flex-row items-center my-[70px] border-y border-black overflow-hidden relative">
+    <section class="flex flex-col md:flex-row items-center my-[8px] border-y border-black overflow-hidden relative">
       <div class="w-full md:w-auto bg-[#1A1A1A] text-white py-4 px-6 text-[13px] font-semibold tracking-wider whitespace-nowrap z-10">[ EXPERIENCES ]</div>
       <div class="flex-1 overflow-hidden py-5 md:py-0">
         <div class="animate-marquee whitespace-nowrap flex items-center">
@@ -138,7 +138,7 @@
       </div>
     </section>
         <!-- Mokas portfolio -->
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] my-20 overflow-visible">
+    <section class="grid grid-cols-2 md:grid-cols-6 gap=[8px] md:gap-[16px]  my-4 md:my-8 overflow-visible">
       <div class="col-span-1 md:col-span-1 animate-reveal flex items-center justify-center md:items-start">
        <img src="/images-/moka-01.png" alt="Moka" class="w-[80%] h-auto" />
       </div>
@@ -152,8 +152,10 @@
           <div class="w-full">
               <div class="flex w-full justify-center p-2">
               </div>
-              <div class="text-xl leading-relaxed ">
-                <p>Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
+              <div class="text-lg leading-relaxed ">
+                <p>Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. </p>
+                
+                <p class="mt-5">Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
                 </p>
               </div>
           </div>
@@ -163,51 +165,44 @@
           <div class="flex animate-reveal items-center justify-center">
           <img src="/images-/moka-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
           </div>
-          <div class="flex overflow-visible animate-reveal items-center justify-center">
+          <div class="flex pt-10 md:pt-0 overflow-visible animate-reveal items-center justify-center">
           <img src="/images-/receipt.png" alt="2026s2 illustration" class="w-[60%] h-auto" />
           </div>
         </div>
     </section>
 
     <!--Mokas -->
-     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
+     <section class="grid grid-cols-2 md:grid-cols-6 gap-[8px] md:gap-[16px] ">
       <!-- Merged Column 1 & 2 -->
-      <div class="col-span-1 md:col-span-2 ">
+      <div class="col-span-1 md:col-span-2 order-1 md:order-none">
         <div class="flex flex-col h-full ">
-          <div class="flex gap-[15px] text-[#333] justify-center md:justify-start">
+          <div class="flex gap-[15px] text-[#333] justify-center md:justify-start animate-reveal">
               <img src="/images-/balls.svg" alt="balls" class="h-auto w-[60%]">
             </div>
         </div>
       </div>
       <!-- Column 3 -->
-      <div class="col-span-1 md:col-span-3 md:col-start-3 h-full gap-[30px] ">
-          <div class="text-xl leading-relaxed pr-5">
-              <p class="py-5 mt-[15px] ">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
+      <div class="col-span-2 md:col-span-2 flex md:flex-col md:col-start-3 h-full gap-[8px] md:gap-[16px] order-3 md:order-none">
+          <div class="text-lg leading-relaxed pr-5">
+              <p class="mt-[8px] ">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
               </p>
           </div>
-          <div class="flex md:justify-start justify-center items-center w-full">
+          <div class="flex col-span-1 md:col-span-2 md:justify-start justify-center items-center w-full py-8 animate-reveal">
             <img src="/images-/double.svg" alt="balls" class="h-auto md:w-[60%] w-[90%]">
           </div>
       </div>
 
-      <div class="col-span-1 md:col-span-1 flex justify-start items-center w-full">
-        <div class="flex flex-col">
-          <div class="flex justify-center animate-reveal">
-            <img src="/images-/ibm-pc.png" alt="balls" class="h-auto w-[60%] md:w-[85%]">
-          </div>
-        </div>  
-      </div>
-      <div class="col-span-1 md:col-span-1 flex justify-start items-center w-full">
-        
+      <div class="col-span-1 md:col-span-1 flex flex-col justify-start items-center w-full animate-reveal order-2 md:order-none">
+            <img src="/images-/dt.svg" alt="balls" class="h-auto w-[60%] md:w-[100%]">
       </div>
       
 
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
+    <section class="grid grid-cols-1 md:grid-cols-6 gap=[8px] md:gap-[16px] ">
          <div class="col-span-1 md:col-span-2">
-          <div class="flex md:justify-end flex justify-center items-center w-full">
-            <img src="/images-/dt.svg" alt="balls" class="h-auto w-[70%]">
+          <div class="flex md:justify-end flex justify-center items-center w-full animate-reveal">
+            <img src="/images-/ibm-pc.png" alt="balls" class="h-auto w-[50%] md:w-[70%] py-8">
           </div>
         </div>  
 
@@ -220,25 +215,44 @@
         </div>
         
         <div class="col-span-1 animate-reveal flex items-center justify-center">
-         <img src="/images-/xl-axiata.png" alt="file icon" class=" h-auto w-[100%]" />
+         <img src="/images-/xl-axiata.png" alt="file icon" class=" h-auto w-[60%] md:w-[100%]" />
 
        </div>
       </section>
 
     <!-- Bublibu -->
-     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
+     <section class="grid grid-cols-2 md:grid-cols-6 gap=[8px] md:gap-[16px] ">
       <!-- Merged Column 1 & 2 -->
       <div class="col-span-1 md:col-span-1 md:pl-20 md:-mr-35 animate-reveal">
           <div class="flex items-start justify-start relative  ">
-            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[50%] h-auto" />
+            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[80%] h-auto" />
           </div>
       </div>
 
       <!-- Column 3 -->
-      <div class="col-span-1 md:col-span-2 md:col-start-3 h-full gap-[30px]">
-        <div class="text-xl leading-relaxed pr-5">
+      <div class="col-span-1 md:col-span-2 md:col-start-3 h-full gap=[8px] md:gap-[16px] ">
+        <div class="text-lg leading-relaxed pr-5">
           <p class="py-5 mt-[15px]">
-            At Paton.dev, the challenge shifted entirely. While at IBM I was a design consultant embedded in large teams, here I was asked to lead - to bootstrap a product from the ground up with a cross-functional team. The most significant thing we built together was Bublibu, a food delivery app that delivered the same user experience as GrabFood or GoFood, but without the fleet. We built it on third-party courier APIs, matching the experience people already expected at a fraction of the operating cost.
+            At Paton.dev, the challenge shifted entirely. While at IBM I was a design consultant embedded in large teams, here I was asked to bootstrap a product from the ground up with a very lean and cross-functional team. I took multidiciplinary role at Paton.dev, mainly focused on Product Design but also involve in product strategy, user research. </p>
+
+            <p>
+            The initial project of joining paton i was devoted to support Paton.dev production team, building empirica.ly at initial stage. Empirica is a free, open-source, <br/>virtual lab platform for developing and conducting synchronous and interactive human-participant experiments. 
+          </p>
+
+            <p class="mt-[25px]">
+            Empirica provides an API that allows experiment designers to devote their effort to implementing participant-facing views and experiment-specific logic. 
+            </p>
+            
+          
+          <p>
+            The most significant thing we built together in Paton.dev was Bublibu, a food delivery app that delivered the same user experience as GrabFood or GoFood, without nurturing their own fleet.</p>
+            
+            <p class="mt-[25px]">The initial idea of bublibu came from covid era 
+            while many of impacted people selling foods from Instagram and WhatsApp, while joining the giant food delivery platforms wasn't easy or affordable, given their high commission fees.
+            </p>
+
+            <p>
+            Bublibu emerged from this gap to answer this struggle, with low commission fee and agnostic courier technology. Since we built it on third-party courier APIs, matching the experience people already expected at a fraction of the operating cost.
           </p>
           </div>
       </div>
@@ -258,24 +272,24 @@
     </section>
     
      <!--Bublibu portfolio -->
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] my-5  animate-reveal">
+    <section class="grid grid-cols-1 md:grid-cols-6 gap=[8px] md:gap-[16px] my-5  animate-reveal">
       <div class="col-span-1 md:col-span-1 flex items-center justify-center">
-      <img src="/images-/bu-01.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      <img src="/images-/bu-01.png" alt="2026s2 illustration" class="w-[60%] md:w-[80%] h-auto" />
       </div>
       <div class="col-span-1 md:col-span-1 md:col-start-3 flex items-center justify-center">
-      <img src="/images-/bu-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      <img src="/images-/bu-04.png" alt="2026s2 illustration" class="w-[60%] py-4 md:w-[80%] h-auto" />
       </div>
       <div class="col-span-1 md:col-span-1 flex items-center justify-center">
-      <img src="/images-/bu-03.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      <img src="/images-/bu-03.png" alt="2026s2 illustration" class="w-[60%] py-4 md:w-[80%] h-auto" />
       </div>
       <div class="col-span-1 md:col-span-1 md:col-start-6 flex items-center justify-center">
-      <img src="/images-/bu-02.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      <img src="/images-/bu-02.png" alt="2026s2 illustration" class="w-[60%] py-4 md:w-[80%] h-auto" />
       </div>
     </section>
   
 
     <!-- Bottom Grid Section -->
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] py-20">
+    <section class="grid grid-cols-1 md:grid-cols-6 gap=[8px] md:gap-[16px]  py-8">
       
       <div class="col-span-full md:col-span-2 h-full justify-between">
         
@@ -292,7 +306,7 @@
       </div>
 
       <!-- Column 3 -->
-      <div class="flex flex-col h-full gap-[30px] md:col-start-5 md:col-span-2">
+      <div class="flex flex-col h-full gap=[8px] md:gap-[16px]  md:col-start-5 md:col-span-2">
         <div class="flex flex-col items-center justify-center relative overflow-hidden aspect-[4/3] rounded-[10px] bg-[#181818]">
         <div class=" absolute top-2 left-2 z-10">
           <img src="/images-/closing-button.png" alt="Vue.js" class="w-full h-full" />
@@ -312,7 +326,7 @@
       </div>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] border-t-1 pt-10"> 
+    <section class="grid grid-cols-1 md:grid-cols-6 gap=[8px] md:gap-[16px]  border-t-1 pt-10"> 
       <div class="col-span-1">
        <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%]">Contact</h2>
       </div>
@@ -325,7 +339,7 @@
       </div>
     </section>
 
-      <!-- <section class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+      <!-- <section class="grid grid-cols-1 md:grid-cols-3 gap=[8px] md:gap-[16px] ">
        <div class="flex flex-col h-full justify-between">
         <div class="text-[16px] leading-relaxed pr-5">
           <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%]">A typical designer who loves being involved in enginering conversation.</h2>
@@ -336,7 +350,7 @@
            <img src="/images-/3-circle.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
         </div>
       </div>
-      <div class="flex flex-col h-full gap-[30px]">
+      <div class="flex flex-col h-full gap=[8px] md:gap-[16px] ">
          <div class="text-[16px] leading-relaxed pr-5">
            <img src="/images-/desainer-bergairah.png" alt="2026s2 illustration" class="w-[100%] h-auto" />
         </div>
@@ -399,6 +413,10 @@ useHead({
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'
     }
   ]
 })
