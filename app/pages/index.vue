@@ -2,13 +2,11 @@
   <div class="w-full sticky top-0 z-10 border-b-1 border-black">
     <div class="p-5">
     <header class="flex justify-between text-sm ">
-          
       <span>Bobby Hartanto</span>
       <div class="flex bg-black py-3 px-5 rounded-full text-[#ffffff]">
         <p class="hidden md:block pr-5">Reach me out</p>
         <a href="mailto:work.bobbyhartanto@gmail.com" class=" underline">work.bobbyhartanto@gmail.com</a>  
       </div>
-      
     </header>
     </div>
   </div>
@@ -366,8 +364,20 @@ onMounted(() => {
   })
 })
 
+useSeoMeta({
+  title: 'Bobby Hartanto - UI/UX Designer Blog',
+  ogTitle: 'Bobby Hartanto - UI/UX Designer Blog',
+  description: 'Product & Design Lead with over 11+ years of experience, Ex Moka POS, EX IBM',
+  ogDescription: 'Product & Design Lead with over 11+ years of experience, Ex Moka POS, EX IBM',
+  ogImage: 'https://bobhartanto.com/og-image.jpg',
+  ogUrl: 'https://bobhartanto.com/'
+})
+
 useHead({
-  title: 'Bobby Hartanto - Portfolio',
+  meta: [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+  ],
   link: [
     {
       rel: 'preconnect',
