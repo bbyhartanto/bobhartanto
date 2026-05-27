@@ -38,7 +38,7 @@
             </div>
             <!-- Column 2 -->
             <div class="flex-3 md:col-start-3 md:col-span-2 flex py-2 md:py-0">
-              <h2 class="md:pl-10 lg:pl-0 text-[40px] text-xl leading-[1.15] m-0 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 8+ years experience in designing intuitive and useful digital products.
+              <h2 class="md:pl-10 lg:pl-0 text-2xl md:text-5xl leading-[1.15] m-0 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 11+ years experience in designing intuitive and useful digital products.
               
               </h2>
             </div>
@@ -48,7 +48,6 @@
       </div>
     </section>
 
-
     <section class="grid grid-cols-1 lg:grid-cols-5 gap-[15px] mb-[30px] md:border-b-1 border-black">
       <div class="col-span-1 md:col-span-2 md:col-start-2 md:py-10 flex items-center justify-center">
         <img src="/images-/bobby.svg" alt="bublibu image" class="w-[90%] h-auto" />
@@ -56,12 +55,7 @@
       <div class="col-span-1 md:col-start-5 md:col-span-1 md:py-10 flex items-center justify-center">
         <img src="/images-/barcode.svg" alt="bublibu image" class="w-[90%] h-auto" />
       </div>
-      
     </section>
-
-  
-
-
     <section class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-[15px] mb-[30px]">
       <div class="col-span-1 lg:col-span-2 flex flex-col lg:flex-row">
           <div class="pt-5 flex  md:items-start">
@@ -156,27 +150,17 @@
 
       <div class="col-span-1 md:col-span-3 lg:col-span-2 md:col-start-3 flex justify-center">
         <div class="flex flex-col w-full items-center" >
-          <img src="/images-/paper-torn.svg" alt="balls" class="h-auto w-[100%] -scale-y-100">
-          <div class="p-5 w-full">
-              <div class="flex w-full justify-center p-2 border-b-1 border-t-1" style="border-style: dashed;">
-                  <span style="font-family: 'DotGothic16', sans-serif;">
-                    *DINE IN*
-                  </span>
+         
+          <div class="w-full">
+              <div class="flex w-full justify-center p-2">
               </div>
               <div class="text-xl leading-relaxed ">
-                <p class="p-5">Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
+                <p>Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
                 </p>
               </div>
-              <div class="flex w-full justify-center p-2 border-b-1 border-t-1" style="border-style: dashed;">
-                <div>
-                  <img src="/images-/barcode-2.svg" alt="balls" class="h-auto w-[100%]">
-                </div>
-              </div>
           </div>
-          <img src="/images-/paper-torn.svg" alt="balls" class="h-auto w-[100%]">
         </div>
       </div>
-
         <div class="col-span-1 lg:col-span-2 flex flex-col lg:flex-row">
           <div class="flex animate-reveal items-center justify-center">
           <img src="/images-/moka-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
@@ -200,7 +184,7 @@
       <!-- Column 3 -->
       <div class="col-span-1 md:col-span-3 md:col-start-3 h-full gap-[30px] ">
           <div class="text-xl leading-relaxed pr-5">
-              <p class="py-5 mt-[15px] " style="font-family: 'IBM Plex Sans', sans-serif; font-size: 2rem;">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
+              <p class="py-5 mt-[15px] ">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
               </p>
           </div>
           <div class="flex md:justify-start justify-center items-center w-full">
@@ -396,7 +380,7 @@ useHead({
     },
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=DotGothic16&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
+      href: 'https://fonts.googleapis.com/css2?family=DotGothic16&display=swap'
     },
     {
       rel: 'stylesheet',
