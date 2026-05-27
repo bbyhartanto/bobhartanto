@@ -4,7 +4,11 @@
     <header class="flex justify-between text-sm ">
           
       <span>Bobby Hartanto</span>
-      <a href="mailto:hello@bobhartanto.com" class="text-[#1A1A1A] underline">hello@bobhartanto.com</a>
+      <div class="flex bg-black py-3 px-5 rounded-full text-[#ffffff]">
+        <p class="hidden md:block pr-5">Reach me out</p>
+        <a href="mailto:work.bobbyhartanto@gmail.com" class=" underline">work.bobbyhartanto@gmail.com</a>  
+      </div>
+      
     </header>
     </div>
   </div>
@@ -16,45 +20,54 @@
     </section> -->
 
     <!-- Top Grid Section -->
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-[15px] mb-[30px]">
+    <section class="flex flex-col md:flex-row gap-[15px]">
       <!-- Column 1 -->
-            <div class="flex justify-center relative overflow-hidden aspect-[4/3]">
-              <div class="flex flex-col h-full gap-[30px]">
-                <div class="text-[16px] leading-relaxed pr-5">
-                  <img src="/images-/desainer-bergairah.png" alt="2026s2 illustration" class="w-[100%] h-auto" />
+            <div class="flex-1 lg:flex-2 justify-center relative overflow-hidden py-2 md:py-0">
+              <div class="flex flex-col">
+                <div class="w-[100%] lg:w-[80%] mx-auto rounded-md overflow-hidden animate-reveal">
+                  <video 
+                  src="/videos/bby.mp4" 
+                  autoplay 
+                  loop 
+                  muted 
+                  playsinline 
+                  class="w-full h-full object-cover"
+                ></video>
                 </div>
               </div>
             </div>
             <!-- Column 2 -->
-            <div class="col-span-1 md:col-start-3  md:col-span-3 flex ">
-              <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 8+ years experience in designing intuitive and useful digital products.
+            <div class="flex-3 md:col-start-3 md:col-span-2 flex py-2 md:py-0">
+              <h2 class="md:pl-10 lg:pl-0 text-2xl md:text-5xl leading-[1.15] m-0 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 11+ years experience in designing intuitive and useful digital products.
               
               </h2>
             </div>
 
-            <div class="col-span-1 md:col-span-1 md:py-10">
+            <div class="flex-1 flex items-center justify-center py-2 md:col-span-1 md:py-10">
         <img src="/images-/circle.svg" alt="bublibu image" class="w-[50%] h-auto" />
       </div>
-
-
     </section>
-    <section class="grid grid-cols-1 md:grid-cols-5 gap-[15px] mb-[30px] border-b-1 border-black">
-      <div class="col-span-1 md:col-span-2 md:col-start-2 md:py-10">
+
+    <section class="grid grid-cols-1 lg:grid-cols-5 gap-[15px] mb-[30px] md:border-b-1 border-black">
+      <div class="col-span-1 md:col-span-2 md:col-start-2 md:py-10 flex items-center justify-center">
         <img src="/images-/bobby.svg" alt="bublibu image" class="w-[90%] h-auto" />
       </div>
-      <div class="col-span-1 md:col-start-5 md:col-span-1 md:py-10">
+      <div class="col-span-1 md:col-start-5 md:col-span-1 md:py-10 flex items-center justify-center">
         <img src="/images-/barcode.svg" alt="bublibu image" class="w-[90%] h-auto" />
       </div>
-      
     </section>
+    <section class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-[15px] mb-[30px]">
+      <div class="col-span-1 lg:col-span-2 flex flex-col lg:flex-row">
+          <div class="pt-5 flex  md:items-start">
+            <img src="/images-/axis.svg" alt="2026s2 illustration" class="w-[100%] h-auto" />
+          </div> 
 
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-[15px] mb-[30px]">
-      <div class="pt-5">
-        <img src="/images-/xl-axiata.png" alt="2026s2 illustration" class="w-[100%] h-auto" />
-        <p class="text-sm px-20 -mt-15">My XL app </p>
-      </div>    
-      
-      <div class="col-start-3 col-span-2 text-xl leading-relaxed ">
+          <div class="pt-5 flex md:items-end justify-center">
+            <img src="/images-/wp.svg" alt="2026s2 illustration" class="w-[60%] h-auto " />
+          </div> 
+        </div>
+
+      <div class="col-span-full md:col-span-3 lg:col-span-2 text-xl leading-relaxed ">
         <p class="mt-[15px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026, Culminating in a highly adaptable approach to design and problem solving. 
           </p>
           <p class="mt-[15px]">
@@ -65,16 +78,17 @@
             Although I started my career as a graphic designer at Mullen Lowe, my interest in interaction design and UI/UX continued to grow. Eventually, in 2016, I decided to shift my career to become a UI/UX Designer with joining Digital Transformation division of Astragraphia.
         </p>
       </div>
-          
-      <div class=" col-span-1 md:col-span-2 items-center justify-center relative overflow-hidden aspect-[4/3] bg-[url('/images-/Fig-3.png')] bg-contain bg-no-repeat bg-center">
-      </div>
+
+      <div class="pt-5 col-span-full md:col-span-2 flex items-center justify-center">
+        <img src="/images-/Fig-3.png" alt="2026s2 illustration" class="w-[80%] h-auto " />
+      </div> 
 
     </section>
 
     <!-- Experiences Ribbon -->
-    <section class="flex items-center my-[70px] border-y border-black overflow-hidden relative">
-      <div class="bg-[#1A1A1A] text-white py-4 px-6 text-[13px] font-semibold tracking-wider whitespace-nowrap z-10">[ EXPERIENCES ]</div>
-      <div class="flex-1 overflow-hidden">
+    <section class="flex flex-col md:flex-row items-center my-[70px] border-y border-black overflow-hidden relative">
+      <div class="w-full md:w-auto bg-[#1A1A1A] text-white py-4 px-6 text-[13px] font-semibold tracking-wider whitespace-nowrap z-10">[ EXPERIENCES ]</div>
+      <div class="flex-1 overflow-hidden py-5 md:py-0">
         <div class="animate-marquee whitespace-nowrap flex items-center">
           <!-- First Set -->
           <div class="flex items-center gap-[60px] px-[30px]">
@@ -95,7 +109,7 @@
               <span class="text-[18px] font-medium">Business & digital Product development Designer 2016</span>
             </div>
             <div class="flex items-center gap-[15px] text-[#333]">
-              <img src="/images-/moka.svg" alt="Moka" class="h-[25px] w-auto" />
+              <img src="/images-/mullen.png" alt="Mullen lowe" class="h-[25px] w-auto" />
               <span class="text-[18px] font-medium">Junior Graphic Designer 2014</span>
             </div>
           </div>
@@ -125,38 +139,63 @@
         </div>
       </div>
     </section>
-    
+        <!-- Mokas portfolio -->
+    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] my-20 overflow-visible">
+      <div class="col-span-1 md:col-span-1 animate-reveal flex items-center justify-center md:items-start">
+       <img src="/images-/moka-01.png" alt="Moka" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1 md:col-start-2 animate-reveal flex items-center justify-center md:items-end">
+      <img src="/images-/moka-02.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+
+      <div class="col-span-1 md:col-span-3 lg:col-span-2 md:col-start-3 flex justify-center">
+        <div class="flex flex-col w-full items-center" >
+         
+          <div class="w-full">
+              <div class="flex w-full justify-center p-2">
+              </div>
+              <div class="text-xl leading-relaxed ">
+                <p>Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+        <div class="col-span-1 lg:col-span-2 flex flex-col lg:flex-row">
+          <div class="flex animate-reveal items-center justify-center">
+          <img src="/images-/moka-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+          </div>
+          <div class="flex overflow-visible animate-reveal items-center justify-center">
+          <img src="/images-/receipt.png" alt="2026s2 illustration" class="w-[60%] h-auto" />
+          </div>
+        </div>
+    </section>
+
     <!--Mokas -->
      <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
       <!-- Merged Column 1 & 2 -->
-      <div class="col-span-1 md:col-span-1 md:col-start-2">
+      <div class="col-span-1 md:col-span-2 ">
         <div class="flex flex-col h-full ">
-          <div class="flex items-center gap-[15px] text-[#333]">
-              <img src="/images-/receipt.png" alt="Moka" class="w-[80%] h-auto" />
+          <div class="flex gap-[15px] text-[#333] justify-center md:justify-start">
+              <img src="/images-/balls.svg" alt="balls" class="h-auto w-[60%]">
             </div>
         </div>
       </div>
-
       <!-- Column 3 -->
-      <div class="col-span-1 md:col-span-2 h-full gap-[30px] ">
-        <div class="text-xl leading-relaxed ">
-          <p class="">Moka POS was my next chapter after Astragraphia. This is where I got my first real taste of startup life most of my coworkers were young and full of energy, and I found myself genuinely caught up in that same enthusiasm for building. Moka was growing fast at the time, and I got to be part of some meaningful work: the English to Indonesian localization, the Table Management feature, and a full redesign of Moka's receipt.
-          </p>
-             <div class="flex justify-center gap-[15px] text-[#333]">
-              <img src="/images-/panah.svg" alt="Moka" class="mt-15 w-[80%] h-auto mx-auto" />
-            </div>
+      <div class="col-span-1 md:col-span-3 md:col-start-3 h-full gap-[30px] ">
+          <div class="text-xl leading-relaxed pr-5">
+              <p class="py-5 mt-[15px] ">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
+              </p>
+          </div>
+          <div class="flex md:justify-start justify-center items-center w-full">
+            <img src="/images-/double.svg" alt="balls" class="h-auto md:w-[60%] w-[90%]">
           </div>
       </div>
 
-      <div class="col-span-1 md:col-span-2 flex justify-start items-center w-full">
-        <div class="col-span-1 flex flex-col">
-          <div class="col-span-1 flex  gap-[30px]">
-            <img src="/images-/snake.svg" alt="file icon" class="mb-2 h-auto w-[40%]" />
-            <img src="/images-/xl-axiata.png" alt="file icon" class=" h-auto w-[40%]" />
-          </div>  
-          <div class="text-xl leading-relaxed pr-5">
-          <p class="py-5 mt-[15px]">Working at IBM gave me exposure to large-scale enterprise projects, cross-country collaboration, the IBM design thinking framework was first introduced to me here. My notable projects were involved is XL Axiata Digital Transformation at 2019.
-          </p>
+      <div class="col-span-1 md:col-span-1 flex justify-start items-center w-full">
+        <div class="flex flex-col">
+          <div class="flex justify-center animate-reveal">
+            <img src="/images-/ibm-pc.png" alt="balls" class="h-auto w-[60%] md:w-[85%]">
           </div>
         </div>  
       </div>
@@ -165,122 +204,98 @@
       </div>
       
 
-
     </section>
-    
-    <!-- Mokas portfolio -->
+
     <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
-      <div class="col-span-1 md:col-span-1">
-      <img src="/images-/moka-01.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
-      </div>
-      <div class="col-span-1 md:col-span-1 md:col-start-3">
-      <img src="/images-/moka-02.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
-      </div>
-      <div class="col-span-1 md:col-span-1">
-      <img src="/images-/moka-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
-      </div>
-      <div class="col-span-1 md:col-span-1 md:col-start-6">
-      <img src="/images-/moka-03.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
-      </div>
-    </section>
+         <div class="col-span-1 md:col-span-2">
+          <div class="flex md:justify-end flex justify-center items-center w-full">
+            <img src="/images-/dt.svg" alt="balls" class="h-auto w-[70%]">
+          </div>
+        </div>  
 
+        <div class="col-span-1 flex-col md:col-span-2 md:col-start-3 gap-[15px] text-[#333]">
+             
+          <div class="text-xl leading-relaxed">
+              <p class="font-normal">At IBM Projects weren't small. Teams weren't local and it's involved multiple stakeholders. Having a convo with cross function team is nothing new for me, i'm always comfortable to have design alignment with engineer, but here at IBM i have to make alignment not only with cross function team but also cross country with different culture A truly escalate the alignment challenge for me. 
+              </p>
+          </div>
+        </div>
+        
+        <div class="col-span-1 animate-reveal flex items-center justify-center">
+         <img src="/images-/xl-axiata.png" alt="file icon" class=" h-auto w-[100%]" />
+
+       </div>
+      </section>
 
     <!-- Bublibu -->
      <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px]">
       <!-- Merged Column 1 & 2 -->
-      <div class="col-span-1 md:col-span-1">
-        <div class="flex flex-col h-full">
-          <div class="flex items-start justify-start relative pr-10 mt-[15px]">
-            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[90%] h-auto" />
+      <div class="col-span-1 md:col-span-1 md:pl-20 md:-mr-35 animate-reveal">
+          <div class="flex items-start justify-start relative  ">
+            <img src="/images-/bublibuu.png" alt="bublibu image" class="w-[50%] h-auto" />
           </div>
-        </div>
       </div>
 
       <!-- Column 3 -->
       <div class="col-span-1 md:col-span-2 md:col-start-3 h-full gap-[30px]">
         <div class="text-xl leading-relaxed pr-5">
-
           <p class="py-5 mt-[15px]">
-            Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost. At Paton.dev, he designed (bublibu) a food delivery app that delivered the same user experience as Gofood or GrabFood without the fleet. built on third-party courier APIs to match the experience at a fraction of their operating cost.</p>
+            At Paton.dev, the challenge shifted entirely. While at IBM I was a design consultant embedded in large teams, here I was asked to lead - to bootstrap a product from the ground up with a cross-functional team. The most significant thing we built together was Bublibu, a food delivery app that delivered the same user experience as GrabFood or GoFood, but without the fleet. We built it on third-party courier APIs, matching the experience people already expected at a fraction of the operating cost.
+          </p>
           </div>
       </div>
 
-      <div class="col-span-1 md:col-start-6 md:col-span-1 flex items-center justify-center w-full">
-        <a href="#" class="text-[16px] leading-relaxed no-underline text-inherit block text-center">
+      <div class="col-span-1 md:col-span-1 md:pl-20 md:-mr-35 animate-reveal">
+          <div class="flex items-start justify-start relative  ">
+            <img src="/images-/bublib-2.png" alt="bublibu image" class="w-[50%] h-auto" />
+          </div>
+      </div>
+
+      <div class="col-span-1 md:col-start-6 md:col-span-1 flex items-center justify-center w-full  animate-reveal">
+        <a href="https://drive.google.com/file/d/1L7tQ9KJIYJ815SpOrySy2Es_YiD-vlMq/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-[16px] leading-relaxed no-underline text-inherit block text-center">
           <img src="/images-/file-icon.png" alt="file icon" class="mb-2 mx-auto" />
-          <p>Bobby-hartanto.cv</p>
+          <p>Bobby-hartanto Portfolio.pdf</p>
         </a>
       </div>
     </section>
     
+     <!--Bublibu portfolio -->
+    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] my-5  animate-reveal">
+      <div class="col-span-1 md:col-span-1 flex items-center justify-center">
+      <img src="/images-/bu-01.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1 md:col-start-3 flex items-center justify-center">
+      <img src="/images-/bu-04.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1 flex items-center justify-center">
+      <img src="/images-/bu-03.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+      <div class="col-span-1 md:col-span-1 md:col-start-6 flex items-center justify-center">
+      <img src="/images-/bu-02.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+      </div>
+    </section>
   
 
     <!-- Bottom Grid Section -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-[30px] ">
-      <!-- Column 1 -->
-      <div class="flex flex-col h-full md:mt-40">
+    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] py-20">
+      
+      <div class="col-span-full md:col-span-2 h-full justify-between">
         
-        <div class="flex items-center gap-10 mb-4 pt-15">
-          <img src="/images-/Laravel.svg" alt="Laravel" class="h-[60px] w-auto" />
-          <img src="/images-/vue-js.svg" alt="Vue.js" class="h-[60px] w-auto" />
-        </div>
+        <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%] pt-10">Bobby is a typical designer who loves being involved in enginering conversation.</h2>
       </div>
 
-      <!-- Column 2 -->
-      <div class="flex flex-col h-full justify-between">
-        <div class="text-xl leading-relaxed pr-5">
-
+      <div class="col-span-full md:col-span-2">
+        <div class="flex items-center">
+          <ClientOnly>
+            <img src="/images-/2026s2.svg" alt="2026s2 illustration" class="w-[50%] h-auto" />
+          </ClientOnly>
         </div>
-      
+        <p class="text-xl leading-[1.15] m-0 max-w-[95%] pt-10">In early 2026 during the hype of vibecode, I extend my skill to not merely only ship a good screenshot, but ship a working digital interaction by the leverage of Ai and my technical implementation knowledge.</p>
       </div>
 
       <!-- Column 3 -->
-      <div class="flex flex-col h-full gap-[30px]">
-        <div class="flex items-center justify-center relative overflow-hidden aspect-square">
-          <img src="/images-/2026s2.svg" alt="2026s2 illustration" class="w-[80%] h-auto" />
-        </div>
-      </div>
-    </section>
-     <!-- Top Grid Section -->
-      <section class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
-      <!-- Column 1 -->
-       <div class="flex flex-col h-full justify-between">
-        <div class="text-[16px] leading-relaxed pr-5">
-          <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%]">A typical designer who loves being involved in enginering conversation.</h2>
-        </div>
-      
-      </div>
-
-      <!-- Column 2 -->
-      <div class="flex flex-col h-full justify-between">
-        <div class="text-[16px] leading-relaxed pr-5">
-           <img src="/images-/3-circle.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
-        </div>
-      
-      </div>
-
-      <!-- Column 3 -->
-      <div class="flex flex-col h-full gap-[30px]">
-         <div class="text-[16px] leading-relaxed pr-5">
-           <img src="/images-/desainer-bergairah.png" alt="2026s2 illustration" class="w-[100%] h-auto" />
-        </div>
-        <div class="text-[16px] leading-relaxed pr-5">
-            <p class="py-2">His first open free class, Fundamental step to transform yourself become UI&UX designer</p>
-          </div>
-      </div>
-    </section>
-    <!-- last section -->
-
-
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-[30px] mb-[60px] mt-20">
-      <!-- Row 1 -->
-      <div class="flex">
-        <p class="text-xl leading-[1.15] m-0 max-w-[95%]">THIS IS TEXT BASE TAILWIND  by the leverage of Ai and his fundamental knowledge of frontend.</p>
-      </div>
-      <div class="flex">
-        <p class="text-xl leading-[1.15] m-0 max-w-[95%]">In early 2026 during the hype of vibecode, he’s extend his skill to not merely only ship a good screenshot, but ship a working frontend by the leverage of Ai and his fundamental knowledge of frontend.</p>
-      </div>
-      <div class="flex flex-col items-center justify-center relative overflow-hidden aspect-[4/3] rounded-[10px] bg-[#181818]">
+      <div class="flex flex-col h-full gap-[30px] md:col-start-5 md:col-span-2">
+        <div class="flex flex-col items-center justify-center relative overflow-hidden aspect-[4/3] rounded-[10px] bg-[#181818]">
         <div class=" absolute top-2 left-2 z-10">
           <img src="/images-/closing-button.png" alt="Vue.js" class="w-full h-full" />
         </div>
@@ -296,29 +311,81 @@
         </div>
         
       </div>
-     
-
-      <!-- Row 2
-      <div class="text-[16px] leading-relaxed pt-5 pr-[30px]">
-        <p class="mt-[15px]">bobby’s experience spans agencies, corporate enterprises, startups, and global consultancies, culminating in a highly adaptable approach to design and problem solving.</p>
       </div>
-      <div class=" flex items-center justify-center relative overflow-hidden aspect-[4/3] bg-[url('/images-/Fig-3.png')] bg-contain bg-no-repeat bg-center">
-      </div>
-      <div class="flex items-center justify-center w-full">
-        <a href="#" class="text-[16px] leading-relaxed no-underline text-inherit block text-center">
-          <img src="/images-/file-icon.png" alt="file icon" class="mb-2 mx-auto" />
-          <p>Bobby-hartanto.cv</p>
-        </a>
-      </div> -->
     </section>
-   
+
+    <section class="grid grid-cols-1 md:grid-cols-6 gap-[30px] border-t-1 pt-10"> 
+      <div class="col-span-1">
+       <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%]">Contact</h2>
+      </div>
+      <div class="col-span-full md:col-span-3 flex items-center h-full">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/bobhartanto/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+          <li><a href="mailto:work.bobbyhartanto@gmail.com">Email</a></li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+    </section>
+
+      <!-- <section class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+       <div class="flex flex-col h-full justify-between">
+        <div class="text-[16px] leading-relaxed pr-5">
+          <h2 class="text-[40px] text-xl leading-[1.15] m-0 max-w-[95%]">A typical designer who loves being involved in enginering conversation.</h2>
+        </div>
+      </div>
+      <div class="flex flex-col h-full justify-between">
+        <div class="text-[16px] leading-relaxed pr-5">
+           <img src="/images-/3-circle.png" alt="2026s2 illustration" class="w-[80%] h-auto" />
+        </div>
+      </div>
+      <div class="flex flex-col h-full gap-[30px]">
+         <div class="text-[16px] leading-relaxed pr-5">
+           <img src="/images-/desainer-bergairah.png" alt="2026s2 illustration" class="w-[100%] h-auto" />
+        </div>
+        <div class="text-[16px] leading-relaxed pr-5">
+            <p class="py-2">His first open free class, Fundamental step to transform yourself become UI&UX designer</p>
+          </div>
+      </div>
+    </section> -->
   </div>
 </template>
 
 <script setup>
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view')
+        observer.unobserve(entry.target)
+      }
+    })
+  }, { threshold: 0.1 })
+
+  document.querySelectorAll('.animate-reveal').forEach(el => {
+    observer.observe(el)
+  })
+})
+
 useHead({
   title: 'Bobby Hartanto - Portfolio',
   link: [
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      crossorigin: ''
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=DotGothic16&display=swap'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap'
+    },
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'
@@ -345,5 +412,24 @@ useHead({
 
 .animate-marquee:hover {
   animation-play-state: paused;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-reveal {
+  opacity: 0;
+}
+
+.animate-reveal.in-view {
+  animation: reveal 0.8s ease-out 0.5s both;
 }
 </style>
