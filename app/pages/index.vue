@@ -379,8 +379,8 @@ onMounted(() => {
 })
 
 useSeoMeta({
-  title: 'Bobby Hartanto - UI/UX Designer Blog',
-  ogTitle: 'Bobby Hartanto - UI/UX Designer Blog',
+  title: 'Bobby Hartanto - UI/UX Design Blog',
+  ogTitle: 'Bobby Hartanto - UI/UX Design Blog',
   description: 'Product & Design Lead with over 11+ years of experience, Ex Moka POS, EX IBM',
   ogDescription: 'Product & Design Lead with over 11+ years of experience, Ex Moka POS, EX IBM',
   ogImage: 'https://bobhartanto.com/og-image.jpg',
