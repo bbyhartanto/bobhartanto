@@ -12,7 +12,7 @@ subcategories:
 timeline: 2021-2025
 ---
 
-# Bublibu Agnostic food delivery marketplace
+## The invisible food marketplace in Bandung
 
 The initial idea of bublibu came from covid era while many of impacted people selling foods from Instagram and WhatsApp, while joining the giant food delivery platforms wasn't easy or affordable, given their high commission fees.
 

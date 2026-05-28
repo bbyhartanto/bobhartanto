@@ -34,8 +34,12 @@
           </p>
       </div>
     </section>
-    <!-- Beautiful Daily Passion / Case Studies Section -->
-    <section class="grid grid-cols-1 md:grid-cols-6 gap-x-[30px] gap-y-[40px] mt-24 items-start relative">
+    <!-- Beautiful Daily Passion / Case Studies Section (Looped per Category) -->
+    <section 
+      v-for="(category, index) in categoriesList" 
+      :key="category.name"
+      class="grid grid-cols-1 md:grid-cols-6 gap-x-[30px] gap-y-[40px] mt-24 items-start relative border-t border-black/10 pt-16"
+    >
       <!-- Left Column (Sticky on Desktop) -->
       <div class="col-span-1 md:col-span-2 md:sticky md:top-28 flex flex-col gap-6">
         <div class="grid grid-cols-3 gap-[15px]">
@@ -63,26 +67,26 @@
       <div class="ml-16 md:ml-0 col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-[30px] bg-white p-8">
         <!-- Content -->
         <div class="col-span-1 md:col-span-3 flex flex-col gap-16 md:gap-24">
-          <div v-for="(category, index) in categoriesList" :key="category.name" class="flex flex-col">
+          <div class="flex flex-col">
             <!-- Number & Category Title-->
              <div class="flex gap-12">
               <span class="-ml-23 text-4xl font-light text-gray-500 mb-2 block font-mono">{{ formatIndex(index) }}</span>
-            <!-- Category Title -->
-            <h3 class="text-2xl md:text-[34px] font-light leading-[1.2] tracking-tight text-black mb-6">
-              {{ category.name }}
-            </h3>
+              <!-- Category Title -->
+              <h3 class="text-2xl md:text-[34px] font-light leading-[1.2] tracking-tight text-black mb-6">
+                {{ category.name }}
+              </h3>
              </div>
             
             <!-- Categories Tags-->
             <div class="flex flex-wrap gap-2.5 mb-8">
               <!-- Dynamic count pill — auto-updates when you add content in Nuxt Studio -->
-              <span class="px-4 py-1.5 border border-black rounded-full text-xs font-mono text-black tracking-tight">
+              <span class="px-4 py-1.5 border border-black rounded-full text-xs font-mono text-black tracking-tight bg-white">
                 {{ getCaseStudiesForCategory(category.name).length }} Case {{ getCaseStudiesForCategory(category.name).length === 1 ? 'Study' : 'Studies' }}
               </span>
               <span 
                 v-for="tag in category.subcategories" 
                 :key="tag" 
-                class="px-4 py-1.5 border border-black/45 rounded-full text-xs font-light text-gray-800 tracking-tight"
+                class="px-4 py-1.5 border border-black/45 rounded-full text-xs font-light text-gray-800 tracking-tight bg-white"
               >
                 {{ tag }}
                 <span v-if="getSubcategoryCount(category.name, tag) > 0" class="ml-1 font-mono text-black/50">({{ getSubcategoryCount(category.name, tag) }})</span>
@@ -99,21 +103,19 @@
               >
                 <!-- Column 1 & 2: Title and Subcategories wrapped in flex-col -->
                 <div class="col-span-1 md:col-span-3 flex flex-col gap-2">
-                  
                   <span class="text-2xl font-medium text-black leading-snug">
-                        {{ caseStudy.title }}
-                      </span>
+                    {{ caseStudy.title }}
+                  </span>
 
-                      <div class="flex flex-wrap gap-1.5 lg:mr-40">
-                        <span 
-                          v-for="sub in getActiveSubcategories(caseStudy)" 
-                          :key="sub"
-                          class="text-[11px] uppercase tracking-wider font-mono px-2.5 py-0.5 border border-black/15 rounded-full text-black/60 w-fit bg-white/30"
-                        >
-                          {{ sub }}
-                        </span>
-                      </div>
-                    
+                  <div class="flex flex-wrap gap-1.5 lg:mr-40">
+                    <span 
+                      v-for="sub in getActiveSubcategories(caseStudy)" 
+                      :key="sub"
+                      class="text-[11px] uppercase tracking-wider font-mono px-2.5 py-0.5 border border-black/15 rounded-full text-black/60 w-fit bg-white/30"
+                    >
+                      {{ sub }}
+                    </span>
+                  </div>
                 </div>
 
                 <!-- Column 3: Description (Spans 3 columns on desktop) -->
@@ -125,7 +127,7 @@
           </div>
         </div>
 
-        <!-- Top-Right Gray Box (Spans Col 4 on Desktop, corresponding to Col 6 of parent) -->
+        <!-- Top-Right Gray Box (Spans Col 4 on Desktop, corresponding to Col 6 of parent section grid) -->
         <div class="col-span-1 md:col-span-1 hidden md:block">
           <div class="bg-box-grey h-[180px] w-full rounded-sm"></div>
         </div>
