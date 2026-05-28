@@ -29,3 +29,12 @@ strong {
   font-family: 'Space Grotesk', sans-serif;
   color: gray;
 }
+
+.role {
+  padding: 4px 0px;
+}
+
+.li-case {
+  padding: 8px 0px;
+  border-bottom: 1px solid black;
+}
