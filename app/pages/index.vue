@@ -38,7 +38,7 @@
     <section class="grid grid-cols-1 md:grid-cols-6 gap-x-[30px] gap-y-[40px] mt-24 items-start relative">
       <!-- Left Column (Sticky on Desktop) -->
       <div class="col-span-1 md:col-span-2 md:sticky md:top-28 flex flex-col gap-6">
-        <div class="grid grid-cols-2 gap-[15px]">
+        <div class="grid grid-cols-3 gap-[15px]">
           <!-- Top-Left Gray Box -->
           <div class="col-span-1 bg-box-grey h-[220px] w-full hidden md:block rounded-sm"></div>
           <!-- Empty column for layout spacing -->
@@ -59,41 +59,68 @@
         </div>
       </div>
 
-      <!-- Right Column (List of Services/Roles) -->
-      <div class="col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-[30px]">
-        <!-- Main Service Lists (Spans Cols 1-3 on Desktop, corresponding to Cols 3-5 of parent) -->
+      <!-- Center Content) -->
+      <div class="ml-16 md:ml-0 col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-[30px] bg-white p-8">
+        <!-- Content -->
         <div class="col-span-1 md:col-span-3 flex flex-col gap-16 md:gap-24">
-          <div v-for="(service, index) in services" :key="index" class="flex flex-col">
-            <!-- Number -->
-            <span class="text-lg font-light text-gray-500 mb-2 block font-mono">{{ service.number }}</span>
-            <!-- Service Title -->
-            <h3 class="text-2xl md:text-[34px] font-normal leading-[1.2] tracking-tight text-black mb-6">
-              {{ service.title }}
+          <div v-for="(category, index) in categoriesList" :key="category.name" class="flex flex-col">
+            <!-- Number & Category Title-->
+             <div class="flex gap-12">
+              <span class="-ml-23 text-4xl font-light text-gray-500 mb-2 block font-mono">{{ formatIndex(index) }}</span>
+            <!-- Category Title -->
+            <h3 class="text-2xl md:text-[34px] font-light leading-[1.2] tracking-tight text-black mb-6">
+              {{ category.name }}
             </h3>
+             </div>
             
-            <!-- Badges/Pills -->
+            <!-- Categories Tags-->
             <div class="flex flex-wrap gap-2.5 mb-8">
+              <!-- Dynamic count pill — auto-updates when you add content in Nuxt Studio -->
+              <span class="px-4 py-1.5 border border-black rounded-full text-xs font-mono text-black tracking-tight">
+                {{ getCaseStudiesForCategory(category.name).length }} Case {{ getCaseStudiesForCategory(category.name).length === 1 ? 'Study' : 'Studies' }}
+              </span>
               <span 
-                v-for="tag in service.tags" 
+                v-for="tag in category.subcategories" 
                 :key="tag" 
                 class="px-4 py-1.5 border border-black/45 rounded-full text-xs font-light text-gray-800 tracking-tight"
               >
                 {{ tag }}
+                <span v-if="getSubcategoryCount(category.name, tag) > 0" class="ml-1 font-mono text-black/50">({{ getSubcategoryCount(category.name, tag) }})</span>
               </span>
             </div>
 
-            <!-- Experience Sub-List -->
+            <!-- Case Studies Sub-List -->
             <div class="flex flex-col border-t border-black">
-              <div 
-                v-for="(item, itemIndex) in service.items" 
-                :key="itemIndex" 
-                class="border-b border-black py-6 flex flex-col md:flex-row justify-between items-start gap-4"
+              <NuxtLink 
+                v-for="caseStudy in getCaseStudiesForCategory(category.name)" 
+                :key="caseStudy.path"
+                :to="caseStudy.path"
+                class="border-b border-black py-6 grid grid-cols-1 md:grid-cols-6 gap-x-6 gap-y-4 items-start hover:opacity-75 transition-opacity duration-200"
               >
-                <span class="text-[17px] font-semibold text-black min-w-[150px]">{{ item.name }}</span>
-                <p class="text-sm font-light text-gray-700 leading-relaxed md:max-w-[360px]">
-                  {{ item.description }}
+                <!-- Column 1 & 2: Title and Subcategories wrapped in flex-col -->
+                <div class="col-span-1 md:col-span-3 flex flex-col gap-2">
+                  
+                  <span class="text-2xl font-medium text-black leading-snug">
+                        {{ caseStudy.title }}
+                      </span>
+
+                      <div class="flex flex-wrap gap-1.5 lg:mr-40">
+                        <span 
+                          v-for="sub in getActiveSubcategories(caseStudy)" 
+                          :key="sub"
+                          class="text-[11px] uppercase tracking-wider font-mono px-2.5 py-0.5 border border-black/15 rounded-full text-black/60 w-fit bg-white/30"
+                        >
+                          {{ sub }}
+                        </span>
+                      </div>
+                    
+                </div>
+
+                <!-- Column 3: Description (Spans 3 columns on desktop) -->
+                <p class="col-span-1 md:col-span-3 text-sm text-gray-700 leading-relaxed">
+                  {{ caseStudy.excerpt || caseStudy.description }}
                 </p>
-              </div>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -110,46 +137,47 @@
 </template>
 
 <script setup>
-const services = [
-  {
-    number: '01',
-    title: 'Navigating problem to product',
-    tags: ['Strategy', 'Research', 'Design thinking'],
-    items: [
-      {
-        name: 'Bublibu cooy',
-        description: 'My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026.'
-      },
-      {
-        name: 'Bublibu cooy',
-        description: 'My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026.'
-      }
-    ]
-  },
-  {
-    number: '02',
-    title: 'Key visual and design direction',
-    tags: ['Art direction', 'Visual design', 'Identity'],
-    items: [
-      {
-        name: 'Bublibu cooy',
-        description: 'My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026.'
-      }
-    ]
-  },
-  {
-    number: '03',
-    title: 'Building Design system',
-    tags: ['Component library', 'Design tokens', 'Documentation'],
-    items: [
-      {
-        name: 'Bublibu cooy',
-        description: 'My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026. This gives me the full-stack design perspective to navigate ambiguity, unite teams, and take a product from concept to launch.'
-      }
-    ]
-  }
-]
+const { data: categoriesDoc } = await useAsyncData('categories', () => {
+  return queryCollection('categories').first()
+})
 
+const categoriesList = computed(() => {
+  return categoriesDoc.value?.items || []
+})
+
+const formatIndex = (index) => String(index + 1).padStart(2, '0')
+
+const { data: caseStudies } = await useAsyncData('casestudies', () => {
+  return queryCollection('casestudies').all()
+})
+
+const getCaseStudiesForCategory = (categoryName) => {
+  if (!caseStudies.value) return []
+  const norm = (str) => {
+    if (!str) return ''
+    return str.toLowerCase()
+      .replace(/problems/g, 'problem')
+      .replace(/s\b/g, '')
+      .replace(/[^a-z0-9]/g, '')
+  }
+  return caseStudies.value.filter(cs => norm(cs.category) === norm(categoryName))
+}
+
+const getActiveSubcategories = (cs) => {
+  if (!cs) return []
+  // subcategories is now an array of strings from the enum multi-select in Nuxt Studio
+  return Array.isArray(cs.subcategories) ? cs.subcategories : []
+}
+
+// Count how many case studies under a category have a given subcategory tag selected
+const getSubcategoryCount = (categoryName, tag) => {
+  const studies = getCaseStudiesForCategory(categoryName)
+  // Normalize both sides to handle any minor casing differences
+  const normalizedTag = tag.toLowerCase().trim()
+  return studies.filter(cs =>
+    getActiveSubcategories(cs).some(s => s.toLowerCase().trim() === normalizedTag)
+  ).length
+}
 
 useSeoMeta({
   title: 'Bobby Hartanto - UI/UX Designer Blog',

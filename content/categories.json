@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "name": "Problem to Product",
+      "subcategories": [
+        "Design Thinking",
+        "Strategy",
+        "UX Research",
+        "Prototyping"
+      ]
+    },
+    {
+      "name": "Visual Direction",
+      "subcategories": [
+        "Design System",
+        "Ui Design",
+        "Motion",
+        "Branding"
+      ]
+    }
+  ]
+}
