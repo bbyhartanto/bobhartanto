@@ -68,11 +68,7 @@ const slugify = (str: string) => {
         
         <!-- Heading Text -->
         <div class="col-span-2 mt-4 md:mt-6">
-<<<<<<< Updated upstream
           <h2 class="text-3xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black">
-=======
-          <h2 class="text-4xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black pl-4">
->>>>>>> Stashed changes
             {{ selectedQuotes[category.name] }}
           </h2>
         </div>
