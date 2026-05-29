@@ -57,7 +57,7 @@ const slugify = (str: string) => {
   <!-- Category Section 2: Visual Direction / Design -->
   <section 
     v-if="category"
-    class="grid grid-cols-1 md:grid-cols-6 gap-x-[30px] gap-y-[40px] items-start relative border-t border-black/10"
+    class=" bg-black/70 grid grid-cols-1 md:grid-cols-6 gap-x-[30px] gap-y-[40px] items-start relative"
   >
     <!-- Left Column (Sticky on Desktop) -->
     <div class="col-span-1 md:col-span-2 md:sticky md:top-28 flex flex-col gap-6">
@@ -69,11 +69,7 @@ const slugify = (str: string) => {
         
         <!-- Heading Text -->
         <div class="col-span-2 mt-4 md:mt-6">
-<<<<<<< Updated upstream
-          <h2 class="text-3xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black">
-=======
-          <h2 class="text-4xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black p-4">
->>>>>>> Stashed changes
+          <h2 class="text-3xl md:text-[28px] pl-4 font-normal leading-[1.15] tracking-tight text-black">
             {{ selectedQuotes[category.name] }}
           </h2>
         </div>
@@ -87,7 +83,7 @@ const slugify = (str: string) => {
     </div>
 
     <!-- Center Content -->
-    <div class="ml-16 md:ml-0 col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-[30px] bg-white p-8">
+     <div class="ml-8 md:ml-0 col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-[30px] bg-white p-8">
       <!-- Content -->
       <div class="col-span-1 md:col-span-3 flex flex-col gap-16 md:gap-24">
         <div class="flex flex-col">
