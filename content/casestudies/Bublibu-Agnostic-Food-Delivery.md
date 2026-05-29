@@ -1,8 +1,7 @@
 ---
-title: The Discovery of Bublibu agnostic food delivery marketplace
+title: "[Discovery phase] of Bublibu agnostic food delivery marketplace"
 category: Problem to Product
 description: Bublibu is an internal project at Paton.dev. An agnostic food delivery marketplace that connects drivers, tenants, and customers. without having any single fleet.
-excerpt: Bublibu is an internal project at Paton.dev. An agnostic food delivery marketplace that connects drivers, tenants, and customers. without having any single fleet.
 focus: Strategy, Research, Product development, Startup
 platform: iOs & Android
 role: Lead Product Designer
@@ -22,7 +21,7 @@ Fg01 1: Bublibu app release materials
 
 ## Overview
 
-Bublibu was an internal product initiative at [Paton.dev](http://Paton.dev), born during the COVID-19 lockdown period in Bandung, Indonesia. It was a food delivery marketplace with one radical design principle:**no owned drivers**\[. Instead, Bublibu was built to plug into a newly emerging ecosystem of homebrew local couriers — independent logistics operators who appeared almost overnight when the pandemic paralyzed established supply chains.
+Bublibu was an internal product initiative at [Paton.dev](http://Paton.dev), born during the COVID-19 lockdown period in Bandung, Indonesia. It was a food delivery marketplace with one radical design principle:**no owned drivers**\[. Instead, Bublibu was built to plug into a newly emerging ecosystem of homebrew local couriers independent logistics operators who appeared almost overnight when the pandemic paralyzed established supply chains.
 
 The project explored a deceptively simple hypothesis:
 
@@ -30,15 +29,26 @@ The project explored a deceptively simple hypothesis:
 
 ## My Role on the Team
 
-Bublibu was built by a team of six: a community manager, a UI/UX designer, a graphic designer, two developers, a QA engineer and one business owner and as a venture from Paton.dev. All working autonomusly in Bandung. I was the product researcher, and sat upstream of all of them. i report directly all of my findings and progress directly to the business owner and distribute the work to my co-worker.
+Bublibu was built by a team of six:
 
-That position is worth unpacking, because it shaped everything else.
+- A community manager
+- An UI/UX designer
+- A graphic designer
+- Two developers
+- A QA engineer and
+- A CEO / Business owner and as a venture from Paton.dev.
 
-**I had no direct deliverable in the traditional sense.** I wasn't designing screens, writing code, or managing community. My output was the thinking that determined what everyone else worked on — and in a greenfield internal project with no existing brief, no prior market data, and no product to iterate on, that upstream role carried the most ambiguity and the most consequence.
+We are working autonomusly in Bandung while the dev was working from Bali. I was the product researcher, and sat upstream of all of them under supervision of the CEO. I report my work directly to the CEO's.
 
-Specifically, here is what I owned end to end:
+here is what I owned end to end during the product Discovery phase:
 
-**Market identification.** No one assigned me a market to study. I identified the invisible marketplace — home sellers and emerging couriers — through direct observation during the lockdown. The team built a product for a market I named and framed from scratch.
+**Actor mapping.**
+
+I defined who the three users were (home seller, local courier, buyer), what each needed, and where the friction lived for each.
+
+**Conducting Seller& Buyer Interview.**
+
+I work with my community managers to arrange meeting with all actors, his job is to find viable early adopters while i was preparing the interview plan. at eraly stages we engage with several high qualify named culinary vendors in Bandung such as RumkayDago, Bia Kombucha, Ngombe Jamu, Bebek Setan, Dapur sedap nikmat, and many more.
 
 **Hypothesis formulation.** The "no owned fleet" architectural decision originated from my research into the unit economics of food delivery platforms. I brought that framing to the team and to leadership as a product thesis, not just an observation.
 
@@ -124,4 +134,4 @@ The project demonstrated that you don't need proprietary infrastructure to build
 
 ---
 
-*Case study written by Bob Hartanto — Product Researcher & Product Designer at&#x20;**[Paton.dev](http://Paton.dev)**&#x20;Published at bobhartanto.com/casestudies/bublibu-agnostic-food-delivery*
+*Case study written by Bob Hartanto — Product Researcher & Product Designer at **[Paton.dev](http://Paton.dev)*** *Published at bobhartanto.com/casestudies/bublibu-agnostic-food-delivery*
