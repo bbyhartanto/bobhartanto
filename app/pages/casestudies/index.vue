@@ -12,24 +12,7 @@ useSeoMeta({
 
 <template>
   <div class="min-h-screen bg-[#F1F1F3] text-[#1A1A1A] font-sans pb-24">
-    <!-- Header -->
-    <div class="w-full sticky top-0 z-10 border-b border-black bg-[#F1F1F3]/80 backdrop-blur-md">
-      <div class="p-5">
-        <header class="flex justify-between items-center text-sm">
-          <NuxtLink to="/" class="hover:underline font-medium leading-tight block text-left">
-            Bobby<br>Hartanto
-          </NuxtLink>
-          <div class="flex items-center gap-4">
-            <NuxtLink to="/" class="group flex items-center gap-1.5 hover:underline">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-3.5 h-3.5 transform group-hover:-translate-x-0.5 transition-transform duration-200">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              Back
-            </NuxtLink>
-          </div>
-        </header>
-      </div>
-    </div>
+    <HeaderChild label="Works" max-width="w-full" bg-class="bg-[#F1F1F3]/80" />
 
     <!-- Main Grid Layout -->
     <div class="w-full px-5 pt-16 md:pt-24 animate-fade-in">

@@ -23,7 +23,7 @@ const getActiveSubcategories = (cs: any) => {
     <div class="pl-1">
       <NuxtLink 
         :to="caseStudy.path"
-        class="title-link text-3xl font-medium text-black leading-tight pl-0 hover:pl-1 transition-all duration-300 block"
+        class="title-link text-xl font-medium text-black leading-tight pl-0 hover:pl-1 transition-all duration-300 block"
       >
         {{ caseStudy.title }}
       </NuxtLink>

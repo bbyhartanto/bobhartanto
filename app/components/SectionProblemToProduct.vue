@@ -59,7 +59,7 @@ const slugify = (str: string) => {
     class="grid grid-cols-1 md:grid-cols-6 gap-x-[30px] gap-y-[40px] items-start relative border-t border-black/10 "
   >
     <!-- Left Column (Sticky on Desktop) -->
-    <div class="col-span-1 md:col-span-2 md:sticky md:top-28 flex flex-col gap-6">
+    <div class="col-span-1 md:col-span-2 md:sticky md:top-28 flex flex-col gap-6 ">
       <div class="grid grid-cols-3 gap-[15px]">
         <!-- Top-Left Gray Box -->
         <div class="col-span-1 bg-box-grey h-[220px] w-full hidden md:block rounded-sm"></div>
@@ -68,7 +68,7 @@ const slugify = (str: string) => {
         
         <!-- Heading Text -->
         <div class="col-span-2 mt-4 md:mt-6">
-          <h2 class="text-3xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black">
+          <h2 class="text-3xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black pl-4">
             {{ selectedQuotes[category.name] }}
           </h2>
         </div>

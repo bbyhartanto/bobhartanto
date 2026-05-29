@@ -92,18 +92,7 @@ onUnmounted(() => {
 
 <template>
   <div class="min-h-screen bg-[#fafafa] text-[#111111] font-sans selection:bg-black selection:text-white pb-24">
-    <!-- Top Nav / Back Button -->
-    <div class="w-full sticky top-0 z-10 bg-[#fafafa]/80 backdrop-blur-md border-b border-black/10">
-      <div class="max-w-4xl mx-auto px-6 py-5 flex justify-between items-center">
-        <NuxtLink to="/" class="group flex items-center gap-2 text-sm font-medium text-black/75 hover:text-black transition-colors duration-200">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 transform group-hover:-translate-x-1 transition-transform duration-200">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          Back to Home
-        </NuxtLink>
-        <span class="text-xs uppercase tracking-wider font-mono text-black/45">Case Study</span>
-      </div>
-    </div>
+    <HeaderChild />
 
     <!-- Main Container -->
     <div class="px-6 pt-16 md:pt-8 animate-fade-in grid grid-cols-1 md:grid-cols-8 gap-x-[30px] gap-y-[40px]">

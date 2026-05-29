@@ -69,7 +69,7 @@ const slugify = (str: string) => {
         
         <!-- Heading Text -->
         <div class="col-span-2 mt-4 md:mt-6">
-          <h2 class="text-3xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black">
+          <h2 class="text-3xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black p-4">
             {{ selectedQuotes[category.name] }}
           </h2>
         </div>

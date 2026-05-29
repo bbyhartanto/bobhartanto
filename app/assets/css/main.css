@@ -23,7 +23,7 @@ body {
 p {
   font-size: 1rem;
   /* Controls global paragraph font size */
-  font-weight: 500;
+  font-weight: 400;
   /* Controls global paragraph font weight */
 
   line-height: 1.625;
