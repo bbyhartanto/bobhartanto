@@ -9,14 +9,14 @@
               <img src="/images-/bobby.svg" alt="bublibu image" class="md:w-[80%] w-[100%] h-auto py-5" />
             </div>
             
-            <div class="col-span-2 col-start-3 px-4">
+            <div class="col-span-2 md:col-start-3 px-4">
               <img src="/images-/bobby-hartanto.png" alt="Bobby Hartanto Portrait" class="w-[30%] h-auto pt-4"/>
               
             </div> 
     </section>
 
-    <section class="grid grid-cols-2 md:grid-cols-6 gap-[15px]8 my-8">
-      <div class="col-span-1 flex-col md:col-start-3 md:col-span-2 flex p-9">
+    <section class="grid grid-cols-2 md:grid-cols-6 gap-[15px] my-8">
+      <div class="col-span-2 flex-col md:col-start-3 md:col-span-4 lg:col-start-3 lg:col-span-2 flex p-9">
         <h2 class=" text-2xl md:text-4xl leading-[1.15] my-8 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 11+ years experience in designing intuitive and useful digital products.
               </h2>
         <p class="my-8">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026. This gives me the full-stack design perspective to navigate ambiguity, unite teams, and take a product from concept to launch.

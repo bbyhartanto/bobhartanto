@@ -62,22 +62,27 @@ const slugify = (str: string) => {
     <div class="col-span-1 md:col-span-2 md:sticky md:top-28 flex flex-col gap-6">
       <div class="grid grid-cols-3 gap-[15px]">
         <!-- Top-Left Gray Box -->
-        <div class="col-span-1 bg-box-grey h-[220px] w-full hidden md:block rounded-sm"></div>
+        <div class="col-span-1  h-[220px] w-full hidden md:block rounded-sm"></div>
         <!-- Empty column for layout spacing -->
         <div class="col-span-1 hidden md:block"></div>
         
         <!-- Heading Text -->
-        <div class="col-span-2 mt-4 md:mt-6">
-          <h2 class="text-2xl md:text-[28px] pl-4 font-normal leading-[1.15] tracking-tight text-white">
-            {{ selectedQuotes[category.name] }}
+        <div class="col-span-2 mt-4 md:mt-6 pl-4">
+          <h2 class="text-4xl md:text-[28px] font-normal leading-[1.15] tracking-tight text-white">
+            <NuxtLink :to="'/categories/' + slugify(category.name)" class="hover:underline hover:opacity-85 transition-all">
+                {{ category.name }}
+              </NuxtLink>
           </h2>
+          <div class="flex flex-row items-end mt-4 gap-2">
+              <span class="text-[11px] uppercase tracking-wider font-mono px-2.5 py-0.5 border border-white/10 rounded-full text-white/60 w-fit bg-white/10">{{ getCaseStudiesForCategory(category.name).length }} Case studies</span>
+            </div>
         </div>
         
         <!-- Bottom-Left Gray Box -->
-        <div class="col-span-1 bg-box-grey h-[120px] w-full hidden md:block mt-4 rounded-sm"></div>
+        <div class="col-span-1  h-[120px] w-full hidden md:block mt-4 rounded-sm"></div>
         
         <!-- Bottom-Middle Gray Box -->
-        <div class="col-span-1 bg-box-grey h-[280px] w-full hidden md:block mt-4 rounded-sm"></div>
+        <div class="col-span-1  h-[280px] w-full hidden md:block mt-4 rounded-sm"></div>
       </div>
     </div>
 
@@ -87,25 +92,11 @@ const slugify = (str: string) => {
       <div class="col-span-1 md:col-span-3 flex flex-col gap-16 md:gap-24">
         <div class="flex flex-col">
           <!-- Number & Category Title-->
-           <div class="flex gap-12">
-            <span class="-ml-23 text-4xl font-medium text-gray-500 mb-2 block font-mono">01</span>
-            <!-- Category Title -->
-            <h3 class="text-2xl md:text-[34px] font-medium leading-[1.2] tracking-tight text-black mb-6">
-              <NuxtLink :to="'/categories/' + slugify(category.name)" class="hover:underline hover:opacity-85 transition-all">
-                {{ category.name }}
-              </NuxtLink>
-            </h3>
-           </div>
+           
           
           <!-- Categories Tags-->
           <div class="flex flex-wrap gap-2.5 mb-8">
-            <!-- Dynamic count pill — auto-updates when you add content in Nuxt Studio -->
-            <NuxtLink 
-              :to="'/categories/' + slugify(category.name)" 
-              class="px-4 py-1.5 border border-black rounded-full text-xs font-mono text-black tracking-tight bg-white hover:bg-black hover:text-white transition-colors duration-200"
-            >
-              {{ getCaseStudiesForCategory(category.name).length }} Case {{ getCaseStudiesForCategory(category.name).length === 1 ? 'Study' : 'Studies' }}
-            </NuxtLink>
+
             <span 
               v-for="tag in category.subcategories" 
               :key="tag" 
@@ -141,7 +132,7 @@ const slugify = (str: string) => {
 
       <!-- Top-Right Gray Box -->
       <div class="col-span-1 md:col-span-1 hidden md:block">
-        <div class="bg-box-grey h-[180px] w-full rounded-sm"></div>
+        <div class=" h-[180px] w-full rounded-sm"></div>
       </div>
     </div>
   </section>
