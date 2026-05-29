@@ -25,6 +25,16 @@
         "This is how it looks",
         "Beauty is in the eye of the beholder"
       ]
+    },
+    {
+      "name": "Experiments",
+      "subcategories": [
+        "Vibecoding",
+        "Product research",
+        "Frontend Development",
+        "HtML CSS",
+        "Backend Development"
+      ]
     }
   ]
 }
