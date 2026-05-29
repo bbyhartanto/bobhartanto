@@ -47,3 +47,8 @@ strong {
   padding: 8px 0px;
   border-bottom: 1px solid black;
 }
+
+/* Case study list hover effect */
+.case-studies-list:has(.title-link:hover) .case-study-row:not(:has(.title-link:hover)) {
+  opacity: 0.5;
+}

@@ -116,36 +116,12 @@ const slugify = (str: string) => {
             </span>
           </div>
 
-           <!-- Case Studies Sub-List -->
-          <div class="flex flex-col border-t border-black">
-            <NuxtLink 
+          <div class="case-studies-list flex flex-col border-t border-black">
+            <ThumbnailCasestudy
               v-for="caseStudy in getCaseStudiesForCategory(category.name).slice(0, 4)" 
               :key="caseStudy.path"
-              :to="caseStudy.path"
-              class="border-b border-black py-6 grid grid-cols-1 md:grid-cols-6 gap-x-6 gap-y-4 items-start hover:opacity-75 transition-opacity duration-200"
-            >
-              <!-- Column 1 & 2: Title and Subcategories wrapped in flex-col -->
-              <div class="col-span-1 md:col-span-3 flex flex-col gap-2">
-                <span class="text-2xl font-medium text-black leading-snug">
-                  {{ caseStudy.title }}
-                </span>
-
-                <div class="flex flex-wrap gap-1.5 lg:mr-40">
-                  <span 
-                    v-for="sub in getActiveSubcategories(caseStudy)" 
-                    :key="sub"
-                    class="text-[11px] uppercase tracking-wider font-mono px-2.5 py-0.5 border border-black/15 rounded-full text-black/60 w-fit bg-white/30"
-                  >
-                    {{ sub }}
-                  </span>
-                </div>
-              </div>
-
-              <!-- Column 3: Description (Spans 3 columns on desktop) -->
-              <p class="col-span-1 md:col-span-3 text-sm text-gray-700">
-                {{ caseStudy.excerpt || caseStudy.description }}
-              </p>
-            </NuxtLink>
+              :case-study="caseStudy"
+            />
           </div>
 
           <!-- View All Button -->

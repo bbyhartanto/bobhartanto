@@ -1,18 +1,5 @@
 <template>
-  <div class="w-full sticky top-0 z-10">
-    <div class="p-5">
-    <header class="flex text-sm items-center">
-      <nav class="bg-[#fafafa]/80 backdrop-blur-md w-full text-black py-3 px-6 rounded-md leading-tight font-medium grid grid-cols-6 gap-6 items-center">
-        <span class="col-span-1">Bobby <br/>Hartanto</span>
-        <a href="#works" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">Works<br/><span class="text-[12px] text-black/50">Casestudies</span></a>
-        <a href="#portfolio" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">Portfolio<br/><span class="text-[12px] text-black/50">Gallery</span></a>
-        <a href="#works" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">Blog<br/><span class="text-[12px] text-black/50">Articles</span></a>
-        <a href="#works" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">Linkedin<br/><span class="text-[12px] text-black/50">Bobhartanto</span></a>
-        <a href="#contact" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">Contact<br/><span class="text-[12px] text-black/50">Drop me a line</span></a>
-      </nav>
-    </header>
-    </div>
-  </div>
+  <HeaderParent />
   <div class="w-full px-5 pt-10 pb-[100px]">
 
     <!-- <section class="mb-[50px]">
