@@ -12,14 +12,14 @@
           <a href="#portfolio" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
             Portfolio<br/><span class="text-[12px] text-black/50">Gallery</span>
           </a>
-          <NuxtLink to="/casestudies" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
+          <NuxtLink to="/#" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
             Blog<br/><span class="text-[12px] text-black/50">Articles</span>
           </NuxtLink>
           <a href="https://www.linkedin.com/in/bobhartanto" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
             Linkedin<br/><span class="text-[12px] text-black/50">Bobhartanto</span>
           </a>
-          <a href="#contact" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
-            Contact<br/><span class="text-[12px] text-black/50">Drop me a line</span>
+          <a href="mailto:work.bobbyhartanto@gmail.com" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
+            Contact<br/><span class="text-[12px] text-black/50">work.bobbyhartanto@gmail.com </span>
           </a>
         </nav>
       </header>

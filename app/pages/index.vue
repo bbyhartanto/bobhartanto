@@ -1,29 +1,25 @@
 <template>
   <HeaderParent />
-  <div class="w-full px-5 pt-10 pb-[100px]">
-
-    <!-- <section class="mb-[50px]">
-      <h1 class="text-[110px] font-medium tracking-tight m-0 leading-none">BOBBY HARTANTO</h1>
-      <p class="text-[22px] m-0 font-light text-[#333]">A No fancy lead UI&UX Designer</p>
-    </section> -->
+  <div class="w-full ">
 
     <!-- Top Grid Section -->
-    <section class="grid grid-cols-2 md:grid-cols-6 gap-[15px] py-16">
+    <section class="grid grid-cols-2 md:grid-cols-6 gap-[15px] my-8 px-8">
       <!-- Column 1 -->
-            <div class="col-span-2 flex-col md:col-span-3 md:col-start-3  flex">
-              <img src="/images-/bobby.svg" alt="bublibu image" class="md:w-[40%] w-[60%] h-auto py-5" />
-              <h2 class=" text-2xl md:text-4xl leading-[1.15] m-0 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 11+ years experience in designing intuitive and useful digital products.
-              </h2>
+            <div class="col-span-2 flex-col md:col-span-2 flex">
+              <img src="/images-/bobby.svg" alt="bublibu image" class="md:w-[80%] w-[100%] h-auto py-5" />
             </div>
-            <div class="flex-1 flex items-center justify-center py-2 md:col-span-1 md:py-10">
-      </div>
+            
+            <div class="col-span-2 col-start-3">
+              <img src="/images-/bobby-hartanto.png" alt="Bobby Hartanto Portrait" class="w-[30%] h-auto pt-4"/>
+              
+            </div> 
     </section>
 
-
-
-    <section class="grid grid-cols-2 md:grid-cols-6 gap-[15px] py-16">
-      <div class="col-span-1 flex-col md:col-start-3 md:col-span-3 flex">
-        <p class="mt-[15px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026. This gives me the full-stack design perspective to navigate ambiguity, unite teams, and take a product from concept to launch.
+    <section class="grid grid-cols-2 md:grid-cols-6 gap-[15px]8 my-8">
+      <div class="col-span-1 flex-col md:col-start-3 md:col-span-2 flex">
+        <h2 class=" text-2xl md:text-4xl leading-[1.15] my-16 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 11+ years experience in designing intuitive and useful digital products.
+              </h2>
+        <p class="my-[16px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026. This gives me the full-stack design perspective to navigate ambiguity, unite teams, and take a product from concept to launch.
           </p>
       </div>
     </section>
