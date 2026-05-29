@@ -1,5 +1,4 @@
 <template>
-  <HeaderParent />
   <div class="w-full ">
 
     <!-- Top Grid Section -->
