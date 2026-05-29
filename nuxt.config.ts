@@ -2,9 +2,15 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/content',
-  ],
+  modules: ['@nuxt/content', 'nuxt-studio'],
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'bbyhartanto',
+      repo: 'bobhartanto',
+      branch: 'bermenu'
+    }
+  },
   app: {
     head: {
       script: [

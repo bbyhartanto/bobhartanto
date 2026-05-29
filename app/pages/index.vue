@@ -1,79 +1,60 @@
 <template>
-  <div class="w-full sticky top-0 z-10 border-b-1 border-black">
-    <div class="p-5">
-    <header class="flex justify-between text-sm ">
-      <span>Bobby Hartanto</span>
-      <div class="flex bg-black py-3 px-5 rounded-full text-[#ffffff]">
-        <p class="hidden md:block pr-5">Reach me out</p>
-        <a href="mailto:work.bobbyhartanto@gmail.com" class=" underline">work.bobbyhartanto@gmail.com</a>  
-      </div>
-    </header>
-    </div>
-  </div>
-  <div class="w-full px-5 pt-10 pb-[100px]">
-
-    <!-- <section class="mb-[50px]">
-      <h1 class="text-[110px] font-medium tracking-tight m-0 leading-none">BOBBY HARTANTO</h1>
-      <p class="text-[22px] m-0 font-light text-[#333]">A No fancy lead UI&UX Designer</p>
-    </section> -->
+  <HeaderParent />
+  <div class="w-full ">
 
     <!-- Top Grid Section -->
-    <section class="flex flex-col md:flex-row gap-[15px]">
+    <section class="grid grid-cols-2 md:grid-cols-6 gap-[15px] my-8 px-8">
       <!-- Column 1 -->
-            <div class="flex-1 lg:flex-2 justify-center relative overflow-hidden py-2 md:py-0">
-              <div class="flex flex-col">
-                <div class="w-[100%] lg:w-[80%] mx-auto rounded-md overflow-hidden animate-reveal">
-                  <video 
-                  src="/videos/bby.mp4" 
-                  autoplay 
-                  loop 
-                  muted 
-                  playsinline 
-                  class="w-full h-full object-cover"
-                ></video>
-                </div>
-              </div>
+            <div class="col-span-2 flex-col md:col-span-2 flex">
+              <img src="/images-/bobby.svg" alt="bublibu image" class="md:w-[80%] w-[100%] h-auto py-5" />
             </div>
-            <!-- Column 2 -->
-            <div class="flex-3 md:col-start-3 md:col-span-2 flex py-2 md:py-0">
-              <h2 class="md:pl-10 lg:pl-0 text-2xl md:text-5xl leading-[1.15] m-0 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 11+ years experience in designing intuitive and useful digital products.
+            
+            <div class="col-span-2 col-start-3">
+              <img src="/images-/bobby-hartanto.png" alt="Bobby Hartanto Portrait" class="w-[30%] h-auto pt-4"/>
               
+            </div> 
+    </section>
+
+    <section class="grid grid-cols-2 md:grid-cols-6 gap-[15px]8 my-8">
+      <div class="col-span-1 flex-col md:col-start-3 md:col-span-2 flex">
+        <h2 class=" text-2xl md:text-4xl leading-[1.15] my-16 max-w-[100%]">Bobby Hartanto is an Indonesian based product designer with over 11+ years experience in designing intuitive and useful digital products.
               </h2>
-              <p class="mt-[15px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026, Culminating in a highly adaptable approach to design and problem solving. 
+        <p class="my-[16px]">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026. This gives me the full-stack design perspective to navigate ambiguity, unite teams, and take a product from concept to launch.
           </p>
-            </div>
-
-            <div class="flex-1 flex items-center justify-center py-2 md:col-span-1 md:py-10">
-        <img src="/images-/circle.svg" alt="bublibu image" class="w-[50%] h-auto" />
       </div>
     </section>
+    <!-- Category Section 1: Problem to Product -->
+    <SectionProblemToProduct />
 
-    <section class="grid grid-cols-1 lg:grid-cols-5 gap-[15px] mb-[30px] md:border-b-1 border-black">
-      <div class="col-span-1 md:col-span-2 md:col-start-2 md:py-10 flex items-center justify-center">
-        <img src="/images-/bobby.svg" alt="bublibu image" class="w-[90%] h-auto" />
-      </div>
-      <div class="col-span-1 md:col-start-5 md:col-span-1 md:py-10 flex items-center justify-center">
-        <img src="/images-/barcode.svg" alt="bublibu image" class="w-[90%] h-auto" />
-      </div>
-    </section>
+    <!-- Category Section 2: Visual Direction / Design -->
+    <SectionDesign />
+
+
   </div>
 </template>
 
 <script setup>
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view')
-        observer.unobserve(entry.target)
-      }
-    })
-  }, { threshold: 0.1 })
-
-  document.querySelectorAll('.animate-reveal').forEach(el => {
-    observer.observe(el)
-  })
+const { data: categoriesDoc } = await useAsyncData('categories', () => {
+  return queryCollection('categories').first()
 })
+
+const categoriesList = computed(() => {
+  return categoriesDoc.value?.items || []
+})
+
+const selectedQuotes = useState('random-quotes', () => {
+  const quotesMap = {}
+  categoriesList.value.forEach(category => {
+    if (category.Quotes && category.Quotes.length > 0) {
+      const randomIndex = Math.floor(Math.random() * category.Quotes.length)
+      quotesMap[category.name] = category.Quotes[randomIndex]
+    } else {
+      quotesMap[category.name] = "Thing’s that i do with passion in my daily basis"
+    }
+  })
+  return quotesMap
+})
+
 
 useSeoMeta({
   title: 'Bobby Hartanto - UI/UX Designer Blog',

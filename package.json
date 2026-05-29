@@ -6,13 +6,16 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "validate": "node scripts/validate-content.mjs"
   },
   "dependencies": {
     "@nuxt/content": "^3.13.0",
     "@tailwindcss/vite": "^4.3.0",
     "better-sqlite3": "^12.10.0",
     "nuxt": "^4.4.4",
-    "tailwindcss": "^4.3.0"
+    "nuxt-studio": "^1.7.0",
+    "tailwindcss": "^4.3.0",
+    "zod": "^4.4.3"
   }
 }

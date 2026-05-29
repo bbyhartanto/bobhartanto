@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "name": "Problem to Product",
+      "subcategories": [
+        "Design Thinking",
+        "Strategy",
+        "UX Research",
+        "Prototyping"
+      ],
+      "Quotes": [
+        "Sometimes it works sometimes it doesn't",
+        "From uncertainity to an object"
+      ]
+    },
+    {
+      "name": "Visual Direction",
+      "subcategories": [
+        "Design System",
+        "Ui Design",
+        "Motion",
+        "Branding"
+      ],
+      "Quotes": [
+        "This is how it looks",
+        "Beauty is in the eye of the beholder"
+      ]
+    }
+  ]
+}
