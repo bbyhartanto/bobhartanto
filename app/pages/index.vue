@@ -119,7 +119,7 @@
                 </div>
 
                 <!-- Column 3: Description (Spans 3 columns on desktop) -->
-                <p class="col-span-1 md:col-span-3 text-sm text-gray-700 leading-relaxed">
+                <p class="col-span-1 md:col-span-3 text-sm text-gray-700">
                   {{ caseStudy.excerpt || caseStudy.description }}
                 </p>
               </NuxtLink>
