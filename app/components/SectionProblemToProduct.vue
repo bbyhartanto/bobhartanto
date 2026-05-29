@@ -68,7 +68,11 @@ const slugify = (str: string) => {
         
         <!-- Heading Text -->
         <div class="col-span-2 mt-4 md:mt-6">
+<<<<<<< Updated upstream
           <h2 class="text-3xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black">
+=======
+          <h2 class="text-4xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black pl-4">
+>>>>>>> Stashed changes
             {{ selectedQuotes[category.name] }}
           </h2>
         </div>
@@ -88,9 +92,9 @@ const slugify = (str: string) => {
         <div class="flex flex-col">
           <!-- Number & Category Title-->
            <div class="flex gap-12">
-            <span class="-ml-23 text-4xl font-light text-gray-500 mb-2 block font-mono">01</span>
+            <span class="-ml-23 text-4xl font-normal text-gray-500 mb-2 block font-mono">01</span>
             <!-- Category Title -->
-            <h3 class="text-2xl md:text-[34px] font-light leading-[1.2] tracking-tight text-black mb-6">
+            <h3 class="text-2xl md:text-[34px] font-medium leading-[1.2] tracking-tight text-black mb-6">
               <NuxtLink :to="'/categories/' + slugify(category.name)" class="hover:underline hover:opacity-85 transition-all">
                 {{ category.name }}
               </NuxtLink>

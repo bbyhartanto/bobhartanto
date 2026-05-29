@@ -23,7 +23,11 @@ const getActiveSubcategories = (cs: any) => {
     <div class="col-span-1 md:col-span-3 flex flex-col gap-2 pl-1">
       <NuxtLink 
         :to="caseStudy.path"
+<<<<<<< Updated upstream
         class="title-link text-2xl font-medium text-black leading-snug pl-0 hover:pl-1 transition-all duration-300"
+=======
+        class="title-link text-xl font-normal text-black leading-snug pl-0 hover:pl-1 transition-all duration-300"
+>>>>>>> Stashed changes
       >
         {{ caseStudy.title }}
       </NuxtLink>
