@@ -1,10 +1,13 @@
 ---
-title: IBM x XL Axiata design system
+title: IBM x XL Axiata design system 2019
 category: Visual Direction
-description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged "
+description: When the same button gets redesigned repeatedly, engineers re-implement identical components across multiple touchpoints, and misalignment becomes the norm rather than the exception it's clear the design system needs intervention.
 navigation:
   title: IBM x XL Axiata design system
   description: This is description
+seo:
+  title: XL Axiata Design system 2019
+  description: When the same button gets redesigned repeatedly, engineers re-implement identical components across multiple touchpoints, and misalignment becomes the norm rather than the exception it's clear the design system needs intervention.
 ---
 
 ## XL Axiata Big Bang Project

@@ -25,7 +25,8 @@ export default defineContentConfig({
         items: z.array(
           z.object({
             name: z.string(),
-            subcategories: z.array(z.string())
+            subcategories: z.array(z.string()),
+            Quotes: z.array(z.string())
           })
         )
       })
@@ -44,6 +45,10 @@ export default defineContentConfig({
         excerpt: z.string().optional().editor({
           input: 'textarea',
           label: 'Excerpt'
+        }),
+        quotes: z.string().optional().editor({
+          input: 'textarea',
+          label: 'Quotes'
         }),
 
         // Dropdown — options derived from categories.json at build time
