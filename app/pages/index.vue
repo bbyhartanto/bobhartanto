@@ -1,5 +1,5 @@
 <template>
-  <HeaderParent :class="{ 'opacity-0': isLoading, 'opacity-100': !isLoading, 'transition-opacity duration-1000': true }" />
+
   <div class="w-full relative overflow-hidden">
     <!-- Top Grid Section -->
      <div class="flex flex-col md:grid md:grid-cols-6 gap-2 my-8 px-4 pointer-events-none relative z-10 h-[70vh]">
