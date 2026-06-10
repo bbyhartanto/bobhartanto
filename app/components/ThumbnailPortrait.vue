@@ -11,6 +11,12 @@ defineProps<{
   caseStudy: CaseStudy
 }>()
 
+const getTruncatedExcerpt = (text?: string) => {
+  if (!text) return ''
+  if (text.length <= 200) return text
+  return text.substring(0, 200).trim() + '...'
+}
+
 const getActiveSubcategories = (cs: any) => {
   if (!cs) return []
   return Array.isArray(cs.subcategories) ? cs.subcategories : []
@@ -30,8 +36,8 @@ const getActiveSubcategories = (cs: any) => {
     </div>
 
     <!-- Description -->
-    <p class="text-lg text-black leading-relaxed font-light pr-4">
-      {{ caseStudy.excerpt || caseStudy.description }}
+    <p class="text-sm text-gray-500 pr-4">
+      {{ getTruncatedExcerpt(caseStudy.excerpt || caseStudy.description) }}
     </p>
 
     <!-- Subcategories Tags -->

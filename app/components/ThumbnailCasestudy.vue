@@ -18,7 +18,7 @@ const getActiveSubcategories = (cs: any) => {
 </script>
 
 <template>
-  <div class="case-study-row border-b border-black py-6 grid grid-cols-1 md:grid-cols-6 gap-x-6 gap-y-4 items-start transition-opacity duration-300">
+  <div class="case-study-row border-b border-black/15 py-6 grid grid-cols-1 md:grid-cols-6 gap-x-6 gap-y-4 items-start transition-opacity duration-300">
     <!-- Column 1 & 2: Title and Subcategories wrapped in flex-col -->
     <div class="col-span-1 md:col-span-3 flex flex-col gap-2 pl-1">
       <NuxtLink 
@@ -32,7 +32,7 @@ const getActiveSubcategories = (cs: any) => {
         <span 
           v-for="sub in getActiveSubcategories(caseStudy)" 
           :key="sub"
-          class="text-[11px] uppercase tracking-wider font-mono px-2.5 py-0.5 border border-black/15 rounded-full text-black/60 w-fit bg-white/30"
+          class="text-[11px] uppercase tracking-wider font-mono px-2.5 py-0.5 border border-black/10 rounded-full text-black/60 w-fit bg-white/30"
         >
           {{ sub }}
         </span>
@@ -40,7 +40,7 @@ const getActiveSubcategories = (cs: any) => {
     </div>
 
     <!-- Column 3: Description (Spans 3 columns on desktop) -->
-    <p class="col-span-1 md:col-span-3 text-sm text-gray-700">
+    <p class="col-span-1 md:col-span-3 text-sm text-gray-500">
       {{ caseStudy.excerpt || caseStudy.description }}
     </p>
   </div>
