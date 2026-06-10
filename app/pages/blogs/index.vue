@@ -71,7 +71,7 @@ useSeoMeta({
 
 <template>
   <div class="min-h-screen bg-[#fafafa] text-[#111111] font-sans selection:bg-black selection:text-white pb-24">
-    <HeaderChild />
+    <HeaderChild label="Category Archive" max-width="max-w-6xl" />
 
     <!-- Main Content Container -->
     <main class="max-w-6xl mx-auto px-6 pt-16 md:pt-24 animate-fade-in">

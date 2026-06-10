@@ -1,7 +1,11 @@
 <script setup lang="ts">
 // Fetch all case studies
 const { data: caseStudies } = await useAsyncData('all-casestudies', () => {
-  return queryCollection('casestudies').all()
+  let q = queryCollection('casestudies')
+  if (!import.meta.dev) {
+    q = q.where('draft', '=', false)
+  }
+  return q.all()
 })
 
 useSeoMeta({
@@ -12,7 +16,7 @@ useSeoMeta({
 
 <template>
   <div class="min-h-screen bg-[#F1F1F3] text-[#1A1A1A] font-sans pb-24">
-    <HeaderChild title="Case Studies" />
+    <HeaderChild label="Works" max-width="w-full" bg-class="bg-[#F1F1F3]/80" />
 
     <!-- Main Grid Layout -->
     <div class="w-full px-5 pt-16 md:pt-24 animate-fade-in">

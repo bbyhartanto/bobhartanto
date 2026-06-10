@@ -3,7 +3,11 @@ const route = useRoute()
 
 // Fetch the case study from the 'casestudies' collection by its path
 const { data: caseStudy } = await useAsyncData('casestudy-' + route.params.slug, () => {
-  return queryCollection('casestudies').path(route.path).first()
+  let q = queryCollection('casestudies').path(route.path)
+  if (!import.meta.dev) {
+    q = q.where('draft', '=', false)
+  }
+  return q.first()
 })
 
 if (!caseStudy.value) {
@@ -92,7 +96,7 @@ onUnmounted(() => {
 
 <template>
   <div class="min-h-screen bg-[#fafafa] text-[#111111] font-sans selection:bg-black selection:text-white pb-24">
-    <HeaderChild title="Case Study" />
+    <HeaderChild />
 
     <!-- Main Container -->
     <div class="px-6 pt-16 md:pt-8 animate-fade-in grid grid-cols-1 md:grid-cols-8 gap-x-[30px] gap-y-[40px]">

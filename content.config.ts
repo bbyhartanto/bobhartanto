@@ -38,6 +38,7 @@ export default defineContentConfig({
       source: 'casestudies/**/*.md',
       schema: z.object({
         title: z.string(),
+        draft: z.boolean().default(false),
         description: z.string().editor({
           input: 'textarea',
           label: 'Description'

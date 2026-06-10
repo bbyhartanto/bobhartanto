@@ -59,7 +59,7 @@ const slugify = (str: string) => {
     class=" bg-black/90 grid grid-cols-1 md:grid-cols-6 gap-x-[30px] gap-y-[40px] items-start relative border-t border-black/10 "
   >
     <!-- Left Column (Sticky on Desktop) -->
-    <div class="col-span-1 md:col-span-2 md:sticky md:top-28 flex flex-col gap-6">
+    <div class="col-span-1 md:col-span-2 md:sticky md:top-28 flex flex-col gap-6 ">
       <div class="grid grid-cols-3 gap-[15px]">
         <!-- Top-Left Gray Box -->
         <div class="col-span-1  h-[220px] w-full hidden md:block rounded-sm"></div>
@@ -67,11 +67,9 @@ const slugify = (str: string) => {
         <div class="col-span-1 hidden md:block"></div>
         
         <!-- Heading Text -->
-        <div class="col-span-2 mt-4 md:mt-6 pl-4">
-          <h2 class="text-4xl md:text-[28px] font-normal leading-[1.15] tracking-tight text-white">
-            <NuxtLink :to="'/categories/' + slugify(category.name)" class="hover:underline hover:opacity-85 transition-all">
-                {{ category.name }}
-              </NuxtLink>
+        <div class="col-span-2 mt-4 md:mt-6">
+          <h2 class="text-3xl md:text-[38px] font-normal leading-[1.15] tracking-tight text-black pl-4">
+            {{ selectedQuotes[category.name] }}
           </h2>
           <div class="flex flex-row items-end mt-4 gap-2">
               <span class="text-[11px] uppercase tracking-wider font-mono px-2.5 py-0.5 border border-white/10 rounded-full text-white/60 w-fit bg-white/10">{{ getCaseStudiesForCategory(category.name).length }} Case studies</span>

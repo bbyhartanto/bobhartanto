@@ -2,7 +2,7 @@
   <div class="w-full sticky top-0 z-10">
     <div class="p-5">
       <!-- Desktop Header -->
-      <header class="hidden md:flex text-sm items-center">
+      <header class="hidden md:block text-sm">
         <nav class="bg-[#fafafa]/80 backdrop-blur-md w-full text-black py-3 px-6 rounded-md leading-tight font-medium grid grid-cols-6 gap-6 items-center">
           <NuxtLink to="/" class="col-span-1 hover:opacity-80 transition-opacity text-left">
             Bobby <br/>Hartanto
@@ -27,7 +27,7 @@
 
       <!-- Mobile Header -->
       <header class="block md:hidden text-sm">
-        <div class="bg-[#fafafa]/80 backdrop-blur-md w-full text-black py-3 px-6 rounded-md leading-tight font-medium grid grid-cols-6 gap-6 items-center">
+        <nav class="bg-[#fafafa]/80 backdrop-blur-md w-full text-black py-3 px-6 rounded-md leading-tight font-medium grid grid-cols-6 gap-6 items-center">
           <NuxtLink to="/" class="col-span-5 hover:opacity-80 transition-opacity text-left">
             Bobby <br/>Hartanto
           </NuxtLink>
@@ -41,26 +41,26 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-        </div>
 
-        <!-- Mobile Dropdown Links -->
-        <div v-if="isMenuOpen" class="mt-2 bg-[#fafafa]/80 backdrop-blur-md w-full text-black p-6 rounded-md leading-tight font-medium flex flex-col gap-4">
-          <NuxtLink to="/casestudies" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
-            Works<br/><span class="text-[12px] text-black/50">Casestudies</span>
-          </NuxtLink>
-          <a href="#portfolio" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
-            Portfolio<br/><span class="text-[12px] text-black/50">Gallery</span>
-          </a>
-          <NuxtLink to="/#" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
-            Blog<br/><span class="text-[12px] text-black/50">Articles</span>
-          </NuxtLink>
-          <a href="https://www.linkedin.com/in/bobhartanto" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
-            Linkedin<br/><span class="text-[12px] text-black/50">Bobhartanto</span>
-          </a>
-          <a href="mailto:work.bobbyhartanto@gmail.com" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
-            Contact<br/><span class="text-[12px] text-black/50">work.bobbyhartanto@gmail.com </span>
-          </a>
-        </div>
+          <!-- Mobile Dropdown Links -->
+          <div v-if="isMenuOpen" class="col-span-6 flex flex-col gap-4 pt-4 border-t border-black/10">
+            <NuxtLink to="/casestudies" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
+              Works<br/><span class="text-[12px] text-black/50">Casestudies</span>
+            </NuxtLink>
+            <a href="#portfolio" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
+              Portfolio<br/><span class="text-[12px] text-black/50">Gallery</span>
+            </a>
+            <NuxtLink to="/#" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
+              Blog<br/><span class="text-[12px] text-black/50">Articles</span>
+            </NuxtLink>
+            <a href="https://www.linkedin.com/in/bobhartanto" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
+              Linkedin<br/><span class="text-[12px] text-black/50">Bobhartanto</span>
+            </a>
+            <a href="mailto:work.bobbyhartanto@gmail.com" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
+              Contact<br/><span class="text-[12px] text-black/50">work.bobbyhartanto@gmail.com </span>
+            </a>
+          </div>
+        </nav>
       </header>
     </div>
   </div>

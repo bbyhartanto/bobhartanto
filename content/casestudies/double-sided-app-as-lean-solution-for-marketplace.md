@@ -1,5 +1,6 @@
 ---
 title: Double sided app as lean solution for marketplace app
+draft: true
 category: Problem to Product
 description: Early stages startup struggle with the development cost, I design double sided interface Buyer and Merchant to reduce development cost at validation phase.
 navigation:
