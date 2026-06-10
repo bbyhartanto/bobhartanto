@@ -1,7 +1,11 @@
 <script setup lang="ts">
 // Fetch all case studies
 const { data: caseStudies } = await useAsyncData('all-casestudies', () => {
-  return queryCollection('casestudies').all()
+  let q = queryCollection('casestudies')
+  if (!import.meta.dev) {
+    q = q.where('draft', '=', false)
+  }
+  return q.all()
 })
 
 useSeoMeta({

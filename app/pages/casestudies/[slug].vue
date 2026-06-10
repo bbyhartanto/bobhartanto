@@ -3,7 +3,11 @@ const route = useRoute()
 
 // Fetch the case study from the 'casestudies' collection by its path
 const { data: caseStudy } = await useAsyncData('casestudy-' + route.params.slug, () => {
-  return queryCollection('casestudies').path(route.path).first()
+  let q = queryCollection('casestudies').path(route.path)
+  if (!import.meta.dev) {
+    q = q.where('draft', '=', false)
+  }
+  return q.first()
 })
 
 if (!caseStudy.value) {
