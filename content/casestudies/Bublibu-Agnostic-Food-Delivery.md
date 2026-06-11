@@ -1,7 +1,8 @@
 ---
-title: "[Discovery phase] of Bublibu agnostic food delivery marketplace"
+title: Research Bublibu agnostic food delivery marketplace
 category: Problem to Product
 description: Bublibu is an internal project at Paton.dev. An agnostic food delivery marketplace that connects drivers, tenants, and customers. without having any single fleet.
+draft: false
 focus: Strategy, Research, Product development, Startup
 platform: iOs & Android
 role: Lead Product Designer
@@ -21,117 +22,84 @@ Fg01 1: Bublibu app release materials
 
 ## Overview
 
-Bublibu was an internal product initiative at [Paton.dev](http://Paton.dev), born during the COVID-19 lockdown period in Bandung, Indonesia. It was a food delivery marketplace with one radical design principle:**no owned drivers**\[. Instead, Bublibu was built to plug into a newly emerging ecosystem of homebrew local couriers independent logistics operators who appeared almost overnight when the pandemic paralyzed established supply chains.
+In early 2020, Bandung went quiet. Restaurants closed. Offices emptied. But food didn't stop moving, it just moved differently.
 
-The project explored a deceptively simple hypothesis:
+If you knew where to look, you'd find it in WhatsApp broadcasts from home cooks offering nasi padang by the portion. You'd find it in a new wave of courier operators small outfits, often just a few motorbikes and a group chat  who appeared almost overnight to fill the gap the major platforms couldn't or didn't want to fill. By mid-lockdown, we had identified at least ten of these operators active in Bandung alone: Ahsan Express, Paketin, Tiketux, PHK Express, BDOJEK, and others.
 
-*Can a food delivery marketplace be structurally leaner if it distributes the capital expenditure of owning a driver fleet?*
+Nobody had planned for any of this. There was no press release, no launch event. It just emerged an informal economy of home sellers and homebrew couriers transacting outside every existing platform.
 
-## My Role on the Team
+**That's where Bublibu started. Not with a pitch deck. With an observation.**
 
-Bublibu was built by a team of six:
+***Can a food delivery marketplace be structurally leaner if it distributes the capital expenditure of owning a driver fleet?***
 
-- A community manager
-- An UI/UX designer
-- A graphic designer
-- Two developers
-- A QA engineer and
-- A CEO / Business owner and as a venture from Paton.dev.
+## **What we saw**
 
-We are working autonomusly in Bandung while the dev was working from Bali. I was the product researcher, and sat upstream of all of them under supervision of the CEO. I report my work directly to the CEO's.
+The home sellers we eventually spoke to  vendors like
 
-here is what I owned end to end during the product Discovery phase:
-
-**Actor mapping.**
-
-I defined who the three users were (home seller, local courier, buyer), what each needed, and where the friction lived for each.
-
-**Conducting Seller& Buyer Interview.**
-
-I work with my community managers to arrange meeting with all actors, his job is to find viable early adopters while i was preparing the interview plan. at eraly stages we engage with several high qualify named culinary vendors in Bandung such as RumkayDago, Bia Kombucha, Ngombe Jamu, Bebek Setan, Dapur sedap nikmat, and many more.
-
-**Hypothesis formulation.** The "no owned fleet" architectural decision originated from my research into the unit economics of food delivery platforms. I brought that framing to the team and to leadership as a product thesis, not just an observation.
-
-**Actor mapping.** I defined who the three users were (home seller, local courier, buyer), what each needed, and where the friction lived for each. This became the foundation that the UI/UX designer used to structure flows, and the developers used to architect the system.
-
-**Research-to-design handoff.** I worked directly with the UI/UX designer to translate research findings into design constraints — for example, the decision to make seller onboarding extremely lightweight came directly from what I learned about how home sellers operated. Research didn't end when design began.
-
-**Product framing for leadership.** Because this was an internal venture, I also played a role in communicating the product direction to the company. The community manager's work in reaching home sellers and local courier operators was grounded in the user profiles I had developed.
-
-**What I didn't do** is equally worth stating. I didn't art-direct the visual design — that was the UI/UX and graphic designer's domain. I didn't manage the sprint cadence or QA process. My role was to make sure the team was building the right thing, not to manage how they built it.
-
-In a small team on an undefined project, the researcher's job is to replace chaos with clarity. That's what I tried to do here.
-
-## Context: The Invisible Marketplace
-
-During the COVID-19 lockdown, two parallel economies silently emerged in Bandung:
-
-**1. Home-based food sellers** Mothers and home cooks who had always sold food — through WhatsApp broadcasts, personal networks, and word of mouth — continued doing so. They weren't new entrepreneurs. They were existing micro-sellers operating without any digital platform infrastructure.
-
-**2. Homebrew courier operators** With millions unemployed and movement restricted, a new category of logistics actor emerged: small-scale, locally operated courier businesses with no prior infrastructure. Within months, Bandung alone had at least **10 identifiable new local courier operators**, including:
-
-- Ahsan Express
+- RumkayDago
+- Bia Kombucha
+- Ngombe Jamu
+- Bebek Setan
+- Dapur Sedap Nikmat
+- They'd already built workarounds. An instagram account, whatsapp DM manual coordination with a local courier that emerging at that moment in the mean time such as:
+- Ahsan express
+- PHK Express
 - Paketin
 - Tiketux
-- PHK Express
 - BDOJEK
 
-These operators filled a genuine gap. They were moving packages — mostly food — between homes, at a time when the major platforms either couldn't reach or weren't servicing their neighborhoods.
+They were operating in stealth they just had no infrastructure. No storefront anyone could discover. No delivery layer they hadn't personally assembled. And critically no margin to absorb the fees GoFood or GrabFood would charge to give them one.
 
-**The core observation:** Significant transaction volume was flowing through an ecosystem that had no formal marketplace, no discoverability layer, and no digital infrastructure. We called this the **invisible marketplace**.
+This was the thing that stuck with me: **the invisibility wasn't a sign that demand didn't exist. It was a sign that the formal market had failed to serve it**. These sellers had real buyers, real orders, and real delivery happening just completely outside any platform's visibility.
 
-## Problem Statement
+## **The problem with the existing platforms**
 
-Existing food delivery giants — GoFood, GrabFood — operated with high marketplace fees, partially driven by the massive capital expenditure of maintaining proprietary driver fleets. This made it structurally difficult for small home-based sellers, with thin margins and low average order values, to participate profitably.
+GoFood and GrabFood are genuinely impressive logistical operations. But they carry a structural cost that gets passed down: proprietary driver fleets. **Thousands of drivers, managed centrally, with all the capital expenditure that implies**. That cost has to go somewhere and it ends up in marketplace fees that can make thin-margin sellers structurally unviable.
 
-Meanwhile, a new wave of local couriers existed and was scaling organically — but remained invisible, informal, and unintegrated.
+For a restaurant with high average order values and volume, those fees are painful but survivable. For a home cook selling home-cooked food at IDR 20–35k a portion, they're often fatal to the unit economics.
 
-**The gap:** No platform existed that could serve the home seller segment while leveraging this emerging courier infrastructure — without rebuilding what the giants had already built.
+The gap wasn't an accident. It was a structural consequence of how those platforms were built.
 
-## Our Hypothesis
+## **The hypothesis**
 
-> *If we can distribute the capex of nurturing our own driver fleet, we have a structural chance to make marketplace fees meaningfully leaner.*
+If we can distribute the capital expenditure of maintaining a driver fleet hand it off to a network of already-existing local couriers do we have a structural chance to make marketplace fees meaningfully leaner?
 
-This led to Bublibu's core architectural decision: **build zero driver infrastructure**. Instead, integrate with local couriers as logistics partners, effectively treating them as a federated fleet.
+That was the bet. Not "can we build a food delivery app." The question was whether the cost structure of food delivery was a fixed constraint or a design choice and whether an agnostic approach to logistics (plugging into couriers rather than owning them) could produce a fundamentally different fee model.
 
-This was not just a cost decision — it was a bet on the trajectory of the local courier ecosystem. Our assumption was that these operators would mature, scale, and eventually expose APIs or integration-ready systems that Bublibu could consume.
+The timing mattered. These local courier operators weren't going away. They were scaling. Our assumption was that they'd mature and eventually expose the kind of APIs or integration-ready systems that a marketplace could actually plug into. Bublibu was designed around that trajectory, not just the present reality.
 
-## Research Process
+## **The smallest experiment we could afford**
 
-### Phase 1 — Field Observation
+We were a small team.
 
-Rather than starting with existing data (none existed for this market), research began with direct observation. We documented the emergence of local courier operators in Bandung by name, reach, and operating model. We identified at least 10 active operators during the lockdown period.
+- A community manager,
+- a UI/UX designer and product manager at the sametime (mysef),
+- a graphic designer,
+- two developers,
+- a QA engineer
 
-This was ethnographic product research — understanding a market that had no prior literature, no comparable case studies, and no playbook.
+All operating under a parent company that was willing to fund a thesis, but not a guess.
 
-### Phase 2 — User Identification
+So we didn't try to build everything. We built the minimum that would tell us whether the thesis held.
 
-We identified three distinct user actors:
+**On the seller side:** a lightweight onboarding flow. Home sellers needed a digital storefront but they didn't need sophistication. They needed something they could actually use, which meant stripping the flow down to what mattered and nothing more.
 
-ActorPainWhat they neededHome seller (ibu rumahan)No digital storefront, limited reach, relied on WhatsAppA lightweight way to publish their food to a wider audienceLocal courierNo aggregation platform, no steady demand pipelineConsistent order volume and discoverabilityBuyerWanted local, home-cooked food that platforms didn't offerAccess to informal sellers with reliable last-mile delivery
+**On the courier side:** we designed the integration layer as an open slot. Ready to connect to partner APIs as they became available, without requiring us to pre-build every integration upfront.
 
-### Phase 3 — Competitive Analysis
+**On the buyer side**: discoverability and trust. A way to find home-cooked food that wasn't on any other platform, with enough structure that placing an order felt reliable.
 
-We mapped the structural cost model of major food delivery platforms — specifically the relationship between driver fleet ownership, operational overhead, and marketplace fee percentage. This informed our core thesis that eliminating driver fleet capex could compress the fee structure.
+The honest framing for the whole thing was this:
 
-### Phase 4 — Concept Validation
+*we believed this could work. We also knew it might not. The courier ecosystem was young, informal, and hadn't yet developed the infrastructure a marketplace would eventually need. Our bet was on a trajectory and trajectories can stall.*
 
-We prototyped the seller onboarding flow and delivery request flow, with the courier integration designed as an open slot — ready to plug into partner APIs as they became available.
+What we were trying to learn wasn't just whether people would use the app. We were trying to learn whether the underlying structural hypothesis that fleet-agnostic delivery could compress fees enough to unlock this segment was real. The product was the instrument. The question was the point.
 
-### 4. Underserved segments often look invisible
+## **Why it was worth trying**
 
-Home sellers broadcasting on WhatsApp had been operating for years. They weren't waiting for a platform — they had built workarounds. Good product research uncovers workarounds, because workarounds reveal real demand that formal solutions have failed to serve.
+The invisible marketplace we observed in Bandung in 2020 wasn't unique to Bandung. Versions of it exist wherever formal platforms have left gaps wherever unit economics don't work, wherever seller margins are too thin, wherever the infrastructure cost of the dominant players prices out the people who most need a platform.
 
-### 5. Hypothesis-first product development
+If the hypothesis was right, Bublibu wasn't just a food delivery app. It was a model for how marketplaces in informal economies could be built differently lean, federated, and structurally honest about what they were and weren't.
 
-Rather than building features, we built around a thesis. This created internal alignment and helped the team make design decisions coherently — every feature was evaluated against whether it supported or diluted the core hypothesis.
+That felt worth building. Even if it didn't work
 
-## Reflection
-
-Bublibu didn't become a commercial product. But the exercise produced something more durable: a framework for thinking about marketplace design in constrained, informal economies. The invisible marketplace we observed in Bandung in 2020 was not unique — versions of it exist in every city where formal platforms have left gaps.
-
-The project demonstrated that you don't need proprietary infrastructure to build a marketplace. You need a clear hypothesis, a real user who is underserved, and the discipline to design for them specifically.
-
----
-
-*Case study written by Bob Hartanto — Product Researcher & Product Designer at **[Paton.dev](http://Paton.dev)*** *Published at bobhartanto.com/casestudies/bublibu-agnostic-food-delivery*
+Read more on **how we designing the form of Bublibu**
