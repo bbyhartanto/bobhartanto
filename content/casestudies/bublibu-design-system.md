@@ -2,7 +2,7 @@
 title: Designing for Early stages startup
 category: Visual Direction
 description: This is how i working on establishing visual design for early stage startup like Bublibu, a food delivery marketplace. I explore the ambiguity of the products, tone of voice, visual direction, and how to create a design system from scratch to support the product. It was a fun journey to discover what it means to design for a startup that is still figuring out its identity
-draft: true
+draft: false
 focus: "Developing Visual Identity and Assets "
 platform: iOs & Android
 role: Lead Product Design
