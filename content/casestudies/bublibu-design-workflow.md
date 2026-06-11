@@ -1,30 +1,34 @@
 ---
 title: Design workflow for Early stages startup
 category: Visual Direction
-description: This is how i working on establishing visual design for early stage startup like Bublibu, a food delivery marketplace. I explore the ambiguity of the products, tone of voice, visual direction, and how to create a design system from scratch to support the product. It was a fun journey to discover what it means to design for a startup that is still figuring out its identity
+description: Establishing visual design for early stage startup like Bublibu, a food delivery marketplace. A journey to discover what it means to design for a startup that is still figuring out its identity
 draft: false
 focus: "Developing Visual Identity and Assets "
 platform: iOs & Android
+quotes: When design forced to be aggile and prone to changes
 role: Lead Product Design
 seo:
-  title: Designing for Early stages startup
-  description: This is how i working on establishing visual design for early stage startup like Bublibu, a food delivery marketplace. I explore the ambiguity of the products, tone of voice, visual direction, and how to create a design system from scratch to support the product. It was a fun journey to discover what it means to design for a startup that is still figuring out its identity
+  title: UI Design workflow Early stages startup
+  description: Establishing visual design for early stage startup like Bublibu, a food delivery marketplace. A journey to discover what it means to design for a startup that is still figuring out its identity
 subcategories:
   - Design System
   - Ui Design
-  - Motion
 timeline: 2021-2026
 ---
 
-Most projects burnout because this kind early-stage startups design mistake things:
+This is the lesson learned while designing the early stage of bublibu?
 
 ## Don't design too early
 
-### `What did you actually decide or design at early stage of bublibu?`
+At the start, I gave Bublibu no design identity. No brand colors, no logo, no typography decision, no illustration assets. Just plain wireframes.
 
-I dont give any identity to the design, i start it with plain wireframe, i co work with my graphic designer i set direction to explore, a tone personality and mood, i dont jump in into generating components directly, while i'm defining the interaction flow and information architecture, my designer do the visual explorations,
+Before another designer joined the team, I was running both tracks alone wireframing and visual exploration simultaneously. That split focus was a problem. Visual exploration is an open-ended process; it expands to fill whatever time you give it. And while I was generating design alternatives, the development team was waiting for flows they could actually build.
 
-**Why?**
+So I made a call: **wireframes and wireflow first**, everything else after. **The MVP needed to ship**. A polished visual identity could wait.
+
+That's the principle behind "don't design too early." It's not that visual design doesn't matter it's that committing to it before the product direction is stable creates work you'll likely redo. Stay loose until the product tells you what it needs.
+
+**Why dont commit too early?**
 
 # *Most early-stage products shift direction more than once. Usually more than twice."* Same point, no baggage.
 
