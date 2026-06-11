@@ -1,119 +1,382 @@
 <template>
-
   <div class="w-full relative overflow-hidden">
     <!-- Top Grid Section -->
-     <div class="flex flex-col md:grid md:grid-cols-6 gap-2 my-8 px-4 pointer-events-none relative z-10 h-[70vh]">
-      <div class="col-span-2 col-start-3 flex items-center justify-center h-full w-full">
-        <img src="/images-/bobby.svg" alt="bublibu image" class="animate-intro w-[60%] md:w-[90%] h-auto py-4" /> 
-      </div>  
-      
-     </div>
-    <div :class="{ 'opacity-0': isLoading, 'opacity-100': !isLoading, 'transition-opacity duration-1000': true }" class="flex flex-col md:grid md:grid-cols-6 gap-2 my-8 px-4 pointer-events-none relative z-10">
+    <div
+      class="flex flex-col md:grid md:grid-cols-6 gap-2 my-8 px-4 pointer-events-none relative z-10 h-[70vh]"
+    >
+      <div
+        class="col-span-2 col-start-3 flex items-center justify-center h-full w-full"
+      >
+        <img
+          src="/images-/bobby.svg"
+          alt="Bobby logo"
+          class="animate-intro w-[60%] md:w-[90%] h-auto py-4"
+        />
+      </div>
+    </div>
+    <div
+      :class="{
+        'opacity-0': isLoading,
+        'opacity-100': !isLoading,
+        'transition-opacity duration-1000': true,
+      }"
+      class="flex flex-col md:grid md:grid-cols-6 gap-2 my-8 px-4 pointer-events-none relative z-10 bg-[#fafafa]"
+    >
       <!-- Column 1 -->
-       
-            <div class="col-span-2 md:col-span-3 md:col-start-3">
-                <div class="flex flex-col gap-4 my-4 ">
-                  <h2 class=" text-2xl md:text-4xl leading-[1.15]">Bobby Hartanto is an Indonesian based product designer with over 11+ years experience in designing intuitive and useful digital products.
-                  </h2>
-                  <p class="">My experience spans agencies, corporate enterprises, startups, and global consultancies from 2014 to 2026. This gives me the full-stack design perspective to navigate ambiguity, unite teams, and take a product from concept to launch.
-                  </p>
-                </div>
-                <div class="mt-6 pointer-events-auto border-y border-black/10">
-                  <button @click="isAccordionOpen = !isAccordionOpen" class="w-full flex justify-between items-center py-4 text-left hover:opacity-70 transition-opacity">
-                    <span class="font-medium text-lg">What services do you offer?</span>
-                    <span class="text-2xl font-light">{{ isAccordionOpen ? '−' : '+' }}</span>
-                  </button>
-                  <div v-show="isAccordionOpen" class="pb-4 text-black/70">
-                    I do design product for mobile and desktop app and website
-                  </div>
-                </div>
-            </div> 
+
+      <div class="col-span-2 my-8 px-4 pointer-events-none pb-40">
+        <div>
+          <img
+            src="/images-/bobby-hartanto.png"
+            alt="bobby hartanto image"
+            class="animate-intro w-[50%] md:w-[50%] h-auto py-4"
+          />
+        </div>
+        <div
+          class="col-span-2 lg:col-span-3 lg:col-start-3 -mt-20 lg:-mt-10 lg:-mt-40 lg:ml-20 mix-blend-difference text-white"
+        >
+          <h2
+            data-initial-delay="0.2s"
+            data-scroll-delay="0.1s"
+            class="opacity-0 font-medium animate-target text-5xl md:text-4xl lg:text-5xl py-4 leading-[1.15]"
+          >
+            Designer who had a full-stack development perspective.
+          </h2>
+        </div>
+      </div>
+
+      <div class="col-span-2 md:col-span-4 lg:col-span-3 lg:col-start-3">
+        <div ref="headingsContainer" class="flex flex-col my-4">
+          <h2
+            data-initial-delay="1.5s"
+            data-scroll-delay="0s"
+            class="text-3xl py-4 md:text-5xl leading-[1.15] opacity-0 animate-target"
+          >
+            a product design partner<br />
+            with focus on
+          </h2>
+          <div
+            v-for="(service, index) in services"
+            :key="index"
+            :data-initial-delay="`${1.7 + index * 0.2}s`"
+            :data-scroll-delay="`${0.1 + index * 0.1}s`"
+            class="pointer-events-auto border-t border-black/10 opacity-0 animate-target"
+            :class="{ 'border-b': index === services.length - 1 }"
+          >
+            <button
+              @click="openAccordion = openAccordion === index ? null : index"
+              class="w-full flex justify-between items-center py-6 text-left hover:opacity-70 transition-opacity group"
+            >
+              <div class="flex items-baseline gap-4 md:gap-6">
+                <span
+                  class="text-lg md:text-2xl text-black/40 font-light font-mono"
+                  >0{{ index + 1 }}</span
+                >
+                <span class="text-2xl md:text-4xl leading-[1.15]">{{
+                  service.title
+                }}</span>
+              </div>
+              <span
+                class="text-4xl font-light transition-transform duration-300"
+                :class="{ 'rotate-45': openAccordion === index }"
+                >+</span
+              >
+            </button>
+            <div
+              class="grid transition-all duration-300 ease-in-out"
+              :class="
+                openAccordion === index
+                  ? 'grid-rows-[1fr] opacity-100 pb-6'
+                  : 'grid-rows-[0fr] opacity-0'
+              "
+            >
+              <div class="overflow-hidden text-lg text-black/70">
+                {{ service.description }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- profile section -->
 
-    
+    <div
+      class="grid grid-cols-6 md:grid-cols-8 gap-2 px-4 pointer-events-none relative z-10 py-16"
+    >
+      <div class="col-span-6 md:col-span-8 flex flex-row gap-5 col-start-1">
+        <div class="grid grid-cols-6 md:grid-cols-8 w-full  md:scale-100 origin-left">
+          <div class="col-span-1 md:col-start-2">
+            <p>2014</p>
+          </div>
+          <div class="col-span- ">
+            <p>2016</p>
+          </div>
+          <div class="col-span-1">
+            <p>2017</p>
+          </div>
+          <div class="col-span-1">
+            <p>2018</p>
+          </div>
+          <div class="col-span-1">
+            <p>2019</p>
+          </div>
+          <div class="col-span-1">
+            <p>2026</p>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-span-6 md:col-span-8 flex flex-row gap-5 col-start-1">
+        <div class="grid grid-cols-6 md:grid-cols-8 w-full md:scale-100 origin-left">
+          <div
+            class="col-span-1 md:col-start-2 border-t-1 opacity-0 animate-target"
+            data-initial-delay="0.2s"
+            data-scroll-delay="0.1s"
+          >
+            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">Mullen Lowe</p>
+          </div>
+          <div
+            class="col-span-1 border-t-1 opacity-0 animate-target"
+            data-initial-delay="0.3s"
+            data-scroll-delay="0.2s"
+          >
+            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">Astragraphia</p>
+          </div>
+          <div
+            class="col-span-1 border-t-1 opacity-0 animate-target"
+            data-initial-delay="0.4s"
+            data-scroll-delay="0.3s"
+          >
+            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">MokaPOS</p>
+          </div>
+          <div
+            class="col-span-1 border-t-1 opacity-0 animate-target"
+            data-initial-delay="0.5s"
+            data-scroll-delay="0.4s"
+          >
+            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">IBM</p>
+          </div>
+          <div
+            class="col-span-1 border-t-1 opacity-0 animate-target"
+            data-initial-delay="0.6s"
+            data-scroll-delay="0.5s"
+          >
+            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">Paton.Dev</p>
+          </div>
+          <div
+            class="col-span-1 border-t-1 opacity-0 animate-target"
+            data-initial-delay="0.7s"
+            data-scroll-delay="0.6s"
+          >
+            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">Freelance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      :class="{
+        'opacity-0': isLoading,
+        'opacity-100': !isLoading,
+        'transition-opacity duration-1000': true,
+      }"
+      class="flex flex-col md:grid md:grid-cols-8 gap-2 my-8 px-4 pointer-events-none relative z-10"
+    >
+      <div class="col-span-2 md:col-span-3 md:col-start-2">
+        <h2
+          data-initial-delay="0.2s"
+          data-scroll-delay="0.1s"
+          class="opacity-0 animate-target text-3xl py-16 md:text-5xl leading-[1.15]"
+        >
+          My experience spans agencies, corporate enterprises, startups, and
+          global consultancies
+        </h2>
+      </div>
+    </div>
 
+    <div
+      class="grid grid-cols-8 gap-2 my-8 px-4 pointer-events-none relative z-10"
+    >
+      <div
+        class="col-span-8 md:col-span-6  flex flex-row gap-5 md:col-start-2 md:px-4 border-b-1 border-black/50 pb-16" 
+      >
+        <div class="grid grid-cols-3 md:grid-cols-5 w-full gap-4 opacity-0 animate-target"
+        data-initial-delay="0.4s"
+            data-scroll-delay="0.3s">
+          <div class="col-span-1">
+            <h2><strong>Agencies</strong></h2>
+            <ul>
+              <li>Mullen lowe</li>
+              <li>Indomie</li>
+              <li>XL Axiata</li>
+              <li>Axis</li>
+              <li>Garuda Indonesia</li>
+              <li>Danamon</li>
+            </ul>
+          </div>
+          <div class="col-span-1">
+            <h2><strong>Startups</strong></h2>
+            <ul>
+              <li>Moka POS</li>
+              <li>Bublibu</li>
+              <li>Cognitix</li>
+            </ul>
+          </div>
+          <div class="col-span-1">
+            <h2><strong>Consultancies</strong></h2>
+            <ul>
+              <li>IBM Indonesia</li>
+              <li>XL Axiata</li>
+              <li>Adira</li>
+              <li>Pertamina</li>
+              <li>Astragraphia</li>
+            </ul>
+          </div>
+          <div class="col-span-2">
+            <h2><strong>Personal Projects</strong></h2>
+            <ul>
+              <li>Crema</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from "vue";
 
-const isAccordionOpen = ref(false)
-const isLoading = ref(true)
+const openAccordion = ref(null);
+const services = ref([
+  {
+    title: "Website design & development",
+    description:
+      "I do loves designing and building websites. I design website on figma for both desktop and mobile design then build it using HTML, Tailwind CSS, Vue.js and Nuxt.js such as this portfolio website.",
+  },
+  {
+    title: "UI Design & Prototyping",
+    description:
+      "UI design is where I do my sharpest thinking, translating the ambiguous vision of founders and board members into interfaces that feel inevitable. I've worked across the full spectrum, from zero-to-one startups to enterprise scale, with clients including Moka POS and IBM.",
+  },
+  {
+    title: "UX Audit review & Strategy",
+    description:
+      "I do design critiques, analyzing your existing product to identify usability issues and providing a clear, actionable strategy for improvement.",
+  },
+  {
+    title: "Branding and Design system",
+    description:
+      "Developing comprehensive, scalable design systems to ensure visual consistency across all of the products in your ecosystem.",
+  },
+]);
+
+const isLoading = ref(true);
+const headingsContainer = ref(null);
+let observer = null;
 
 onMounted(() => {
   setTimeout(() => {
-    isLoading.value = false
-  }, 1500) // 1.5s loading delay
-})
+    isLoading.value = false;
+  }, 1500); // 1.5s loading delay
 
-const { data: categoriesDoc } = await useAsyncData('categories', () => {
-  return queryCollection('categories').first()
-})
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (isLoading.value) {
+            entry.target.style.animationDelay =
+              entry.target.dataset.initialDelay;
+          } else {
+            entry.target.style.animationDelay =
+              entry.target.dataset.scrollDelay;
+          }
+          entry.target.classList.add("animate-intro");
+        } else {
+          entry.target.classList.remove("animate-intro");
+        }
+      });
+    },
+    { threshold: 0.1 },
+  );
+
+  setTimeout(() => {
+    // Select ALL elements with .animate-target on the page
+    const animatedElements = document.querySelectorAll(".animate-target");
+    animatedElements.forEach((el) => observer.observe(el));
+  }, 100);
+});
+
+onUnmounted(() => {
+  if (observer) observer.disconnect();
+});
+
+const { data: categoriesDoc } = await useAsyncData("categories", () => {
+  return queryCollection("categories").first();
+});
 
 const categoriesList = computed(() => {
-  return categoriesDoc.value?.items || []
-})
+  return categoriesDoc.value?.items || [];
+});
 
-const selectedQuotes = useState('random-quotes', () => {
-  const quotesMap = {}
-  categoriesList.value.forEach(category => {
+const selectedQuotes = useState("random-quotes", () => {
+  const quotesMap = {};
+  categoriesList.value.forEach((category) => {
     if (category.Quotes && category.Quotes.length > 0) {
-      const randomIndex = Math.floor(Math.random() * category.Quotes.length)
-      quotesMap[category.name] = category.Quotes[randomIndex]
+      const randomIndex = Math.floor(Math.random() * category.Quotes.length);
+      quotesMap[category.name] = category.Quotes[randomIndex];
     } else {
-      quotesMap[category.name] = "Thing’s that i do with passion in my daily basis"
+      quotesMap[category.name] =
+        "Thing’s that i do with passion in my daily basis";
     }
-  })
-  return quotesMap
-})
-
+  });
+  return quotesMap;
+});
 
 useSeoMeta({
-  title: 'Bobby Hartanto - UI/UX Designer Blog',
-  ogTitle: 'Bobby Hartanto - UI/UX Designer Blog',
-  description: 'Product & Design Lead with over 11+ years of experience, Ex Moka POS, EX IBM',
-  ogDescription: 'Product & Design Lead with over 11+ years of experience, Ex Moka POS, EX IBM',
-  ogImage: 'https://bobhartanto.com/og-image.jpg',
-  ogUrl: 'https://bobhartanto.com/'
-})
+  title: "Bobby Hartanto - UI/UX Designer Blog",
+  ogTitle: "Bobby Hartanto - UI/UX Designer Blog",
+  description:
+    "Product & Design Lead with over 11+ years of experience, Ex Moka POS, EX IBM",
+  ogDescription:
+    "Product & Design Lead with over 11+ years of experience, Ex Moka POS, EX IBM",
+  ogImage: "https://bobhartanto.com/og-image.jpg",
+  ogUrl: "https://bobhartanto.com/",
+});
 
 useHead({
   meta: [
-    { charset: 'utf-8' },
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    { charset: "utf-8" },
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
   ],
   link: [
     {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com'
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
     },
     {
-      rel: 'preconnect',
-      href: 'https://fonts.gstatic.com',
-      crossorigin: ''
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossorigin: "",
     },
     {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=DotGothic16&display=swap'
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=DotGothic16&display=swap",
     },
     {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap'
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap",
     },
     {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
     },
     {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'
-    }
-  ]
-})
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap",
+    },
+  ],
+});
 </script>
 
 <style scoped>
