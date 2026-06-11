@@ -78,17 +78,11 @@ We were a small team.
 - two developers,
 - a QA engineer
 
-All operating under a parent company that was willing to fund a thesis, but not a guess.
+The team kept the bet as lean as possible. No fleet investment, no proprietary drivers, no capital expenditure on logistics infrastructure. Instead of building what GoFood and GrabFood had built, Bublibu was designed around it integrating with third-party courier APIs and treating local operators as a federated delivery layer the team didn't have to own.
 
-So we didn't try to build everything. We built the minimum that would tell us whether the thesis held.
+The logic was straightforward: if the capex of maintaining a driver fleet could be distributed, that saving had somewhere to go. The team passed it down into lower marketplace fees and more affordable delivery costs for the sellers and buyers who needed it most.
 
-**On the seller side:** a lightweight onboarding flow. Home sellers needed a digital storefront but they didn't need sophistication. They needed something they could actually use, which meant stripping the flow down to what mattered and nothing more.
-
-**On the courier side:** we designed the integration layer as an open slot. Ready to connect to partner APIs as they became available, without requiring us to pre-build every integration upfront.
-
-**On the buyer side**: discoverability and trust. A way to find home-cooked food that wasn't on any other platform, with enough structure that placing an order felt reliable.
-
-The honest framing for the whole thing was this:
+That was the experiment. Not "can we build a food delivery app." Can we prove that the cost structure of food delivery is a design choice, not a fixed constraint.
 
 *we believed this could work. We also knew it might not. The courier ecosystem was young, informal, and hadn't yet developed the infrastructure a marketplace would eventually need. Our bet was on a trajectory and trajectories can stall.*
 
