@@ -1,11 +1,14 @@
 ---
-title: Designing for Early stages startup
+title: Design workflow for Early stages startup
 category: Visual Direction
 description: This is how i working on establishing visual design for early stage startup like Bublibu, a food delivery marketplace. I explore the ambiguity of the products, tone of voice, visual direction, and how to create a design system from scratch to support the product. It was a fun journey to discover what it means to design for a startup that is still figuring out its identity
 draft: false
 focus: "Developing Visual Identity and Assets "
 platform: iOs & Android
 role: Lead Product Design
+seo:
+  title: Designing for Early stages startup
+  description: This is how i working on establishing visual design for early stage startup like Bublibu, a food delivery marketplace. I explore the ambiguity of the products, tone of voice, visual direction, and how to create a design system from scratch to support the product. It was a fun journey to discover what it means to design for a startup that is still figuring out its identity
 subcategories:
   - Design System
   - Ui Design
@@ -23,7 +26,7 @@ I dont give any identity to the design, i start it with plain wireframe, i co wo
 
 **Why?**
 
-# Most early stages product we're shift direction like a girl changing clothes.
+# *Most early-stage products shift direction more than once. Usually more than twice."* Same point, no baggage.
 
 If you try to reach for a polished visual system, a tight brand guide, a clean component library and they spend weeks on infrastructure that will need to be rebuilt the moment the product direction shifts. Which it always does. so that's why i set my design work at low commitment at the beginning to keep the design team agile to follow product direction shift.
 
@@ -56,8 +59,16 @@ The first thing an interaction designer does isn't draw. It's ask questions  or
 
 Before krisna arrives in bublibu i set myself as the visual exploration too, and thus bring me delaying the wireframe work because i was too much focus to building more design alternatives rather than a tangible wireframe flow for the developers, when Krisna arrives as our second designer, the business owner devoted myself to majorly work on the wireflow for the others product features.
 
-I set the visual exploration team to work on most important part in design first before we continue to other details, here's the sequence:
+I would like to explain the Desing exploration steps in other article more detailed and more screenshot.
 
-## Font explorations
+## What I'd tell another designer doing this
 
-## Spot Illustrations
+The designer instinct when joining an early-stage startup is to establish everything — lock down the colors, build the component library, write the brand guide. It feels like discipline. But actually a trap and slowdown the development process.
+
+What you need at the start is enough of a direction that the team can make decisions coherently — and nothing more. A tone. A character. A few key screens that demonstrate the intent. The rest should stay loose until the product tells you what it needs.
+
+At Bublibu, I set a direction to keep design identity lightweight. It wasn't a resource constraint. It was a deliberate choice to stay moveable. The product shifted direction multiple times. The visual language shifted with it, without anyone having to throw away months of work.
+
+The test of a good early design identity isn't whether it looks finished. It's whether it survives the first pivot intact.
+
+##
