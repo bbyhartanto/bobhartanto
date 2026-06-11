@@ -48,7 +48,7 @@ As a design lead i responsible to assure my designer work within responsible are
 - Only work for respectable area that important for MVP phase not overstepping the production team.
 - Also aligned with the intention or perception of the Business owner
 
-## First team - Designing the wireframe
+## 1st team - Designing the wireframe
 
 This is the team that translating the requirement and business process from product manager, A brief from a PM or business owner typically contains the *what* and the *why*  "we need a seller onboarding flow" or "users need to be able to track their order." What it almost never contains is the *how*. That gap is exactly where the wireframing process begins.
 
@@ -58,12 +58,13 @@ The first thing an interaction designer does isn't draw. It's ask questions  or
 - Understood where's the process is located in the architecture
 - Undercover the edge cases and permutations
 - Gave mitigation strategy while the main flow is not working
+- Align the wireframe with the users mental models
 
-## Second team - The design explorations
+## 2nd team - The design explorations
 
-Before krisna arrives in bublibu i set myself as the visual exploration too, and thus bring me delaying the wireframe work because i was too much focus to building more design alternatives rather than a tangible wireframe flow for the developers, when Krisna arrives as our second designer, the business owner devoted myself to majorly work on the wireflow for the others product features.
+Before Krisna joined, I was handling visual exploration on top of the wireframing work. In practice that meant the wireframes suffered I was spending too much time generating design alternatives when the development team needed tangible flows to build from. When Krisna came on as our second designer, I handed the visual exploration track to him entirely and refocused on interaction design and wireflow across the remaining product features.
 
-I would like to explain the Desing exploration steps in other article more detailed and more screenshot.
+The visual exploration process font decisions, character design, illustration system is covered in a separate article with more detail and full visual references.
 
 ## What I'd tell another designer doing this
 
