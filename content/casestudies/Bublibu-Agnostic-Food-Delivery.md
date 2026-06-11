@@ -1,5 +1,5 @@
 ---
-title: Research Bublibu agnostic food delivery marketplace
+title: Product Research Bublibu food delivery app
 category: Problem to Product
 description: Bublibu is an internal project at Paton.dev. An agnostic food delivery marketplace that connects drivers, tenants, and customers. without having any single fleet.
 draft: false
@@ -24,41 +24,41 @@ Fg01 1: Bublibu app release materials
 
 In early 2020, Bandung went quiet. Restaurants closed. Offices emptied. But food didn't stop moving, it just moved differently.
 
-If you knew where to look, you'd find it in WhatsApp broadcasts from home cooks offering nasi padang by the portion. You'd find it in a new wave of courier operators small outfits, often just a few motorbikes and a group chat  who appeared almost overnight to fill the gap the major platforms couldn't or didn't want to fill. By mid-lockdown, we had identified at least ten of these operators active in Bandung alone: Ahsan Express, Paketin, Tiketux, PHK Express, BDOJEK, and others.
+If you knew where to look, you'd find it in WhatsApp broadcasts from home cooks offering nasi padang by the portion. You'd find it in a new wave of courier operators small outfits, often just a few motorbikes and a group chat  who appeared almost overnight to fill the gap the major platforms couldn't or didn't want to fill. By mid-lockdown, we had identified at least ten of local courier operators active in Bandung alone:
+
+- Ahsan Express
+- Paketin
+- Tiketux
+- PHK Express
+- BDOJEK and many others.
 
 Nobody had planned for any of this. There was no press release, no launch event. It just emerged an informal economy of home sellers and homebrew couriers transacting outside every existing platform.
 
 **That's where Bublibu started. Not with a pitch deck. With an observation.**
 
-***Can a food delivery marketplace be structurally leaner if it distributes the capital expenditure of owning a driver fleet?***
-
 ## **What we saw**
 
-The home sellers we eventually spoke to  vendors like
+The home sellers we interviewed are:
 
 - RumkayDago
 - Bia Kombucha
 - Ngombe Jamu
 - Bebek Setan
 - Dapur Sedap Nikmat
-- They'd already built workarounds. An instagram account, whatsapp DM manual coordination with a local courier that emerging at that moment in the mean time such as:
-- Ahsan express
-- PHK Express
-- Paketin
-- Tiketux
-- BDOJEK
 
-They were operating in stealth they just had no infrastructure. No storefront anyone could discover. No delivery layer they hadn't personally assembled. And critically no margin to absorb the fees GoFood or GrabFood would charge to give them one.
+They'd already built workarounds. An instagram account, whatsapp DM manual coordination with those local courier.
 
-This was the thing that stuck with me: **the invisibility wasn't a sign that demand didn't exist. It was a sign that the formal market had failed to serve it**. These sellers had real buyers, real orders, and real delivery happening just completely outside any platform's visibility.
+Those seller and buyer were operating in stealth with messy transaction flow. No payment gateway, No delivery tracking, no Discovery page. And critically no high admin fees like GoFood or GrabFood would charge to give them one.
 
-## **The problem with the existing platforms**
+This was the thing that stuck with me: **the invisibility wasn't a sign that demand didn't exist. It was a sign that there was underserved market were exist**. These sellers had real buyers, real orders, and real delivery happening just completely outside any platform's visibility.
 
-GoFood and GrabFood are genuinely impressive logistical operations. But they carry a structural cost that gets passed down: proprietary driver fleets. **Thousands of drivers, managed centrally, with all the capital expenditure that implies**. That cost has to go somewhere and it ends up in marketplace fees that can make thin-margin sellers structurally unviable.
+## **The problem**
 
-For a restaurant with high average order values and volume, those fees are painful but survivable. For a home cook selling home-cooked food at IDR 20–35k a portion, they're often fatal to the unit economics.
+GoFood and GrabFood are genuinely impressive logistical operations. But they carry a structural cost that gets passed down: proprietary driver fleets, managed centrally, with all the capital expenditure that implies. That cost lands on sellers as marketplace fees ranging from 20% to 40% per transaction.
 
-The gap wasn't an accident. It was a structural consequence of how those platforms were built.
+For a restaurant with high average order values, that cut is painful but survivable. For a home cook selling food at IDR 20–35k a portion, it's often fatal to the unit economics. Thin margins, no marketing budget, no brand recognition beyond their neighborhood  a 20–40% fee doesn't just hurt, it excludes.
+
+The result was an entire segment of active, productive sellers left operating informally through WhatsApp and personal networks not because they lacked buyers, but because no platform could serve them without pricing them out. That wasn't a niche. It was a structural gap. And it was the underservedmarket we were looking at.
 
 ## **The hypothesis**
 
