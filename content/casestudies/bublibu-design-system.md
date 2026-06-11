@@ -2,7 +2,7 @@
 title: Bublibu Design System file
 category: Visual Direction
 description: is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley,
-excerpt: is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley,
+draft: true
 focus: "Developing Visual Identity and Assets "
 platform: iOs & Android
 role: Lead Product Design

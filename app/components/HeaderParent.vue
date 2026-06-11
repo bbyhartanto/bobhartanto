@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full sticky top-0 z-10">
+  <div class="w-full sticky top-0 z-50">
     <div class="p-5">
       <!-- Desktop Header -->
       <header class="hidden md:block text-sm">
