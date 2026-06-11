@@ -257,7 +257,7 @@ const services = ref([
   {
     title: "UI Design & Prototyping",
     description:
-      "UI design is where I do my sharpest thinking, translating the ambiguous vision of founders and board members into interfaces that feel inevitable. I've worked across the full spectrum, from zero-to-one startups to enterprise scale, with clients including Moka POS and IBM.",
+      "UI design is where I do my sharpest thinking, translating the ambiguous vision of founders and board members into interfaces that feel intuitive, fun and engaging. I've worked across the full spectrum, from emerging to growing startups to large enterprises, Such as Astragraphia, Moka POS and IBM.",
   },
   {
     title: "UX Audit review & Strategy",
@@ -267,7 +267,7 @@ const services = ref([
   {
     title: "Branding and Design system",
     description:
-      "Developing comprehensive, scalable design systems to ensure visual consistency across all of the products in your ecosystem.",
+      "I have ability to designing in pixel perfect such as logo, poster, and banner, and also developing comprehensive, scalable design systems to ensure visual consistency across all of the products in your ecosystem.",
   },
 ]);
 
