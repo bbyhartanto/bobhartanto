@@ -13,9 +13,9 @@
           <a href="#portfolio" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
             Portfolio<br/><span class="text-[12px] text-black/50">Gallery</span>
           </a>
-          <NuxtLink to="/#" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
-            Blog<br/><span class="text-[12px] text-black/50">Articles</span>
-          </NuxtLink>
+          <a href="https://www.instagram.com/desainer.bergairah/" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
+            Instagram<br/><span class="text-[12px] text-black/50">designer.bergairah</span>
+          </a>
           <a href="https://www.linkedin.com/in/bobhartanto" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
             Linkedin<br/><span class="text-[12px] text-black/50">Bobhartanto</span>
           </a>

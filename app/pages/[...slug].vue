@@ -88,7 +88,7 @@ if (!page.value) {
   font-size: 1.125rem;
   line-height: 1.8;
   color: #222222;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 :deep(a) {

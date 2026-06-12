@@ -146,7 +146,7 @@ onUnmounted(() => {
           </div>
 
           <!-- Description -->
-          <p class="text-xl md:text-2xl  text-black/75 leading-relaxed max-w-3xl">
+          <p class="text-lg md:text-2xl font-normal text-black/75 leading-relaxed max-w-3xl">
             {{ caseStudy.description }}
           </p>
 
@@ -202,6 +202,16 @@ onUnmounted(() => {
   color: #000000;
 }
 
+.prose :deep(h3) {
+  font-size: 1.55rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: #000000;
+}
+
 .prose :deep(p) {
   font-size: 1.125rem;
   line-height: 1.8;
@@ -225,9 +235,9 @@ onUnmounted(() => {
 .prose :deep(li) {
   margin-bottom: 0.5rem;
   font-size: 1.125rem;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #222222;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @keyframes fadeIn {

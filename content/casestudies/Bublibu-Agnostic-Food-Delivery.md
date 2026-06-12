@@ -20,80 +20,60 @@ timeline: 2021-2025
 
 Fg01 1: Bublibu app release materials
 
-## Overview
+## Context & Overview
 
-In early 2020, Bandung went quiet. Restaurants closed. Offices emptied. But food didn't stop moving, it just moved differently.
+In early 2020, Bandung went quiet. Restaurants closed and offices emptied, but food didn't stop moving it just moved differently. The movement shifted to **WhatsApp broadcasts** from home cooks and a new wave of local courier operators who appeared almost overnight to fill the gap major platforms couldn't, or wouldn't, fill. By mid-lockdown, an entirely informal economy had emerged, with at least ten active local courier operators in Bandung alone, transacting outside every existing platform.
 
-If you knew where to look, you'd find it in WhatsApp broadcasts from home cooks offering nasi padang by the portion. You'd find it in a new wave of courier operators small outfits, often just a few motorbikes and a group chat  who appeared almost overnight to fill the gap the major platforms couldn't or didn't want to fill. By mid-lockdown, we had identified at least ten of local courier operators active in Bandung alone:
+Bublibu started here. Not with a pitch deck, but with an observation of this invisible, parallel market.
 
-- Ahsan Express
-- Paketin
-- Tiketux
-- PHK Express
-- BDOJEK and many others.
+## Research Questions
 
-Nobody had planned for any of this. There was no press release, no launch event. It just emerged an informal economy of home sellers and homebrew couriers transacting outside every existing platform.
+Before writing a single line of code, we needed to understand the mechanics of this informal economy. Our product discovery was guided by three core questions:
 
-**That's where Bublibu started. Not with a pitch deck. With an observation.**
+- How might we provide home-sellers with structured marketplace features (discovery, tracking, payments) without crippling 20-40% commission fees?
+- What are the specific friction points causing drop-offs in the current manual, WhatsApp-based transaction flows?
+- Can an agnostic API integration with emerging local courier fleets serve as a viable, scalable alternative to maintaining proprietary logistics?
 
-## **What we saw**
+## Methodology
 
-The home sellers we interviewed are:
+To validate that this invisibility was an underserved market rather than a lack of demand, we focused on qualitative discovery.
 
-- RumkayDago
-- Bia Kombucha
-- Ngombe Jamu
-- Bebek Setan
-- Dapur Sedap Nikmat
+- **User Interviews:** We conducted deep-dive discussions with active home sellers, including RumkayDago, Bia Kombucha, Ngombe Jamu, Bebek Setan, and Dapur Sedap Nikmat.
+- **Contextual Inquiry:** We observed their current workarounds, documenting the messy, manual coordination between Instagram DMs, WhatsApp chats, and local courier dispatching.
+- **Ecosystem Mapping:** We mapped the operational capabilities of local couriers (Ahsan Express, Paketin, Tiketux, etc.) to gauge their readiness for future system integrations.
 
-They'd already built workarounds. An instagram account, whatsapp DM manual coordination with those local courier.
+## Discoveries
 
-Those seller and buyer were operating in stealth with messy transaction flow. No payment gateway, No delivery tracking, no Discovery page. And critically no high admin fees like GoFood or GrabFood would charge to give them one.
+Through our research, we separated the immediate user frustrations from the broader, structural market failures.
 
-This was the thing that stuck with me: **the invisibility wasn't a sign that demand didn't exist. It was a sign that there was underserved market were exist**. These sellers had real buyers, real orders, and real delivery happening just completely outside any platform's visibility.
+### User Needs (The Micro)
 
-## **The problem**
+Sellers and buyers were operating in stealth out of necessity. Sellers were forced into highly manual, error-prone workflows. They lacked payment gateways, delivery tracking, and a centralized discovery page. However, they possessed real buyers, real orders, and consistent delivery volume.
 
-GoFood and GrabFood are genuinely impressive logistical operations. But they carry a structural cost that gets passed down: proprietary driver fleets, managed centrally, with all the capital expenditure that implies. That cost lands on sellers as marketplace fees ranging from 20% to 40% per transaction.
+### Market Gaps (The Macro)
 
-For a restaurant with high average order values, that cut is painful but survivable. For a home cook selling food at IDR 20–35k a portion, it's often fatal to the unit economics. Thin margins, no marketing budget, no brand recognition beyond their neighborhood  a 20–40% fee doesn't just hurt, it excludes.
+Incumbent platforms like GoFood and GrabFood carry a heavy structural cost: proprietary driver fleets managed centrally. This capital expenditure is passed down as marketplace fees ranging from 20% to 40%. For a home cook selling portions at IDR 20–35k, this cut is fatal to their unit economics. The gap wasn't a lack of platform features; it was a logistics monopoly that priced out the grassroots market.
 
-The result was an entire segment of active, productive sellers left operating informally through WhatsApp and personal networks not because they lacked buyers, but because no platform could serve them without pricing them out. That wasn't a niche. It was a structural gap. And it was the underservedmarket we were looking at.
+## Actionable Insights
 
-## **The hypothesis**
+The data pointed to a clear direction for the product architecture. Design and product strategy needed to act as the vital bridge linking raw backend functionality with real business survival.
 
-If we can distribute the capital expenditure of maintaining a driver fleet hand it off to a network of already-existing local couriers do we have a structural chance to make marketplace fees meaningfully leaner?
+- **Survival-First Margins:** Sellers cannot absorb traditional tech commissions. The system must operate on an ultra-lean or flat-fee model to be adopted.
+- **Decentralized Logistics:** Local courier ecosystems are fragmented but rapidly scaling. The product architecture must be API-first to leverage these external operators.
+- **The Missing Link:** The product's primary value proposition isn't food discovery; it is providing the missing trust and scalability infrastructure (tracking, payments) to an already active informal network.
 
-That was the bet. Not "can we build a food delivery app." The question was whether the cost structure of food delivery was a fixed constraint or a design choice and whether an agnostic approach to logistics (plugging into couriers rather than owning them) could produce a fundamentally different fee model.
+## Hypothesis & Proposed Solution
 
-The timing mattered. These local courier operators weren't going away. They were scaling. Our assumption was that they'd mature and eventually expose the kind of APIs or integration-ready systems that a marketplace could actually plug into. Bublibu was designed around that trajectory, not just the present reality.
+**The Bet:** If we can distribute the capital expenditure of maintaining a driver fleet by handing it off to a network of existing local couriers, we have a structural chance to make marketplace fees meaningfully leaner.
 
-## **The smallest experiment we could afford**
+The proposed solution, Bublibu, was designed to treat local operators as a federated delivery layer. We hypothesized that the cost structure of food delivery is a design choice, not a fixed constraint. By taking an agnostic approach to logistics—plugging into couriers rather than owning them—we could pass the operational savings directly down to the MSMEs.
 
-We were a small team.
+## Validation & The Lean Experiment
 
-- A community manager,
-- a UI/UX designer and product manager at the sametime (mysef),
-- a graphic designer,
-- two developers,
-- a QA engineer
+To test this trajectory, we kept the experiment as lean as possible. Our cross-functional team consisted of just a community manager, a UI/UX designer/PM, a graphic designer, two developers, and a QA engineer.
 
-The team kept the bet as lean as possible. No fleet investment, no proprietary drivers, no capital expenditure on logistics infrastructure. Instead of building what GoFood and GrabFood had built, Bublibu was designed around it integrating with third-party courier APIs and treating local operators as a federated delivery layer the team didn't have to own.
+- **Zero Fleet Investment:** We allocated zero capital expenditure to proprietary drivers or logistics infrastructure.
+- **Third-Party Integration Testing:** We built the MVP strictly around integrating with third-party courier APIs, validating whether they were mature enough to handle automated marketplace routing.
+- **Measuring the Structural Bet:** Success wasn't just acquiring users. The core validation metric was proving we could successfully route orders through a fleet-agnostic layer while maintaining a compressed fee model that sellers would actually adopt.
 
-The logic was straightforward: if the capex of maintaining a driver fleet could be distributed, that saving had somewhere to go. The team passed it down into lower marketplace fees and more affordable delivery costs for the sellers and buyers who needed it most.
-
-That was the experiment. Not "can we build a food delivery app." Can we prove that the cost structure of food delivery is a design choice, not a fixed constraint.
-
-*we believed this could work. We also knew it might not. The courier ecosystem was young, informal, and hadn't yet developed the infrastructure a marketplace would eventually need. Our bet was on a trajectory and trajectories can stall.*
-
-What we were trying to learn wasn't just whether people would use the app. We were trying to learn whether the underlying structural hypothesis that fleet-agnostic delivery could compress fees enough to unlock this segment was real. The product was the instrument. The question was the point.
-
-## **Why it was worth trying**
-
-The invisible marketplace we observed in Bandung in 2020 wasn't unique to Bandung. Versions of it exist wherever formal platforms have left gaps wherever unit economics don't work, wherever seller margins are too thin, wherever the infrastructure cost of the dominant players prices out the people who most need a platform.
-
-If the hypothesis was right, Bublibu wasn't just a food delivery app. It was a model for how marketplaces in informal economies could be built differently lean, federated, and structurally honest about what they were and weren't.
-
-That felt worth building. Even if it didn't work
-
-Read more on **how we designing the form of Bublibu**
+We believed this could work, but we also knew the courier ecosystem was young and informal. Bublibu wasn't just a food delivery app; it was a model for how marketplaces in informal economies could be built differently—lean, federated, and structurally honest.

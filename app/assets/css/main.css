@@ -10,51 +10,56 @@
   --font-sans: 'General Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-body {
-  background-color: #F1F1F3;
-  color: #1A1A1A;
-  font-family: var(--font-sans);
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
+@layer base {
+  body {
+    background-color: #F1F1F3;
+    color: #1A1A1A;
+    font-family: var(--font-sans);
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  p {
+    font-size: 1.2rem;
+    /* Controls global paragraph font size */
+    font-weight: 400;
+    /* Controls global paragraph font weight */
+
+    line-height: 1.625;
+  }
+
+  b,
+  strong {
+    font-weight: 600;
+  }
 }
 
-p {
-  font-size: 1rem;
-  /* Controls global paragraph font size */
-  font-weight: 400;
-  /* Controls global paragraph font weight */
+@layer components {
+  .anotation {
+    font-family: 'Space Grotesk', sans-serif;
+    color: gray;
+  }
 
-  line-height: 1.625;
-}
+  .role {
+    padding: 4px 0px;
+  }
 
-b,
-strong {
-  font-weight: 600;
-}
+  .li-case {
+    padding: 8px 0px;
+    border-bottom: 1px solid black;
+  }
 
-.anotation {
-  font-family: 'Space Grotesk', sans-serif;
-  color: gray;
-}
-
-.role {
-  padding: 4px 0px;
-}
-
-.li-case {
-  padding: 8px 0px;
-  border-bottom: 1px solid black;
-}
-
-/* Case study list hover effect */
-.case-studies-list:has(.title-link:hover) .case-study-row:not(:has(.title-link:hover)) {
-  opacity: 0.5;
+  /* Case study list hover effect */
+  .case-studies-list:has(.title-link:hover) .case-study-row:not(:has(.title-link:hover)) {
+    opacity: 0.5;
+  }
 }
 
 /* Lenis */
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
