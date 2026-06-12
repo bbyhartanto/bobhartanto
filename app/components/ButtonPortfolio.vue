@@ -1,7 +1,7 @@
 <template>
   <a href="https://www.figma.com/deck/8LXMGbShPpvOWI7us1iUIu" target="_blank" class="bg-black rounded-lg text-white py-2 px-3 w-fit flex items-center gap-3 opacity-90 hover:opacity-100 transition-opacity duration-200">
     <div>
-      Portfolio<br/><span class="text-[12px] text-white/70">Deck</span>
+      Portfolio<br/><span class="text-[12px] opacity-70">Deck</span>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-arrow">
       <path d="M5 12h14"></path>

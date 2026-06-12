@@ -42,7 +42,7 @@
           >
             Designer who had a full-stack development perspective.
           </h2>
-            <ButtonPortfolio class="col-span-1 !bg-white !text-black" />
+            <ButtonPortfolio class="col-span-1 !bg-white !text-black pointer-events-auto" />
         </div>
       </div>
 
