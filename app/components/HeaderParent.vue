@@ -10,9 +10,7 @@
           <NuxtLink to="/casestudies" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
             Works<br/><span class="text-[12px] text-black/50">Casestudies</span>
           </NuxtLink>
-          <a href="#portfolio" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
-            Portfolio<br/><span class="text-[12px] text-black/50">Gallery</span>
-          </a>
+          <ButtonPortfolio class="col-span-1" />
           <a href="https://www.instagram.com/desainer.bergairah/" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
             Instagram<br/><span class="text-[12px] text-black/50">designer.bergairah</span>
           </a>
@@ -47,9 +45,7 @@
             <NuxtLink to="/casestudies" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
               Works<br/><span class="text-[12px] text-black/50">Casestudies</span>
             </NuxtLink>
-            <a href="#portfolio" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
-              Portfolio<br/><span class="text-[12px] text-black/50">Gallery</span>
-            </a>
+            <ButtonPortfolio @click="isMenuOpen = false" />
             <NuxtLink to="/#" @click="isMenuOpen = false" class="opacity-75 hover:opacity-100 transition-opacity duration-200">
               Blog<br/><span class="text-[12px] text-black/50">Articles</span>
             </NuxtLink>
@@ -71,3 +67,5 @@ import { ref } from 'vue'
 
 const isMenuOpen = ref(false)
 </script>
+
+
