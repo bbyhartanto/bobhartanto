@@ -53,7 +53,7 @@
             data-scroll-delay="0s"
             class="text-3xl py-4 md:text-5xl leading-[1.15] opacity-0 animate-target"
           >
-            a product design partner<br />
+            A product design partner<br />
             with focus on
           </h2>
           <div
@@ -104,73 +104,73 @@
 
     <div
       class="grid grid-cols-6 md:grid-cols-8 gap-2 px-4 pointer-events-none relative z-10 py-16"
-    >
-      <div class="col-span-6 md:col-span-8 flex flex-row gap-5 col-start-1">
-        <div class="grid grid-cols-6 md:grid-cols-8 w-full  md:scale-100 origin-left">
-          <div class="col-span-1 md:col-start-2">
-            <p>2014</p>
-          </div>
-          <div class="col-span- ">
-            <p>2016</p>
-          </div>
-          <div class="col-span-1">
-            <p>2017</p>
-          </div>
-          <div class="col-span-1">
-            <p>2018</p>
-          </div>
-          <div class="col-span-1">
-            <p>2019</p>
-          </div>
-          <div class="col-span-1">
-            <p>2026</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-span-6 md:col-span-8 flex flex-row gap-5 col-start-1">
-        <div class="grid grid-cols-6 md:grid-cols-8 w-full md:scale-100 origin-left">
+    ><div class="col-span-6 md:col-span-8 flex flex-row gap-5 col-start-1">
+    
+        <div class="flex flex-col md:flex-row grid grid-cols-1 md:grid-cols-8 w-full md:scale-100 origin-left gap-16 md:gap-0">
           <div
-            class="col-span-1 md:col-start-2 border-t-1 opacity-0 animate-target"
+            class="col-span-1 md:col-start-2 opacity-0 animate-target"
             data-initial-delay="0.2s"
             data-scroll-delay="0.1s"
           >
-            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">Mullen Lowe</p>
+            <p class="text-3xl py-4 md:text-5xl leading-[1.15] opacity-0 animate-target">Experiences</p>
+          </div>
+          </div></div>
+      <div class="col-span-6 md:col-span-8 flex flex-row gap-5 col-start-1">
+    
+        <div class="flex flex-col md:flex-row grid grid-cols-1 md:grid-cols-8 w-full md:scale-100 origin-left gap-8 md:gap-0">
+          <div
+            class="col-span-1 md:col-start-2 opacity-0 animate-target"
+            data-initial-delay="0.2s"
+            data-scroll-delay="0.1s"
+          >
+            <p class="0 md:scale-100 origin-top-left">2014</p>
+            <hr class="my-2 border-black/70" />
+            <p class="0 md:scale-100 origin-top-left">Mullen Lowe</p>
           </div>
           <div
-            class="col-span-1 border-t-1 opacity-0 animate-target"
+            class="col-span-1 opacity-0 animate-target"
             data-initial-delay="0.3s"
             data-scroll-delay="0.2s"
           >
-            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">Astragraphia</p>
+            <p class="0 md:scale-100 origin-top-left ">2016</p>
+            <hr class="my-2 border-black/70" />
+            <p class="0 md:scale-100 origin-top-left ">Astragraphia</p>
           </div>
           <div
-            class="col-span-1 border-t-1 opacity-0 animate-target"
+            class="col-span-1 opacity-0 animate-target"
             data-initial-delay="0.4s"
             data-scroll-delay="0.3s"
           >
-            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">MokaPOS</p>
+            <p class="0 md:scale-100 origin-top-left ">2017</p>
+            <hr class="my-2 border-black/70" />
+            <p class="0 md:scale-100 origin-top-left">MokaPOS</p>
           </div>
           <div
-            class="col-span-1 border-t-1 opacity-0 animate-target"
+            class="col-span-1 opacity-0 animate-target"
             data-initial-delay="0.5s"
             data-scroll-delay="0.4s"
           >
-            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">IBM</p>
+            <p class="0 md:scale-100 origin-top-left">2018</p>
+            <hr class="my-2 border-black/70" />
+            <p class="0 md:scale-100 origin-top-left">IBM</p>
           </div>
           <div
-            class="col-span-1 border-t-1 opacity-0 animate-target"
+            class="col-span-1 opacity-0 animate-target"
             data-initial-delay="0.6s"
             data-scroll-delay="0.5s"
           >
-            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">Paton.Dev</p>
+          <p class="0 md:scale-100 origin-top-left">2019</p>
+            <hr class="my-2 border-black/70" />
+            <p class="0 md:scale-100 origin-top-left">Paton.Dev</p>
           </div>
           <div
-            class="col-span-1 border-t-1 opacity-0 animate-target"
+            class="col-span-1 opacity-0 animate-target"
             data-initial-delay="0.7s"
             data-scroll-delay="0.6s"
           >
-            <p class="scale-[0.7] md:scale-100 origin-top-left mt-2">Freelance</p>
+            <p class="0 md:scale-100 origin-top-left">2026</p>
+            <hr class="my-2 border-black/70" />
+            <p class="0 md:scale-100 origin-top-left">Freelance</p>
           </div>
         </div>
       </div>
