@@ -3,7 +3,7 @@
     <div class="p-5">
       <!-- Desktop Header -->
       <header class="hidden md:block text-sm">
-        <nav class="bg-[#fafafa]/80 backdrop-blur-md w-full text-black py-3 px-6 rounded-md leading-tight font-medium grid grid-cols-6 gap-6 items-center">
+        <nav class="bg-[#e4e4e4]/60 backdrop-blur-md w-full text-black py-3 px-6 rounded-md leading-tight font-medium grid grid-cols-6 gap-6 items-center">
           <NuxtLink to="/" class="col-span-1 hover:opacity-80 transition-opacity text-left">
             Bobby <br/>Hartanto
           </NuxtLink>
@@ -17,8 +17,14 @@
           <a href="https://www.linkedin.com/in/bobhartanto" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
             Linkedin<br/><span class="text-[12px] text-black/50">Bobhartanto</span>
           </a>
-          <a href="mailto:work.bobbyhartanto@gmail.com" class="col-span-1 opacity-75 hover:opacity-100 transition-opacity duration-200">
-            Contact<br/><span class="text-[12px] text-black/50">work.bobbyhartanto@gmail.com </span>
+          <a href="mailto:work.bobbyhartanto@gmail.com" class="col-span-1 group flex flex-row items-end bg-[#fbfbfb] justify-between gap-2 border border-black/15 hover:bg-black text-black hover:text-white font-normal px-3 py-2 rounded-lg transition-colors duration-200">
+            <div>
+              Have a project?<br/><span class="text-[14px] text-black group-hover:text-white font-bold transition-colors duration-200">Book consultation</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-arrow mb-1">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
           </a>
         </nav>
       </header>
