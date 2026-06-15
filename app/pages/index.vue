@@ -335,12 +335,12 @@ const selectedQuotes = useState("random-quotes", () => {
 });
 
 useSeoMeta({
-  title: "Bobby Hartanto - UI/UX Designer Blog",
-  ogTitle: "Bobby Hartanto - UI/UX Designer Blog",
+  title: "Bobby Hartanto - UI/UX Designer",
+  ogTitle: "Bobby Hartanto - UI/UX Designer",
   description:
-    "Product & Design Lead with over 11+ years of experience, Ex Moka POS, EX IBM",
+    "UX|UI Product designer specialize in building digital products for startup, enterprise and consultancy with over 11+ years of experience.",
   ogDescription:
-    "Product & Design Lead with over 11+ years of experience, Ex Moka POS, EX IBM",
+    "UX|UI Product designer specialize in building digital products for startup, enterprise and consultancy with over 11+ years of experience.",
   ogImage: "https://bobhartanto.com/og-image.jpg",
   ogUrl: "https://bobhartanto.com/",
 });
