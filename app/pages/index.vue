@@ -320,20 +320,20 @@
           data-scroll-delay="0.1s"
         >
           <h2 class="text-3xl md:text-3xl leading-[1.15]">
-          Hire me as:
+          How can i help:
           </h2>  
           <ul class="text-xl leading-relaxed border-t border-black/10 mt-4 pointer-events-auto">
             <li class="border-b border-black/10 py-3 transition-all duration-300 hover:bg-black hover:text-white hover:pl-2 cursor-pointer opacity-0 animate-target"
                 data-initial-delay="0.2s" data-scroll-delay="0.2s">
-              Design consulting partner
+              Design consulting — diagnose and fix your product
             </li>
             <li class="border-b border-black/10 py-3 transition-all duration-300 hover:bg-black hover:text-white hover:pl-2 cursor-pointer opacity-0 animate-target"
                 data-initial-delay="0.3s" data-scroll-delay="0.3s">
-              Development partner
+              Development partner — design and build from scratch
             </li>
             <li class="border-b border-black/10 py-3 transition-all duration-300 hover:bg-black hover:text-white hover:pl-2 cursor-pointer opacity-0 animate-target"
                 data-initial-delay="0.4s" data-scroll-delay="0.4s">
-              Workshops speaker
+              Workshop & speaking — for teams and communities
             </li>
           </ul>
               <button href="/contact" class="mt-8 flex items-center gap-2 bg-black text-white text-lg px-6 py-3 rounded-lg w-fit hover:opacity-80 hover:scale-[1.1] transition-all duration-300 pointer-events-auto opacity-0 animate-target"
