@@ -304,36 +304,40 @@
           data-initial-delay="0.2s"
           data-scroll-delay="0.1s"
         >
-          <p class="text-2xl md:text-2xl leading-[1.15]">
+          <p class="text-2xl md:text-3xl leading-[1.15]">
           My experience spans agencies, corporate enterprises, startups, and
           global consultancies.
 
           </p>  
-          <p class="text-xl md:text-xl leading-[1.15] mt-8">
+          <p class="text-xl md:text-2xl leading-[1.15] mt-8">
             I help business owners see their blindspots — especially in an AI-first world where the gap between good design and growth is smaller than ever.
-            Building something? Let's talk.
+            Building something? <strong>Let's talk.</strong>
           </p>
         </div>
 
-        <div class="flex-1 opacity-0 animate-target"
+        <div class="flex-1 opacity-0 animate-target border border-black/10 p-8 bg-white shadow-md rounded-xl "
           data-initial-delay="0.2s"
           data-scroll-delay="0.1s"
         >
           <h2 class="text-3xl md:text-3xl leading-[1.15]">
           How can i help:
           </h2>  
-          <ul class="text-xl leading-relaxed border-t border-black/10 mt-4 pointer-events-auto">
-            <li class="border-b border-black/10 py-3 transition-all duration-300 hover:bg-black hover:text-white hover:pl-2 cursor-pointer opacity-0 animate-target"
+          <ul class="text-xl border-t border-black/10 mt-4 pointer-events-auto">
+            <li class="border-b border-black/10 py-3 transition-all duration-300 hover:pl-4 cursor-pointer opacity-0 animate-target font-medium"
                 data-initial-delay="0.2s" data-scroll-delay="0.2s">
-              Design consulting — diagnose and fix your product
+              Design consulting <br><span class="text-sm font-normal">Diagnose and optimize your product</span>
             </li>
-            <li class="border-b border-black/10 py-3 transition-all duration-300 hover:bg-black hover:text-white hover:pl-2 cursor-pointer opacity-0 animate-target"
+            <li class="border-b border-black/10 py-3 transition-all duration-300 hover:pl-4 cursor-pointer opacity-0 animate-target font-medium"
+                data-initial-delay="0.2s" data-scroll-delay="0.2s">
+              Design system <br><span class="text-sm font-normal">Audit and setup your design system</span>
+            </li>
+            <li class="border-b border-black/10 py-3 transition-all duration-300 hover:pl-4 cursor-pointer opacity-0 animate-target font-medium"
                 data-initial-delay="0.3s" data-scroll-delay="0.3s">
-              Development partner — design and build from scratch
+              Development partner <br><span class="text-sm font-normal">Design and build from scratch</span>
             </li>
-            <li class="border-b border-black/10 py-3 transition-all duration-300 hover:bg-black hover:text-white hover:pl-2 cursor-pointer opacity-0 animate-target"
+            <li class="border-b border-black/10 py-3 transition-all duration-300 hover:pl-4 cursor-pointer opacity-0 animate-target font-medium"
                 data-initial-delay="0.4s" data-scroll-delay="0.4s">
-              Workshop & speaking — for teams and communities
+              Workshop & speaking <br><span class="text-sm font-normal">For teams and communities</span>
             </li>
           </ul>
               <button href="/contact" class="mt-8 flex items-center gap-2 bg-black text-white text-lg px-6 py-3 rounded-lg w-fit hover:opacity-80 hover:scale-[1.1] transition-all duration-300 pointer-events-auto opacity-0 animate-target"
