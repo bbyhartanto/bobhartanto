@@ -118,20 +118,20 @@
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-10 gap-2 px-4 pointer-events-none relative z-10 items-center">
-      <div class="flex items-center col-span-2 md:col-start-2">
+      <div class="flex items-center col-span-2 md:col-start-2 opacity-0 animate-target" data-initial-delay="0.2s" data-scroll-delay="0.1s">
         
         <div class="relative w-full flex-col flex items-center justify-center">
           <img src="/images-/cognitix-thumb.png" alt="Cognitix website" class="w-full h-auto object-contain" />
         <p class="text-xs font-mono text-black/50 -mt-6">Fig 01. Cognitix website</p>
         </div>        
       </div>
-      <div class="flex flex-col items-center col-span-4 md:col-start-4 justify-center">
+      <div class="flex flex-col items-center col-span-4 md:col-start-4 justify-center opacity-0 animate-target" data-initial-delay="0.3s" data-scroll-delay="0.2s">
         <div class="relative w-full flex-col flex items-center justify-center">
           <img src="/images-/crema.svg" alt="crema roastery website" class="w-50 h-auto object-contain" />
         <p class="text-xs font-mono text-black/50 ">Fig 02. crema logo branding</p>
         </div>        
       </div>
-      <div class="flex flex-col items-center col-span-2 md:col-start-8">
+      <div class="flex flex-col items-center col-span-2 md:col-start-8 opacity-0 animate-target" data-initial-delay="0.4s" data-scroll-delay="0.3s">
         <div class="relative w-full flex-col flex items-center justify-center">
           <img src="/images-/crema-thumb.png" alt="crema roastery website" class="w-full h-auto object-contain" />
         <p class="text-xs font-mono text-black/50">Fig 02. crema roastery website</p>
@@ -140,18 +140,18 @@
     </div>
     
     <div class="grid grid-cols-2 md:grid-cols-10 gap-2 px-4 pointer-events-none relative z-10 items-center">
-      <div class="flex flex-col items-center col-span-3 ">
+      <div class="flex flex-col items-center col-span-3 opacity-0 animate-target" data-initial-delay="0.2s" data-scroll-delay="0.1s">
         <img src="/images-/bublibu-thumb.png" alt="bublibu food delivery app" class="w-full h-auto object-contain" />
           <p class="text-xs font-mono text-black/50 -mt-6">Fig 02. Bublibu food delivery app</p>
       </div>
-      <div class="flex flex-col items-center col-span-2 md:col-start-5">
+      <div class="flex flex-col items-center col-span-2 md:col-start-5 opacity-0 animate-target" data-initial-delay="0.3s" data-scroll-delay="0.2s">
         <p>
           I've shipped full-stack web and mobile products, built lean marketplaces, and structured business models that reduce cost without sacrificing user experience. My edge is conversion-focused design: the kind that moves metrics, not just pixels.
         </p>
         <img src="/images-/moka-pos-thumb.png" alt="Moka POS app" class="w-full h-auto object-contain" />  
         <p class="text-xs font-mono text-black/50 -mt-6">Fig 03. Moka POS app</p>
       </div>
-      <div class="flex flex-col items-center col-span-2 md:col-span-4 md:col-start-7">
+      <div class="flex flex-col items-center col-span-2 md:col-span-4 md:col-start-7 opacity-0 animate-target" data-initial-delay="0.4s" data-scroll-delay="0.3s">
         <img src="/images-/parkee-thumb.png" alt="parkee parking app" class="w-full h-auto object-contain" />
         <p class="text-xs font-mono text-black/50 pr-10 -mt-6">Fig 04. Parkee app</p>
           
