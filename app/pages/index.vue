@@ -148,7 +148,7 @@
         <p>
           I've shipped full-stack web and mobile products, built lean marketplaces, and structured business models that reduce cost without sacrificing user experience. My edge is conversion-focused design: the kind that moves metrics, not just pixels.
         </p>
-        <img src="/images-/MokaPos-thumb.png" alt="Moka POS app" class="w-full h-auto object-contain" />  
+        <img src="/images-/moka-pos-thumb.png" alt="Moka POS app" class="w-full h-auto object-contain" />  
         <p class="text-xs font-mono text-black/50 -mt-6">Fig 03. Moka POS app</p>
       </div>
       <div class="flex flex-col items-center col-span-2 md:col-span-4 md:col-start-7">
@@ -265,7 +265,7 @@
           data-initial-delay="0.2s"
           data-scroll-delay="0.1s"
         >
-          <img src="/images-/Astragraphia-logo.svg" alt="IBM Logo" class="w-auto h-8 md:h-10 object-contain" />
+          <img src="/images-/AstraGraphia-Logo.svg" alt="IBM Logo" class="w-auto h-8 md:h-10 object-contain" />
         </div>
         <div
           class="col-span-1 opacity-0 animate-target"
