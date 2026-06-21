@@ -35,31 +35,25 @@ const activeSubcategories = computed(() => {
   return list
 })
 
-// Custom theme styling helper
-const isKalibrasi = computed(() => route.params.slug === 'eksplorasi-ai-dalam-workflow-bisnis-kalibrasi')
-
-// Dynamically load font family
+// Dynamically load font family for all case studies
 useHead(() => {
-  if (isKalibrasi.value) {
-    return {
-      link: [
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.googleapis.com'
-        },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: ''
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap'
-        }
-      ]
-    }
+  return {
+    link: [
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com'
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: ''
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap'
+      }
+    ]
   }
-  return {}
 })
 
 // Hybrid adaptive Table of Contents (TOC)
@@ -69,12 +63,12 @@ let observer: IntersectionObserver | null = null
 
 onMounted(() => {
   // 1. Try to find actual H2 heading elements first
-  let headingElements = Array.from(document.querySelectorAll('.prose h2, .prose-kalibrasi h2'))
+  let headingElements = Array.from(document.querySelectorAll('.prose-casestudy h2'))
   
   // 2. If no H2 elements exist, look for bold-paragraphs acting as section titles
   const usingBoldParas = headingElements.length === 0
   if (usingBoldParas) {
-    headingElements = Array.from(document.querySelectorAll('.prose p, .prose-kalibrasi p')).filter(p => {
+    headingElements = Array.from(document.querySelectorAll('.prose-casestudy p')).filter(p => {
       const child = p.firstElementChild
       return child && (child.tagName === 'STRONG' || child.tagName === 'B') && p.textContent?.trim() === child.textContent?.trim()
     })
@@ -82,10 +76,20 @@ onMounted(() => {
 
   // 3. Build a dynamic links map and assign anchor IDs to paragraphs
   const links = headingElements.map((el, idx) => {
-    const text = el.textContent?.trim() || ''
+    // Clone the element to safely inspect text content without step-number
+    const clone = el.cloneNode(true) as HTMLElement
+    const stepEl = clone.querySelector('.step-number')
+    let stepPrefix = ''
+    if (stepEl) {
+      stepPrefix = stepEl.textContent?.trim() ? `${stepEl.textContent.trim()}. ` : ''
+      stepEl.remove()
+    }
+    const cleanText = clone.textContent?.trim() || ''
+    const text = stepPrefix + cleanText
+
     let id = el.getAttribute('id')
     if (!id) {
-      id = text.toLowerCase()
+      id = cleanText.toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/(^-|-$)+/g, '') || `section-${idx}`
       el.setAttribute('id', id)
@@ -122,10 +126,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div 
-    class="min-h-screen pb-24 transition-colors duration-500"
-    :class="isKalibrasi ? 'theme-kalibrasi' : 'bg-[#fafafa] text-[#111111] font-sans selection:bg-black selection:text-white'"
-  >
+  <div class="theme-casestudy min-h-screen pb-24 transition-colors duration-500">
     <HeaderChild />
 
     <!-- Main Container -->
@@ -139,18 +140,12 @@ onUnmounted(() => {
               :key="link.id" 
               :href="`#${link.id}`"
               class="group flex items-start gap-3 text-sm transition-all duration-300 relative py-1"
-              :class="[
-                activeSection === link.id ? 'text-black font-semibold' : 'text-black/45 hover:text-black',
-                isKalibrasi ? (activeSection === link.id ? 'nav-active-kalibrasi' : 'nav-hover-kalibrasi') : ''
-              ]"
+              :class="activeSection === link.id ? 'nav-active-casestudy font-semibold' : 'nav-hover-casestudy'"
             >
               <!-- Content Navigation -->
               <span 
-                class="h-[1.5px] bg-black transition-all duration-300 mt-[9px] shrink-0"
-                :class="[
-                  activeSection === link.id ? 'w-6' : 'w-0 group-hover:w-3',
-                  isKalibrasi ? 'bg-[var(--brass)]' : ''
-                ]"
+                class="h-[1.5px] bg-[var(--brass)] transition-all duration-300 mt-[9px] shrink-0"
+                :class="activeSection === link.id ? 'w-6' : 'w-0 group-hover:w-3'"
               ></span>
               <span class="whitespace-normal break-words">{{ link.text }}</span>
             </a>
@@ -160,96 +155,44 @@ onUnmounted(() => {
 
       <!-- Right Column: Case Study content -->
       <div class="col-span-1 md:col-span-4 md:col-start-3">
-        <header class="flex flex-col gap-4 mb-8" :class="{ 'hero-kalibrasi': isKalibrasi }">
-          <template v-if="isKalibrasi">
-            <!-- Eyebrow -->
-            <span class="eyebrow"><span class="dial"></span>{{ caseStudy.category }}</span>
-            <!-- Title -->
-            <h1 class="title">
-              {{ caseStudy.title }}
-            </h1>
-            <!-- Subtitle -->
-            <p class="subtitle">
-              {{ caseStudy.description }}
-            </p>
+        <header class="flex flex-col gap-4 mb-8 hero-casestudy">
+          <!-- Eyebrow -->
+          <span v-if="caseStudy.category" class="eyebrow"><span class="dial"></span>{{ caseStudy.category }}</span>
+          <!-- Title -->
+          <h1 class="title">
+            {{ caseStudy.title }}
+          </h1>
+          <!-- Subtitle -->
+          <p class="subtitle" v-if="caseStudy.description">
+            {{ caseStudy.description }}
+          </p>
 
-            <!-- Lede -->
-            <p class="lede">
-              Saya mengujinya lewat eksperimen <em>extremely lean</em> menggali potensi micro-SaaS di industri Kalibrasi.
-            </p>
-            <!-- Spec Grid -->
-            <div class="spec-grid">
-              <div class="spec-cell" v-if="caseStudy.role">
-                <div class="spec-label">Role</div>
-                <div class="spec-value">{{ caseStudy.role }}</div>
-              </div>
-              <div class="spec-cell" v-if="caseStudy.timeline">
-                <div class="spec-label">Timeline</div>
-                <div class="spec-value">{{ caseStudy.timeline }}</div>
-              </div>
-              <div class="spec-cell" v-if="caseStudy.platform">
-                <div class="spec-label">Platform</div>
-                <div class="spec-value">{{ caseStudy.platform }}</div>
-              </div>
-              <div class="spec-cell" v-if="caseStudy.focus">
-                <div class="spec-label">Focus</div>
-                <div class="spec-value">{{ caseStudy.focus }}</div>
-              </div>
+          <!-- Lede -->
+          <p v-if="caseStudy.excerpt" class="lede" v-html="caseStudy.excerpt"></p>
+
+          <!-- Spec Grid -->
+          <div v-if="caseStudy.role || caseStudy.timeline || caseStudy.platform || caseStudy.focus" class="spec-grid">
+            <div class="spec-cell" v-if="caseStudy.role">
+              <div class="spec-label">Role</div>
+              <div class="spec-value">{{ caseStudy.role }}</div>
             </div>
-          </template>
-
-          <template v-else>
-            <!-- Huge Title -->
-            <h1 class="text-4xl md:text-6xl font-normal leading-[1.1] tracking-tight text-black font-sans mt-2">
-              {{ caseStudy.title }}
-            </h1>
-            <!-- Category Badges -->
-            <div class="flex flex-wrap gap-2.5 items-center">
-              <span class="px-3.5 py-1 border border-black rounded-full text-xs font-medium tracking-tight uppercase bg-white">
-                {{ caseStudy.category }}
-              </span>
-              <template v-if="activeSubcategories.length > 0">
-                <span 
-                  v-for="sub in activeSubcategories" 
-                  :key="sub"
-                  class="px-3.5 py-1 border border-black/15 text-black/60 rounded-full text-xs font-normal tracking-tight uppercase bg-white/50"
-                >
-                  {{ sub }}
-                </span>
-              </template>
+            <div class="spec-cell" v-if="caseStudy.timeline">
+              <div class="spec-label">Timeline</div>
+              <div class="spec-value">{{ caseStudy.timeline }}</div>
             </div>
-
-            <!-- Description -->
-            <p class="text-lg md:text-2xl font-normal text-black/75 leading-relaxed max-w-3xl">
-              {{ caseStudy.description }}
-            </p>
-
-            <!-- Dynamic Metadata Row -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 my-4 border-y border-black/10 text-sm">
-              <div v-if="caseStudy.role || 'Product Design Lead'">
-                <span class="block text-black/45 font-mono text-xs uppercase mb-1">Role</span>
-                <span class="font-medium text-black">{{ caseStudy.role || 'Product Design Lead' }}</span>
-              </div>
-              <div v-if="caseStudy.timeline || '2026'">
-                <span class="block text-black/45 font-mono text-xs uppercase mb-1">Timeline</span>
-                <span class="font-medium text-black">{{ caseStudy.timeline || '2026' }}</span>
-              </div>
-              <div v-if="caseStudy.platform || 'Web & Mobile'">
-                <span class="block text-black/45 font-mono text-xs uppercase mb-1">Platform</span>
-                <span class="font-medium text-black">{{ caseStudy.platform || 'Web & Mobile' }}</span>
-              </div>
-              <div v-if="caseStudy.focus || 'Strategy & Research'">
-                <span class="block text-black/45 font-mono text-xs uppercase mb-1">Focus</span>
-                <span class="font-medium text-black">{{ caseStudy.focus || 'Strategy & Research' }}</span>
-              </div>
+            <div class="spec-cell" v-if="caseStudy.platform">
+              <div class="spec-label">Platform</div>
+              <div class="spec-value">{{ caseStudy.platform }}</div>
             </div>
-          </template>
+            <div class="spec-cell" v-if="caseStudy.focus">
+              <div class="spec-label">Focus</div>
+              <div class="spec-value">{{ caseStudy.focus }}</div>
+            </div>
+          </div>
         </header>
 
         <!-- Markdown Prose Content -->
-        <article 
-          :class="isKalibrasi ? 'prose-kalibrasi' : 'prose prose-neutral max-w-none text-black/85'"
-        >
+        <article class="prose-casestudy">
           <ContentRenderer :value="caseStudy" />
         </article>
       </div>
@@ -259,37 +202,37 @@ onUnmounted(() => {
 
 <style scoped>
 /* High-end custom typography style overrides for markdown rendering */
-.prose :deep(h1) {
+.prose-casestudy :deep(h1) {
   font-size: 2.25rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.25;
-  color: #000000;
+  color: var(--ink);
 }
 
-.prose :deep(h2) {
+.prose-casestudy :deep(h2) {
   font-size: 1.75rem;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 500;
   letter-spacing: -0.02em;
   line-height: 1.3;
-  color: #000000;
+  color: var(--ink);
 }
 
-.prose :deep(h3) {
+.prose-casestudy :deep(h3) {
   font-size: 1.55rem;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1.3;
-  color: #000000;
+  color: var(--ink);
 }
 
-.prose :deep(p) {
+.prose-casestudy :deep(p) {
   font-size: 1.125rem;
   line-height: 1.8;
   color: #222222;
@@ -297,19 +240,19 @@ onUnmounted(() => {
   font-weight: 400;
 }
 
-.prose :deep(ul) {
+.prose-casestudy :deep(ul) {
   list-style-type: disc;
   margin-bottom: 1.75rem;
   padding-left: 1.5rem;
 }
 
-.prose :deep(ol) {
+.prose-casestudy :deep(ol) {
   list-style-type: decimal;
   margin-bottom: 1.75rem;
   padding-left: 1.5rem;
 }
 
-.prose :deep(li) {
+.prose-casestudy :deep(li) {
   margin-bottom: 0.5rem;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -317,8 +260,8 @@ onUnmounted(() => {
   font-weight: 400;
 }
 
-/* Custom Kalibrasi Case Study styles */
-.theme-kalibrasi {
+/* Custom Case Study styles */
+.theme-casestudy {
   --paper: #FAF8F4;
   --paper-raised: #FFFFFF;
   --ink: #1A1A18;
@@ -340,26 +283,26 @@ onUnmounted(() => {
   min-height: 100vh;
 }
 
-.theme-kalibrasi ::selection {
+.theme-casestudy ::selection {
   background: var(--brass-soft) !important;
   color: var(--ink) !important;
 }
 
-.theme-kalibrasi h1,
-.theme-kalibrasi h2,
-.theme-kalibrasi h3,
-.theme-kalibrasi .title,
-.theme-kalibrasi .subtitle,
-.prose-kalibrasi :deep(h1),
-.prose-kalibrasi :deep(h2),
-.prose-kalibrasi :deep(h3),
-.prose-kalibrasi :deep(blockquote),
-.prose-kalibrasi :deep(.thesis p) {
+.theme-casestudy h1,
+.theme-casestudy h2,
+.theme-casestudy h3,
+.theme-casestudy .title,
+.theme-casestudy .subtitle,
+.prose-casestudy :deep(h1),
+.prose-casestudy :deep(h2),
+.prose-casestudy :deep(h3),
+.prose-casestudy :deep(blockquote),
+.prose-casestudy :deep(.thesis p) {
   font-family: 'Fraunces', serif !important;
 }
 
 /* Eyebrow & Dial */
-.theme-kalibrasi .eyebrow {
+.theme-casestudy .eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -371,7 +314,7 @@ onUnmounted(() => {
   margin-bottom: 22px;
 }
 
-.theme-kalibrasi .eyebrow .dial {
+.theme-casestudy .eyebrow .dial {
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -380,7 +323,7 @@ onUnmounted(() => {
   flex-shrink: 0;
 }
 
-.theme-kalibrasi .eyebrow .dial::after {
+.theme-casestudy .eyebrow .dial::after {
   content: '';
   position: absolute;
   top: 1px;
@@ -393,7 +336,7 @@ onUnmounted(() => {
 }
 
 /* Hero elements */
-.theme-kalibrasi .title {
+.theme-casestudy .title {
   font-weight: 600;
   font-size: clamp(32px, 5.4vw, 52px);
   line-height: 1.08;
@@ -402,7 +345,7 @@ onUnmounted(() => {
   color: var(--ink);
 }
 
-.theme-kalibrasi .subtitle {
+.theme-casestudy .subtitle {
   font-style: italic;
   font-weight: 500;
   font-size: clamp(17px, 2.4vw, 21px);
@@ -412,9 +355,7 @@ onUnmounted(() => {
   line-height: 1.4;
 }
 
-
-
-.theme-kalibrasi .lede {
+.theme-casestudy .lede {
   font-size: 18px;
   line-height: 1.65;
   color: var(--ink-soft);
@@ -422,7 +363,7 @@ onUnmounted(() => {
 }
 
 /* Spec Grid */
-.theme-kalibrasi .spec-grid {
+.theme-casestudy .spec-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
@@ -432,17 +373,17 @@ onUnmounted(() => {
   overflow: hidden;
 }
 
-.theme-kalibrasi .spec-cell {
+.theme-casestudy .spec-cell {
   padding: 14px 16px;
   border-right: 1px solid var(--hair);
   background: var(--paper-raised);
 }
 
-.theme-kalibrasi .spec-cell:last-child {
+.theme-casestudy .spec-cell:last-child {
   border-right: none;
 }
 
-.theme-kalibrasi .spec-label {
+.theme-casestudy .spec-label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
   letter-spacing: 0.1em;
@@ -451,41 +392,41 @@ onUnmounted(() => {
   margin-bottom: 5px;
 }
 
-.theme-kalibrasi .spec-value {
+.theme-casestudy .spec-value {
   font-family: 'JetBrains Mono', monospace;
   font-size: 13px;
   color: var(--ink);
 }
 
 @media (max-width: 640px) {
-  .theme-kalibrasi .spec-grid {
+  .theme-casestudy .spec-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .theme-kalibrasi .spec-cell:nth-child(2) {
+  .theme-casestudy .spec-cell:nth-child(2) {
     border-right: none;
   }
-  .theme-kalibrasi .spec-cell:nth-child(1),
-  .theme-kalibrasi .spec-cell:nth-child(2) {
+  .theme-casestudy .spec-cell:nth-child(1),
+  .theme-casestudy .spec-cell:nth-child(2) {
     border-bottom: 1px solid var(--hair);
   }
 }
 
 /* TOC active states override */
-.theme-kalibrasi .nav-active-kalibrasi {
+.theme-casestudy .nav-active-casestudy {
   color: var(--ink) !important;
   font-weight: 600 !important;
 }
 
-.theme-kalibrasi .nav-hover-kalibrasi {
+.theme-casestudy .nav-hover-casestudy {
   color: var(--ink-soft) !important;
 }
 
-.theme-kalibrasi .nav-hover-kalibrasi:hover {
+.theme-casestudy .nav-hover-casestudy:hover {
   color: var(--ink) !important;
 }
 
-/* Prose Kalibrasi layout & overrides */
-.prose-kalibrasi :deep(p) {
+/* Prose Casestudy layout & overrides */
+.prose-casestudy :deep(p) {
   font-family: var(--font-sans), sans-serif;
   font-size: 17px;
   line-height: 1.78;
@@ -493,7 +434,7 @@ onUnmounted(() => {
   margin-bottom: 22px;
 }
 
-.prose-kalibrasi :deep(h2) {
+.prose-casestudy :deep(h2) {
   font-weight: 600;
   font-size: clamp(24px, 3.4vw, 30px);
   line-height: 1.25;
@@ -505,14 +446,14 @@ onUnmounted(() => {
   scroll-margin-top: 24px;
 }
 
-.prose-kalibrasi :deep(h2:first-child) {
+.prose-casestudy :deep(h2:first-child) {
   border-top: none;
   padding-top: 0;
   margin-top: 0;
 }
 
 /* Step number */
-.prose-kalibrasi :deep(.step-number) {
+.prose-casestudy :deep(.step-number) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -529,14 +470,14 @@ onUnmounted(() => {
   flex-shrink: 0;
 }
 
-.prose-kalibrasi :deep(.h2-inner) {
+.prose-casestudy :deep(.h2-inner) {
   display: flex;
   align-items: center;
   gap: 2px;
 }
 
 /* Thesis callouts */
-.prose-kalibrasi :deep(.thesis) {
+.prose-casestudy :deep(.thesis) {
   background: var(--paper-raised);
   border: 1px solid var(--hair);
   border-left: 3px solid var(--brass);
@@ -546,7 +487,7 @@ onUnmounted(() => {
   position: relative;
 }
 
-.prose-kalibrasi :deep(.thesis .tag) {
+.prose-casestudy :deep(.thesis .tag) {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
   letter-spacing: 0.1em;
@@ -556,7 +497,7 @@ onUnmounted(() => {
   margin-bottom: 10px;
 }
 
-.prose-kalibrasi :deep(.thesis p) {
+.prose-casestudy :deep(.thesis p) {
   font-style: italic;
   font-weight: 500;
   font-size: 19px;
@@ -566,7 +507,7 @@ onUnmounted(() => {
 }
 
 /* Reframe highlight */
-.prose-kalibrasi :deep(mark.reframe) {
+.prose-casestudy :deep(mark.reframe) {
   background: linear-gradient(to bottom, transparent 62%, var(--brass-soft) 62%);
   color: var(--ink);
   padding: 0 1px;
@@ -574,7 +515,7 @@ onUnmounted(() => {
 }
 
 /* Notes callouts */
-.prose-kalibrasi :deep(.flag-note) {
+.prose-casestudy :deep(.flag-note) {
   display: flex;
   gap: 14px;
   background: var(--red-soft);
@@ -583,14 +524,14 @@ onUnmounted(() => {
   margin: 24px 0;
 }
 
-.prose-kalibrasi :deep(.flag-note .icon) {
+.prose-casestudy :deep(.flag-note .icon) {
   flex-shrink: 0;
   width: 22px;
   height: 22px;
   margin-top: 2px;
 }
 
-.prose-kalibrasi :deep(.flag-note .body strong) {
+.prose-casestudy :deep(.flag-note .body strong) {
   display: block;
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
@@ -600,14 +541,14 @@ onUnmounted(() => {
   margin-bottom: 6px;
 }
 
-.prose-kalibrasi :deep(.flag-note .body p) {
+.prose-casestudy :deep(.flag-note .body p) {
   margin: 0;
   font-size: 15.5px;
   line-height: 1.65;
   color: var(--ink);
 }
 
-.prose-kalibrasi :deep(.check-note) {
+.prose-casestudy :deep(.check-note) {
   display: flex;
   gap: 14px;
   background: var(--green-soft);
@@ -616,14 +557,14 @@ onUnmounted(() => {
   margin: 24px 0;
 }
 
-.prose-kalibrasi :deep(.check-note .icon) {
+.prose-casestudy :deep(.check-note .icon) {
   flex-shrink: 0;
   width: 22px;
   height: 22px;
   margin-top: 2px;
 }
 
-.prose-kalibrasi :deep(.check-note .body strong) {
+.prose-casestudy :deep(.check-note .body strong) {
   display: block;
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
@@ -633,7 +574,7 @@ onUnmounted(() => {
   margin-bottom: 6px;
 }
 
-.prose-kalibrasi :deep(.check-note .body p) {
+.prose-casestudy :deep(.check-note .body p) {
   margin: 0;
   font-size: 15.5px;
   line-height: 1.65;
@@ -641,14 +582,14 @@ onUnmounted(() => {
 }
 
 /* Tag chips */
-.prose-kalibrasi :deep(.tag-row) {
+.prose-casestudy :deep(.tag-row) {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin: 18px 0 26px;
 }
 
-.prose-kalibrasi :deep(.chip) {
+.prose-casestudy :deep(.chip) {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11.5px;
   letter-spacing: 0.03em;
@@ -660,7 +601,7 @@ onUnmounted(() => {
 }
 
 /* Chain (cause -> effect chains) */
-.prose-kalibrasi :deep(.chain) {
+.prose-casestudy :deep(.chain) {
   margin: 24px 0;
   padding: 20px 22px;
   background: var(--paper-raised);
@@ -671,18 +612,18 @@ onUnmounted(() => {
   color: var(--ink-soft);
 }
 
-.prose-kalibrasi :deep(.chain b) {
+.prose-casestudy :deep(.chain b) {
   color: var(--ink);
 }
 
-.prose-kalibrasi :deep(.chain .arrow) {
+.prose-casestudy :deep(.chain .arrow) {
   color: var(--brass);
   margin: 0 6px;
   font-family: 'JetBrains Mono', monospace;
 }
 
 /* Blockquote */
-.prose-kalibrasi :deep(blockquote) {
+.prose-casestudy :deep(blockquote) {
   margin: 28px 0;
   padding: 4px 0 4px 22px;
   border-left: 2px solid var(--brass-soft);
@@ -693,7 +634,7 @@ onUnmounted(() => {
 }
 
 /* Gauge quote signature */
-.prose-kalibrasi :deep(.gauge-quote) {
+.prose-casestudy :deep(.gauge-quote) {
   margin: 40px 0;
   padding: 40px 28px 32px;
   background: var(--ink);
@@ -702,7 +643,7 @@ onUnmounted(() => {
   overflow: hidden;
 }
 
-.prose-kalibrasi :deep(.gauge-quote::before) {
+.prose-casestudy :deep(.gauge-quote::before) {
   content: '';
   position: absolute;
   inset: 0;
@@ -711,7 +652,7 @@ onUnmounted(() => {
   pointer-events: none;
 }
 
-.prose-kalibrasi :deep(.gauges) {
+.prose-casestudy :deep(.gauges) {
   display: flex;
   gap: 28px;
   justify-content: center;
@@ -719,16 +660,16 @@ onUnmounted(() => {
   position: relative;
 }
 
-.prose-kalibrasi :deep(.gauge) {
+.prose-casestudy :deep(.gauge) {
   text-align: center;
 }
 
-.prose-kalibrasi :deep(.gauge svg) {
+.prose-casestudy :deep(.gauge svg) {
   display: block;
   margin: 0 auto 8px;
 }
 
-.prose-kalibrasi :deep(.gauge-label) {
+.prose-casestudy :deep(.gauge-label) {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
   letter-spacing: 0.12em;
@@ -736,7 +677,7 @@ onUnmounted(() => {
   color: #9C968A;
 }
 
-.prose-kalibrasi :deep(.gauge-quote p) {
+.prose-casestudy :deep(.gauge-quote p) {
   position: relative;
   font-style: italic;
   font-weight: 500;
@@ -748,26 +689,26 @@ onUnmounted(() => {
   margin: 0 auto;
 }
 
-.prose-kalibrasi :deep(.gauge-quote .accent) {
+.prose-casestudy :deep(.gauge-quote .accent) {
   color: #E0A98C;
   font-style: normal;
   font-weight: 600;
 }
 
-.prose-kalibrasi :deep(.gauge-quote .accent-brake) {
+.prose-casestudy :deep(.gauge-quote .accent-brake) {
   color: #D88A78;
   font-style: normal;
   font-weight: 600;
 }
 
 /* Editor notes, prompt block, hashtags */
-.prose-kalibrasi :deep(.closing-sign) {
+.prose-casestudy :deep(.closing-sign) {
   margin: 32px 0 8px;
   font-size: 17px;
   line-height: 1.7;
 }
 
-.prose-kalibrasi :deep(.editor-note) {
+.prose-casestudy :deep(.editor-note) {
   font-size: 14.5px;
   color: var(--ink-soft);
   font-style: italic;
@@ -776,7 +717,7 @@ onUnmounted(() => {
   margin-top: 8px;
 }
 
-.prose-kalibrasi :deep(.prompt-block) {
+.prose-casestudy :deep(.prompt-block) {
   margin: 32px 0;
   padding: 24px;
   background: var(--paper-raised);
@@ -784,13 +725,13 @@ onUnmounted(() => {
   border-radius: 6px;
 }
 
-.prose-kalibrasi :deep(.prompt-block p) {
+.prose-casestudy :deep(.prompt-block p) {
   font-size: 16.5px;
   margin: 0;
   color: var(--ink);
 }
 
-.prose-kalibrasi :deep(.prompt-block .q-mark) {
+.prose-casestudy :deep(.prompt-block .q-mark) {
   font-size: 40px;
   color: var(--brass-soft);
   line-height: 0.5;
@@ -798,21 +739,21 @@ onUnmounted(() => {
   margin-bottom: 6px;
 }
 
-.prose-kalibrasi :deep(.hashtags) {
+.prose-casestudy :deep(.hashtags) {
   margin: 36px 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.prose-kalibrasi :deep(.hashtags span) {
+.prose-casestudy :deep(.hashtags span) {
   font-family: 'JetBrains Mono', monospace;
   font-size: 12.5px;
   color: var(--brass);
 }
 
-.theme-kalibrasi :deep(strong),
-.theme-kalibrasi :deep(b) {
+.theme-casestudy :deep(strong),
+.theme-casestudy :deep(b) {
   font-weight: 600;
   color: var(--ink);
 }
