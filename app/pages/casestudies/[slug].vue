@@ -88,7 +88,12 @@ onMounted(() => {
     const text = stepPrefix + cleanText
 
     let id = el.getAttribute('id')
-    if (!id) {
+    if (id) {
+      if (/^_\d/.test(id)) {
+        id = id.replace(/^_\d+/, '')
+        el.setAttribute('id', id)
+      }
+    } else {
       id = cleanText.toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/(^-|-$)+/g, '') || `section-${idx}`

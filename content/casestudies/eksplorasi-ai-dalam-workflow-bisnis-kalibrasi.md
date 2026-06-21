@@ -24,7 +24,7 @@ Saya mengujinya lewat eksperimen yang *extremely lean*: Menggali potensi micro-S
 
 Bekal saya cuma tiga: Lean framework, kemauan membongkar domain knowledge industri yang asing bagi saya, dan AI sebagai eksekutor yang memangkas jarak antara 'Ide' menjadi 'MVP'.
 
-## \[\[1]{.step-number}Cari Masalah Terdekat, Sunk Cost Terendah]{.h2-inner}
+## <span class="h2-inner"><span class="step-number">1</span>Cari Masalah Terdekat, Sunk Cost Terendah</span>
 
 Memilih Industri kalibrasi sebagai bahan riset bukan kebetulan — perusahaan kalibrasi ini milik seorang teman. Secara bisnis, lab kalibrasi adalah *underserved market* ERP yang sangat seksi: market size-nya terlalu kecil untuk dilirik raksasa ERP membuat produk yang spesifik di domain ini.
 
@@ -32,7 +32,7 @@ Saat memetakan bisnis prosesnya, saya menemukan kenyataan di lapangan: semua alu
 
 Bagi kacamata bisnis, spreadsheet adalah inefisiensi. Tapi bagi kacamata saya sebagai Desainer, *spreadsheet ini adalah "Proto-UI"*. User sebenarnya sudah punya **mental model** tentang data apa yang mau mereka masukkan; mereka hanya terjebak di alat yang terlalu generik.
 
-## \[\[2]{.step-number}Membatasi "Biaya Gagal" (The CapEx Mindset)]{.h2-inner}
+## <span class="h2-inner"><span class="step-number">2</span>Membatasi "Biaya Gagal" (The CapEx Mindset)</span>
 
 Riset ini dipatok 1 bulan, dengan biaya harus mendekati Rp0 (VS Code + Qwen versi gratisan).
 
@@ -50,7 +50,7 @@ Di tahap validasi awal, menelantarkan estetika visual demi mempercepat pengujian
 
 Detail yang saya kejar di tahap ini bukan pada pixel, melainkan pada **Data Mapping** proses kalibrasi: bagaimana merancang arsitektur database yang mampu menampung ribuan raw data pengukuran alat, mencocokkannya dengan reference data alat kalibrasi, lalu menghitung standard deviasi koreksi suhu ruang, klaim CMC.
 
-## \[\[3]{.step-number}Memetakan Opportunity Cost lewat 4U Framework]{.h2-inner}
+## <span class="h2-inner"><span class="step-number">3</span>Memetakan Opportunity Cost lewat 4U Framework</span>
 
 Dengan menggunakan framework dari Harvard Business School, saya menemukan titik kritis dimana ada peluang yang bisa di-solve:
 
