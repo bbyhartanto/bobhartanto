@@ -125,14 +125,18 @@ onMounted(() => {
   })
 })
 
+const gallery = useArticleGallery()
+
 onUnmounted(() => {
   observer?.disconnect()
+  gallery.clearGallery()
 })
 </script>
 
 <template>
   <div class="theme-casestudy min-h-screen pb-24 transition-colors duration-500">
     <HeaderChild />
+    <ImageModal />
 
     <!-- Main Container -->
     <div class="px-6 pt-16 md:pt-8 animate-fade-in grid grid-cols-1 md:grid-cols-8 gap-x-[30px] gap-y-[40px]">

@@ -61,8 +61,12 @@ function getMarkdownFiles(dir) {
   )
 }
 
-const casestudiesDir = path.join(ROOT, 'content/casestudies')
-const files = getMarkdownFiles(casestudiesDir)
+const contentDirs = [
+  path.join(ROOT, 'content/casestudies'),
+  path.join(ROOT, 'content/portfolio')
+]
+
+const files = contentDirs.flatMap(dir => fs.existsSync(dir) ? getMarkdownFiles(dir) : [])
 
 // ── Validate each file ───────────────────────────────────────────────────────
 let hasErrors = false

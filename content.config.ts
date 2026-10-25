@@ -82,6 +82,57 @@ export default defineContentConfig({
           description: 'Areas of focus (e.g. Strategy & Research)'
         })
       })
+    }),
+
+    // 5. Register Portfolio (from portfolio/ folder)
+    portfolio: defineCollection({
+      type: 'page',
+      source: 'portfolio/**/*.md',
+      schema: z.object({
+        title: z.string(),
+        draft: z.boolean().default(false),
+        description: z.string().editor({
+          input: 'textarea',
+          label: 'Description'
+        }),
+        excerpt: z.string().optional().editor({
+          input: 'textarea',
+          label: 'Excerpt'
+        }),
+        quotes: z.string().optional().editor({
+          input: 'textarea',
+          label: 'Quotes'
+        }),
+
+        // Dropdown — options derived from categories.json at build time
+        category: z.enum(categoryNames).editor({
+          label: 'Category'
+        }),
+
+        // Multi-select — options derived from categories.json at build time
+        subcategories: z.array(
+          z.enum(subcategoryNames)
+        ).default([]).editor({
+          label: 'Subcategories'
+        }),
+
+        role: z.string().optional().editor({
+          label: 'Role',
+          description: 'Your role in the project (e.g. Product Design Lead)'
+        }),
+        timeline: z.string().optional().editor({
+          label: 'Timeline',
+          description: 'Project timeline (e.g. 2026)'
+        }),
+        platform: z.string().optional().editor({
+          label: 'Platform',
+          description: 'Project platforms (e.g. Web & Mobile)'
+        }),
+        focus: z.string().optional().editor({
+          label: 'Focus',
+          description: 'Areas of focus (e.g. Strategy & Research)'
+        })
+      })
     })
   },
 })
