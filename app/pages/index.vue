@@ -40,7 +40,7 @@
             data-scroll-delay="0.1s"
             class="opacity-0 font-medium animate-target text-5xl md:text-4xl lg:text-5xl py-4 leading-[1.15]"
           >
-            Designer who had a full-stack development perspective.
+            E-Commerce Product Designer & Technical Implementer.
           </h2>
             <ButtonPortfolio class=" opacity-0 animate-target pointer-events-auto" />
         </div>
@@ -53,9 +53,11 @@
             data-scroll-delay="0s"
             class="text-3xl py-4 md:text-5xl leading-[1.15] opacity-0 animate-target"
           >
-            A product design partner<br />
-            with focus on
+            An Ai powered Product Designer
           </h2>
+          <p data-initial-delay="0.3s" data-scroll-delay="0.2s" class="opacity-0 animate-target mb-10">
+            I work with DTC brand owners to create seamless e-commerce operations using agentic workflow to improve retention and learn from customers behaviour.
+          </p>
           <div
             v-for="(service, index) in services"
             :key="index"
@@ -410,14 +412,14 @@ import { ref, computed, onMounted, onUnmounted } from "vue";
 const openAccordion = ref(null);
 const services = ref([
   {
-    title: "Website design & development",
+    title: "Ai E-Commerce, Web & Mobile",
     description:
-      "I do loves designing and building websites. I design website on figma for both desktop and mobile design then build it using HTML, Tailwind CSS, Vue.js and Nuxt.js such as this portfolio website.",
+      "Think about a lexus class aftersales for e-commerce, I enable agent to your e commerce website to chat with your customer trough whatsapp for the customer satisfaction, upsell/cross-sell, product recommendations, and then the agent will update the order status, and so on. that's what i do.  ",
   },
   {
-    title: "UI Design & Prototyping",
+    title: "Anti slop UI Design & Prototyping",
     description:
-      "UI design is where I do my sharpest thinking, translating the ambiguous vision of founders and board members into interfaces that feel intuitive, fun and engaging. I've worked across the full spectrum, from emerging to growing startups to large enterprises, Such as Astragraphia, Moka POS and IBM.",
+      "AI can generate screens in seconds, but it can’t generate taste. I design distinct, brand-native interfaces that don’t look like generic SaaS templates—translating raw ideas into tactile, conversion-ready prototypes. Design with figma just like the old days",
   },
   {
     title: "UX Audit review & Strategy",
@@ -425,9 +427,9 @@ const services = ref([
       "I do design critiques, analyzing your existing product to identify usability issues and providing a clear, actionable strategy for improvement.",
   },
   {
-    title: "Branding and Design system",
+    title: "Cohesive Branding & Design Systems",
     description:
-      "I have ability to designing in pixel perfect such as logo, poster, and banner, and also developing comprehensive, scalable design systems to ensure visual consistency across all of the products in your ecosystem.",
+      "Consistent products build instant credibility. I craft unified visual identities and modular design systems that keep your brand distinct, eliminate component bloat, and speed up future feature releases.",
   },
 ]);
 
